@@ -184,6 +184,10 @@ angular.module('App', ['ionic', 'ngAnimate', 'ngCordova', 'ui.bootstrap', 'count
                     },
                     templateUrl: 'views/pay-resume.html'
                 })
+                .state('profile', {
+                    url: '/profile',
+                    templateUrl: 'views/profile.html'
+                })
 
 
                 ;

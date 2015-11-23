@@ -1,0 +1,175 @@
+<ion-view class="container-profile" ng-controller="profileController as profileControl" can-swipe-back="false">
+
+    <!--HEADER-->
+    <ion-header-bar class="bar bar-header bar-light bar-profile" align-title="center">
+        <div class="buttons" side="left">
+            <button class="button ion-navicon icon-arrow" ng-click="$ionicGoBack()"></button>
+        </div>
+        <h1 class="title">{{i18n.profile.title}}</h1>
+        <div class="buttons" side="right" ng-show="!profileControl.isUserEnroll">
+            <button class="button ion-navicon icon-user"></button>
+        </div>
+    </ion-header-bar >
+    <!-- FIN HEADER -->
+
+    <ion-content>
+
+        <div class="container-profile-enroll" ng-class="{'display-profile-enroll': profileControl.isUserEnroll}">
+            <!--BOX UNO-->
+            <div class="row">
+                <div class="col">
+                    <div class="profile-top-box rounded">
+                        <h3>{{i18n.profile.enroll.title}}</h3>
+                        <p>{{i18n.profile.enroll.contextA}}</p>
+                        <p>{{i18n.profile.enroll.contextB}}</p>
+                        <p>{{i18n.profile.enroll.contextC}}</p>
+                        <div class="tf-resumen-line"></div>
+                        <h3>{{i18n.profile.enroll.labelPhoneNumber}}</h3>
+                        <h4>{{profileControl.phoneNumber}}</h4>
+                        <br>
+                        <a href="#/registry/nickname">
+                            <button class="button button-block button-assertive acepto">
+                                {{i18n.profile.enroll.labelButton}}
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            <!--FIN BOX UNO-->
+        </div>
+
+        <div class="container-profile-literegistry" ng-class="{'display-profile-liteRegistry': !profileControl.isUserEnroll}">
+            <!--BOX UNO-->
+            <div class="row">
+                <div class="col">
+                    <div class="profile-top">
+                        <div class="row">
+                            <div class="col">
+                                <a href="#/cashin">
+                                    <button class="button button-block button-assertive button-recharge">
+                                        {{i18n.generalActions.cashin}}
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-top-box">
+                        <h2>{{i18n.profile.account.title}}</h2>
+                        <br>
+                        <h3>{{i18n.profile.account.labelPhone}}</h3>
+                        <h4><a href="#" x-apple-data-detectors="false">+57 {{profileControl.phoneNumber}}</a></h4>
+                        <p>{{i18n.profile.account.contextPhone}}</p>
+                        <div class="tf-resumen-line"></div>
+                        <h3>{{i18n.profile.account.labelAccountNumber}}</h3>
+                        <h4><a href="#" x-apple-data-detectors="false">{{profileControl.accountNumber}}</a></h4>
+                        <p>{{i18n.profile.account.contextAccountNumber}} <a ng-click="profileCostsTable.show();">{{i18n.profile.account.linkAccountNumber}}</a></p>
+                        <div class="tf-resumen-line"></div>
+                        <h3>{{i18n.profile.account.labelEmail}}</h3>
+                        <h4>{{profileControl.email}}</h4>
+                        <p>{{i18n.profile.account.contextEmail}}</p>
+                    </div>
+                    <div class="profile-box-bottom">
+                        <h3>{{i18n.profile.closeAccount.title}}</h3>
+                        <p>{{i18n.profile.closeAccount.context}}</p>
+                        <h4>{{i18n.profile.closeAccount.labelTotal}} <span>{{profileControl.balanceTotal | currency : '$' : '0'}}</span></h4>
+                        <div class="col">
+                            <button class="button button-block button-assertive button-close-account grey" 
+                            ng-class="{'button-deactivated': !profileControl.isBalanceZero}"
+                            ng-click="profileControl.closeAccount();">
+                                {{i18n.profile.closeAccount.labelButton}}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--FIN BOX UNO-->
+
+            <!--BOX DOS-->
+            <div class="row">
+                <div class="col">
+                    <div class="profile-box iconodatos">
+                        <h3><span>{{i18n.profile.data.title}}</span></h3>
+                        <h3>{{i18n.profile.data.labelName}}</h3>
+                        <h4>{{profileControl.fullName}}</h4>
+                        <div class="tf-resumen-line"></div>
+                        <h3 class="profile-title-id">
+                            {{profileControl.typeIdName}}
+                        </h3>
+                        <h4 class="profile-info-id-user">
+                            <div class="profile-id-user">
+                                <a href="#" x-apple-data-detectors="false">{{profileControl.id}}</a>
+                            </div>
+                        </h4>
+                        <div class="tf-resumen-line"></div>
+                        <h3>{{i18n.profile.data.labelEmail}}</h3>
+                        <h4>{{profileControl.email}}</h4>
+                        <p>{{i18n.profile.data.contextEmail}}</p>
+                        <div class="tf-resumen-line"></div>
+                        <h3>{{i18n.profile.data.labelPhone}}</h3>
+                        <h4><a href="#" x-apple-data-detectors="false">+57 {{profileControl.phoneNumber}}</a></h4>
+                        <div class="tf-resumen-line"></div>
+                    </div>
+                    <div class="profile-box-bottom"><a href="#">{{i18n.profile.data.labelEditData}}</a></div>
+                </div>
+            </div>
+            <!--FIN BOX DOS-->
+
+
+            <!--BOX TRES-->
+            <div class="row">
+                <div class="col">
+                    <div class="profile-box iconoseguridad">
+                        <h3><span>{{i18n.profile.security.title}}</span></h3>
+                        <p>{{i18n.profile.security.contextFirst}} <strong>{{i18n.profile.security.contextMiddle}}</strong> {{i18n.profile.security.contextLast}}</p>
+                        <div class="tf-resumen-line"></div>
+                    </div>
+                    <div class="profile-box-bottom"><a href="#">{{i18n.profile.security.buttonConfiguration}}</a></div>
+                </div>
+            </div>
+            <!--FIN BOX TRES-->
+
+            <!--BOX CUATRO-->
+            <div class="row">
+                <div class="col">
+                    <div class="profile-box icononotificaciones">
+                        <h3><span>{{i18n.profile.notifications.title}}</span></h3>
+                        <p>{{i18n.profile.notifications.contextFirst}} <strong>{{i18n.profile.notifications.contextLast}}</strong></p>
+                        <div class="tf-resumen-line"></div>
+                    </div>
+                    <div class="profile-box-bottom"><a href="#">{{i18n.profile.notifications.buttonConfiguration}}</a></div>
+                </div>
+            </div>
+            <!--FIN BOX CUATRO-->
+        </div>
+
+        <!--BOX CINCO-->
+        <div class="row">
+            <div class="col">
+                <div class="profile-box rounded iconoenlaapp">
+                    <h3><span>{{i18n.profile.inApp.title}}</span></h3>
+                    <p>{{i18n.profile.inApp.context}}</p>
+                    <ul>
+                        <li class="enlace-secundario">
+                            <a ng-click="profileControl.showHelpView();">{{i18n.generalActions.help}}</a>
+                        </li>
+                        <li class="enlace-secundario">
+                            <a href="#/profileLegalAgreements">{{i18n.profile.inApp.legalAgreements}}</a>
+                        </li>
+                        <li class="enlace-secundario disabled-acces">
+                            <a href="#">{{i18n.profile.inApp.termsOfService}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--FIN BOX CINCO-->
+
+        <!--BOX CINCO-->
+        <div class="row" ng-show="!profileControl.isUserEnroll">
+            <div class="col profile-close">
+                <a ng-click="profileControl.logout();">{{i18n.profile.labelButtonCloseSession}}</a>
+            </div>
+        </div> 
+        <!--FIN BOX CINCO-->
+    </ion-content>
+</ion-view>
