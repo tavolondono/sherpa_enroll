@@ -1,0 +1,19 @@
+<ion-modal-view class="modal modal-sherpa-view pay-resume-modal-error">
+    <ion-content class="padding modal-sherpa-container">
+	   		<div class="row">
+	         	<div class="col">
+	                <!--MODAL-->
+	            	<div class="pagos-modal-denegado">
+	                	<h3>{{i18n.payResume.errorModalTitle}}</h3>
+	                    <br>
+	                    <p>{{payResumeControl.errorMessageModal}}</p>
+	                    <br>
+	                    <p class="enlace-secundario">
+                            <a ng-click="payResumeControl.closeErrorModal();">{{i18n.generalActions.close}}</a>
+                        </p>
+	                </div>
+	                <!--FIN MODAL-->
+	         	</div>
+	        </div>
+    </ion-content>
+</ion-modal-view>

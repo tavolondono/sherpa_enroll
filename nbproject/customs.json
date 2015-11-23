@@ -1,0 +1,27 @@
+{
+    "attributes": {
+        "count-to": {
+            "context": "span"
+        },
+        "class": {}
+    },
+    "elements": {
+        "ion-modal-view": {},
+        "ion-header-bar": {},
+        "p": {},
+        "ion-item": {},
+        "uib-progressbar": {
+            "attributes": {
+                "max": {},
+                "value": {},
+                "type": {}
+            }
+        },
+        "progressbar": {},
+        "ion-view": {},
+        "toast": {},
+        "ion-nav-view": {},
+        "ion-list": {},
+        "ion-content": {}
+    }
+}

@@ -1,0 +1,64 @@
+<ion-view
+can-swipe-back="false"
+ng-controller="paymentsController as paymentsControl">
+    <!--HEADER-->
+    <ion-header-bar class="bar bar-header bar-light bar-pay-transfers" align-title="center">
+        <div class="buttons" side="left">
+            <button class="button ion-navicon-white icon-arrow" ng-click="paymentsControl.goBack()"></button>
+        </div>
+        <h1 class="title"><span>{{i18n.paymentsQRcode.title}}</span></h1>
+    </ion-header-bar>
+    <!-- FIN HEADER -->
+
+    <ion-content class="payments-container">
+        <ion-refresher pulling-text="{{i18n.generalActions.loading}}..." on-refresh="paymentsControl.getBalance()"> </ion-refresher>
+        <!--SALDO-->
+         <div class="balanceTop balance padding">
+            <div class="row">
+                <div class="col"><p>{{i18n.generalActions.available}}</p></div>
+                <div class="col text-right"><p><span>{{paymentsControl.balanceAvailable | currency : '$' : '0'}}</span></p></div>
+            </div>
+            <div class="row">
+                <div class="col"><p>{{i18n.generalActions.total}}</p></div>
+                <div class="col text-right"><p>{{paymentsControl.balanceTotal | currency : '$' : '0'}}</p></div>
+            </div>
+         </div>
+         <div class="balanceTop-bg balance-bg"></div>
+        <!--FIN SALDO-->
+
+        <div ng-show="paymentsControl.isShowFormCode" class="contForm">
+            <!--COPY-->
+             <div class="row">
+                <div class="col">
+                    <div class="pagos-ingresar-codigo padding">
+                        <p ng-bind-html="i18n.paymentsQRcode.description"></p>
+                    </div>
+                </div>
+             </div>
+            <!--FIN COPY-->
+
+            <!--INPUT-->
+            <div class="row">
+                <div class="col">
+                    <label class=" item item-input input-cantidad">
+                        <span class="input-label" ng-bind-html="i18n.paymentsQRcode.placeHolder"></span>
+                        <input
+                        type="tel"
+                        name="code"
+                        ng-model="paymentsControl.qrCode"
+                        ng-required="true"
+                        trim="true"
+                        ng-maxlength="6"
+                        length-checker="paymentsControl.qrCode"
+                        length-size="6"
+                        >
+                    </label>
+                </div>
+            </div>
+            <!--FIN INPUT-->
+        </div>
+
+
+    </ion-content>
+</ion-view>
+

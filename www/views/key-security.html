@@ -1,0 +1,80 @@
+<ion-modal-view
+class="contenedor-clave"
+can-swipe-back="false"
+ng-controller="keySecurityController as keySecurityControl">
+    <!--HEADER-->
+    <ion-header-bar class="bar bar-header bar-light" align-title="center">
+        <div class="buttons" side="left">
+            <button class="ion-backicon icon-arrow" ng-click="keySecurityControl.hide();"></button>
+        </div>
+        <h1 class="title"> {{keySecurityControl.titlePage}} </h1>
+        <div class="buttons" side="right"> </div>
+    </ion-header-bar >
+    <!-- FIN HEADER -->
+   <ion-content overflow-scroll="true">
+        <form name="formKeySecurity" ng-submit="formKeySecurity.$valid && formKeySecurity.validationkeySecurity();" novalidate>
+            <!--CELULAR TEXTO-->
+            <div class="row">
+                <div class="col">
+                    <div class="claveseguridad">
+                        <p> {{keySecurityControl.title}} </p>
+                        <p><span ng-bind-html="keySecurityControl.description"></span></p>
+                    </div>
+                </div>
+            </div>
+            <!--FIN CELULAR TEXTO-->
+
+            <!--INPUTS-->
+            <div class="row">
+                <div class="col">
+               
+                    <label ng-class="{'has-error': (formKeySecurity.password.$invalid && formKeySecurity.password.$dirty)}"
+                    class="item item-input mask-password">
+                        
+                        <input type="tel"
+                        name="password"
+                        ng-model="keySecurityControl.password"
+                        ng-required="true"
+                        trim="true"
+                        ng-maxlength="4"
+                        length-checker="keySecurityControl.passwordSecurity"
+                        length-size="4">
+                        
+                        <div class="maskPunto">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="maskPunto transparent">
+                            <span class="active" ng-class="{'has-pass': keySecurityControl.password.length > 0}"> · </span>
+                            <span class="active" ng-class="{'has-pass': keySecurityControl.password.length > 1}"> · </span>
+                            <span class="active" ng-class="{'has-pass': keySecurityControl.password.length > 2}"> · </span>
+                            <span class="active" ng-class="{'has-pass': keySecurityControl.password.length > 3}"> · </span>
+                        </div>
+
+                    </label>
+
+                </div>
+            </div>
+
+            <!--FIN INPUTS-->
+
+            <!--FAQ-->
+            <div class="row">
+                <div class="col">
+                    <div class="claveseguridad">
+                        <a href="#">{{i18n.keySecurity.fortgotPassword}}</a>
+                    </div>
+                </div>
+            </div>
+            <!--FIN FAQ-->
+
+            <!--BOTONES-->
+            <!-- <ion-footer-bar class="bar bar-footer">
+                <button class="button button-block button-assertive acepto">{{i18n.generalActions.send}}</button>
+             </ion-footer-bar> -->
+            <!--FIN BOTONES-->
+        </form>
+    </ion-content>
+</ion-modal-view>

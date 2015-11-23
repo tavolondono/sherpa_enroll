@@ -1,0 +1,35 @@
+<ion-view class="contenedor-login"
+can-swipe-back="false"
+ng-controller="homeController as homeControl">
+    <ion-content scroll="false">
+        <div class="login-clear-header"></div>
+
+        <div class="login-titulo">
+            <h1>{{i18n.home.homeWellcome}}</h1>
+        </div>
+
+        <div class="login-clear-boton"></div>
+
+        <!--BOTON-->
+        <div class="padding content-bottom">
+            <a class="btn" ng-click="homeControl.testNequi();">
+                <button class="button button-block button-positive Enviar">
+                    {{i18n.home.testSherpa}}
+                </button>
+            </a>
+            
+            <div class="row entrar-login">
+                <a href="#/userLogin" class="padding">
+                    {{i18n.generalActions.enter}}
+                </a>
+            </div>
+            <div class="row entrar-login" ng-click="homeControl.clearData()">
+                <a href="#" class="padding">
+                    Clear data
+                </a>
+            </div>            
+            
+        </div>
+        <!--FIN BOTON-->
+    </ion-content>
+</ion-view>

@@ -1,0 +1,29 @@
+<ion-modal-view class="tool-welcome-sherpa">
+    <ion-content class="container-tool-dashboard" scroll="false">
+        <!--MARQUEE-->
+        <div class="vertalign-modal row row-center">
+            <div class="col">
+                <div class="tool-dashboard-marquee welcomeSherpa">
+                    <div class="tool-dashboard-text">
+                        <h3>{{i18n.dashboard.tools.welcomeSherpa.title}}</h3>
+                        <p>{{i18n.dashboard.tools.welcomeSherpa.contextOne}}</p>
+                        <h2>{{i18n.dashboard.tools.welcomeSherpa.contextTwo}}</h2>
+                        <p>{{i18n.dashboard.tools.welcomeSherpa.contextThree}}</p>
+
+                        <!--BOTON-->
+                        <div class="row">
+                            <div class="col">
+                                <a href="#/dashboard" ng-click="closeModalWelcome();">
+                                    <button class="button button-block button-positive">{{i18n.generalActions.claimMoney}}</button>
+                                </a>
+                            </div>
+                        </div>
+                        <!--FIN BOTON-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MARQUEE-->
+
+    </ion-content>
+</ion-modal-view>

@@ -1,0 +1,67 @@
+<ion-view can-swipe-back="false">    
+    <ion-content class="contract wizard-content" ng-controller="biometriaFacialController as biometriaControl">
+        <div class="contenedor-vinculacion">
+
+            <!--HEADER-->
+            <div class="bar bar-header bar-light aqua">
+                <button class="button ion-navicon icon-arrow" ng-click="biometriaControl.atras();"></button>
+                <h1 class="title">{{i18n.biometry.title}}</h1>
+                <button class="button ion-navicon icon-help" ng-click="biometriaControl.showHelp();"></button>
+            </div>
+            <!--FIN HEADER-->
+
+            <div class="clearheader"></div>
+
+            <!--PASOS-->
+            <div class="row">
+                <div class="col">
+                    <div class="Txt-pasos">
+                        <p>5 de 5</p>
+                    </div>
+                </div>
+            </div> 
+            <!--FIN PASOS-->
+
+            <!--ICONO-->
+            <div class="row">
+                <div class="col">
+                    <div class="vinculacion-icono icono-correo"></div>
+                </div>
+            </div> 
+            <!--FIN ICONO-->
+
+            <br>
+            
+            <!--FIN TEXTOS-->
+
+            <!--BOTON-->
+            <div class="row">
+                <div class="col">
+                    <button class="button button-block button-assertive siguiente" 
+                            ng-disabled="biometriaControl.puedeSeguir" ng-click="biometriaControl.takePhoto();"
+                            >{{i18n.biometry.takePicture}}</button>
+                </div>
+                <div class="col">
+                    <button class="button button-block button-assertive siguiente" 
+                            ng-disabled="!biometriaControl.puedeSeguir" ng-click="biometriaControl.siguiente()">
+                        {{i18n.navigation.next}}</button>
+                </div>
+            </div> 
+            <!--TEXTOS-->
+            <div class="row">
+                <div ng-repeat="foto in biometriaControl.foto" class="col">
+                    <div class="Txt-parrafo">
+                        <img src="{{foto.uri}}" style="width: 90px; height: 200px;"/>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="row">
+                <div class="texto-cancelar"><a href="#">{{i18n.navigation.cancel}}</a></div> 
+            </div> 
+            <!--FIN BOTON-->
+
+        </div>
+
+    </ion-content>
+</ion-view>

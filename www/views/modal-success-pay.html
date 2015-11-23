@@ -1,0 +1,68 @@
+<ion-modal-view
+class="operation-result contenedor-successApp"
+can-swipe-back="false"
+scroll="false">
+    <!--HEADER-->
+    <ion-header-bar class="bar bar-header bar-light" align-title="center">
+        <div class="buttons" side="left"></div>
+        <h1 class="title"></h1>
+
+        <div class="buttons" side="right">
+            <button
+            class="button ion-navicon icon-close" ng-click="payResumeControl.closeModal('successPay');"></button>
+        </div>
+
+    </ion-header-bar >
+    <!-- FIN HEADER -->
+    <ion-content>
+        <!--OPERATIONRESULT TEXTO-->
+        <div class="row">
+            <div class="col">
+                <div class="operationResult-txt">
+                    <h3>{{i18n.payResume.success.title}}</h3>
+                    <h3>{{payResumeControl.mountToPay | currency : '$' : '0'}}</h3>
+                </div>
+            </div>
+        </div>
+        <!--FIN OPERATIONRESULT TEXTO-->
+
+        <!--OPERATIONRESULT ICONO-->
+        <div class="row">
+            <div class="col">
+                <div class="successApp-icono"> </div>
+            </div>
+        </div>
+        <!--FIN OPERATIONRESULT ICONO-->
+
+        <!--OPERATIONRESULT TEXTO-->
+        <div class="row">
+            <div class="col">
+                <div class="operationResult-txt">
+                    <p> </p>
+                </div>
+            </div>
+        </div>
+        <!--FIN OPERATIONRESULT TEXTO-->
+
+        <!--BOTON-->
+        <div class="row">
+            <div class="col">
+                <a href="#" ng-click="payResumeControl.getVoucher();">
+                    <button class="button button-block button-positive acepto">{{i18n.payResume.success.comprobante}}</button>
+                </a>
+            </div>
+        </div>
+        <!--FIN BOTON-->
+
+        <!--OPERATIONRESULT TEXTO-->
+        <div class="row">
+            <div class="col">
+                <div class="operationResult-txt enlace-secundario">
+                    <a ng-click="payResumeControl.closeModal('successPay');">{{i18n.payResume.success.otroPago}}</a>
+                </div>
+            </div>
+        </div>
+        <!--FIN OPERATIONRESULT TEXTO-->
+
+    </ion-content>
+</ion-modal-view>

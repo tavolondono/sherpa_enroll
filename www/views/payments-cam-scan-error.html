@@ -1,0 +1,26 @@
+<ion-modal-view class="modal-sherpa-view cam-scan-error">
+    <div class="row">
+        <div class="col">
+            <div class="tf-modal-cerrar"><a href="#" ng-click="paymentsControl.closeCamScanError();"></a></div>
+        </div>
+    </div>
+    <ion-content scroll="false" class="padding modal-sherpa-container">
+        <div class="modal-sherpa">
+            <!--FIN CERRAR-->
+             <div class="row">
+                <div class="col">
+                    <!--MODAL-->
+                    <div class="content-modal-scan-error">
+                        <h3 ng-bind-html="i18n.paymentsQRcode.camScanError.title"></h3>
+                        <p ng-bind-html="i18n.paymentsQRcode.camScanError.description"></p>
+                        <br>
+                        <button ng-click="paymentsControl.showFormCode();" class="button button-block button-assertive siguiente">{{i18n.paymentsQRcode.camScanError.enterCode}}</button>
+                        <p class="enlace-secundario"><a href="#" ng-click="paymentsControl.closeCamScanError();">{{i18n.generalActions.cancel}}</a></p>
+                    </div>
+                    <!--FIN MODAL-->
+                </div>
+             </div>
+
+        </div>
+    </ion-content>
+</ion-modal-view>

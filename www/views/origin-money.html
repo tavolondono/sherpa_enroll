@@ -1,0 +1,71 @@
+<ion-view can-swipe-back="false" class="origin-money-container" ng-controller="originMoneyController as originMoneyControl">
+   
+    <!--HEADER-->
+    <ion-header-bar class="bar bar-header bar-light bar-origin-money" align-title="center">
+        <div class="buttons" side="left">
+            <button class="button ion-navicon-white icon-arrow" ng-click="$ionicGoBack()"></button>
+        </div>
+        <h1 class="title">{{i18n.originMoney.title}}</h1>
+    </ion-header-bar >
+    <!--FIN HEADER-->
+
+    <ion-content scroll="false">
+
+        <ion-scroll class="scroll-origin-money-balance" direction="y">
+            <ion-refresher pulling-text="Cargando..." on-refresh="originMoneyControl.getBalance()"></ion-refresher>
+            <!--SALDO-->
+            <div class="origin-money-balance-container">
+                <div class="origin-money-balance padding">
+                    <div class="row">
+                        <div class="col col-33"><p>{{i18n.generalActions.available}}</p></div>
+                        <div class="col right"><p><span>{{originMoneyControl.balance | currency : '$' : '0'}}</span></p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><p>{{i18n.generalActions.total}}</p></div>
+                        <div class="col right"><p>{{originMoneyControl.balanceAvailable | currency : '$' : '0'}}</p></div>
+                    </div>
+                </div>
+            </div>
+            <!-- END SALDO -->
+        </ion-scroll>
+        
+        <!--SELECCION DE ORIGEN TITLE-->
+        <div class="origin-money-instructions">
+            <h3>{{i18n.originMoney.instructions}} <span>{{originMoneyControl.actionButton}}</span></h3>
+        </div>
+        <!--END SELECCION DE ORIGEN TITLE-->
+
+        <!-- POCKETS -->
+        <div class="row row-pockets">
+            <div class="pockets-container">
+                <ion-slide-box on-slide-changed="originMoneyControl.selectOriginTransfer($index)" show-pager="false">
+                    <ion-slide ng-repeat="pocket in originMoneyControl.pockets">
+                        <div class="pocket">
+                            <div class="header-pocket">
+                                <div class="iconPocket icon{{pocket.pocketType}}"></div>
+                            </div>
+                            <div class="content-pocket">
+                                <h2 class="title-pocket">{{pocket.name}}</h2>
+                                <p>{{pocket.value| currency : '$' : '0'}}</p>
+                            </div>
+                        </div>
+                    </ion-slide>
+                </ion-slide-box>
+            </div>
+        </div>
+        <!--END POCKETS-->
+
+        <!--BOTONES-->
+        <div class="bar bar-footer bar-footer-origin-money">
+            <div class="row">
+                <div class="col">
+                    <button class="button button-block button-assertive lightblue" ng-click="originMoneyControl.goToTransfer()" ng-class="{'button-available':!originMoneyControl.transferAvailable}">{{originMoneyControl.actionButton}} {{i18n.originMoney.labelButton}}</button> 
+                    <a href="#/dashboard">{{i18n.generalActions.cancel}}</a>
+                </div>
+            </div>
+         </div>
+        <!--FIN BOTONES-->
+        
+
+    </ion-content>
+</ion-view>

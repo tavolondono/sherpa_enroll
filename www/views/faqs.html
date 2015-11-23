@@ -1,0 +1,24 @@
+<ion-modal-view class="modal-sherpa-view faqs-container">
+    
+    <button class="close-modal-faq" ng-click="faqsControl.faqsModal.hide();"></button>
+    
+    <ion-content class="modal-sherpa-container">
+        <div class="container-faq">
+            <h1>{{faqsControl.currentCategoryData.title}}</h1>
+            <p ng-repeat="context in faqsControl.currentCategoryData.context">{{context}}</p>
+            <h1 ng-class="{'ng-hide':faqsControl.currentCategoryData.titleB == ''}">
+                {{faqsControl.currentCategoryData.titleB}}
+            </h1>
+            <div class="faq-list-container" ng-class="{'ng-hide':faqsControl.currentCategoryData.list == ''}">
+                <li ng-repeat="list in faqsControl.currentCategoryData.list">
+                    {{list}}
+                </li>
+            </div>
+            <div class="faq-alert-container" ng-class="{'ng-hide':faqsControl.currentCategoryData.alert == ''}">
+                <div class="icon-alert"></div>
+                <p>{{faqsControl.currentCategoryData.alert}}</p>
+            </div>
+        </div>
+    </ion-content>
+
+</ion-modal-view>

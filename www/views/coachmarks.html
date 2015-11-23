@@ -1,0 +1,243 @@
+<ion-modal-view ng-controller="coachmarksController as coachControl" class="coachmarks-modal">
+    <ion-content class="coachmarks-container" scroll="false" on-swipe-left="coachControl.swipeLeft();">
+        <ion-slide-box active-slide="0" on-slide-changed="coachControl.slideHasChanged($index)" does-continue="false" delegate-handle="mySlider">
+            <!--SLIDE COACHMARK WELCOME-->
+            <ion-slide class="coachmark-welcome-container">
+                <div class="row row-center">
+                    <div class="col">
+                        <div class="modal-container">
+                            <h1>{{i18n.coachmark.welcome.title}}</h1>
+                            <p>{{i18n.coachmark.welcome.text}}</p>
+                        </div>
+                    </div>
+                </div>
+            </ion-slide>
+            <!-- END SLIDE COACHMARK WELCOME -->
+
+            <!--SLIDE COACHMARK PROFILE-->
+            <ion-slide class="coachmark-profile-container">
+                <div class="mochila-layer">
+                    <div class="mochilabono-green">
+                        <div class="mochila-top">
+                            <div class="menu-icon"></div>
+                        </div>
+                    </div>
+
+                    <div class="row row-center">
+                        <div class="col">
+                            <div class="modal-container">
+                                <h1>{{i18n.coachmark.profile.title}}</h1>
+                                <p>{{i18n.coachmark.profile.text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              <!--FIN LAYER DOWN-->
+            </ion-slide>
+            <!-- END SLIDE COACHMARK PROFILE -->
+
+            <!--SLIDE COACHMARK DASHBOARD-->
+            <ion-slide class="coachmark-dashboard-container">
+              <div class="top-right-shadow">
+                <div class="mochilabono-rombo-dark">
+                  <div class="mochila-saldo">
+                    <h3>{{i18n.coachmark.general.disponible}}</h3>
+                    <p>{{i18n.coachmark.general.monto}}</p>
+                    <h3>{{i18n.coachmark.general.total}}</h3>
+                    <h5>{{i18n.coachmark.general.saldo}}</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mochila-layer">
+                <div class="mochila-top-shadow">
+                  <div class="menu-icon"></div>
+                </div>
+              </div>
+
+              <!--FIN LAYER DOWN-->
+              <div class="modal-container">
+                <h1>{{i18n.coachmark.dashboard.title}}</h1>
+                <p>{{i18n.coachmark.dashboard.text}}</p>
+              </div>
+
+              <div class="bottom-right-shadow"></div>
+            </ion-slide>
+            <!-- END SLIDE COACHMARK DASHBOARD -->
+
+            <!--SLIDE COACHMARK PROFILE-->
+            <ion-slide class="coachmark-tools-container">
+              <div class="modal-container">
+                <h1>{{i18n.coachmark.tools.title}}</h1>
+                <p>{{i18n.coachmark.tools.text}}</p>
+              </div>
+              <div class="top-right-shadow">
+                <div class="rombo-dark-dis">
+
+                  <div class="mochila-saldo-dis">
+                    <h3>{{i18n.coachmark.general.disponible}}</h3>
+                    <p>{{i18n.coachmark.general.monto}}</p>
+                    <h3>{{i18n.coachmark.general.total}}</h3>
+                    <h5>{{i18n.coachmark.general.saldo}}</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mochila-layer">
+                <div class="mochila-top-shadow">
+                  <div class="menu-icon"></div>
+                </div>
+              </div>
+
+              <!--FIN LAYER DOWN-->
+
+
+              <!--HERRAMIENTAS-->
+              <div class="mochila-tools">
+                  <div class="row">
+                      <div class="col">
+                        <div class="mochila-icono-metas"></div>
+                          <div class="mochila-icono-texto padding-top"><p>{{i18n.coachmark.general.metas}}</p></div>
+                      </div>
+                      <div class="col">
+                        <div class="mochila-icono-guardadito"></div>
+                          <div class="mochila-icono-texto padding-top"><p>{{i18n.coachmark.general.guardadito}}</p></div>
+                      </div>
+                      <div class="col">
+                          <div class="mochila-icono-bolsillos"></div>
+                          <div class="mochila-icono-texto padding-top"><p>{{i18n.coachmark.general.bolsillos}}</p></div>
+                      </div>
+                  </div>
+              </div>
+              <!--FIN HERRAMIENTAS-->
+
+              <div class="bottom-right-shadow"></div>
+            </ion-slide>
+            <!-- END SLIDE COACHMARK PROFILE -->
+
+            <!--SLIDE COACHMARK MONEY-->
+            <ion-slide class="coachmark-reload-container">
+              <div class="modal-container">
+                <h1>{{i18n.coachmark.reload.title}}</h1>
+                <p>{{i18n.coachmark.reload.title}}</p>
+              </div>
+              <div class="top-right-shadow">
+                <div class="rombo-dark-dis">
+
+                  <div class="mochila-saldo-dis">
+                    <h3>{{i18n.coachmark.general.disponible}}</h3>
+                    <p>{{i18n.coachmark.general.monto}}</p>
+                    <h3>{{i18n.coachmark.general.total}}</h3>
+                    <h5>{{i18n.coachmark.general.saldo}}</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mochila-layer">
+                <div class="mochila-top-shadow">
+                  <div class="menu-icon"></div>
+                </div>
+              </div>
+
+              <!--FIN LAYER DOWN-->
+
+
+              <!--HERRAMIENTAS-->
+              <div class="mochila-tools">
+                  <div class="row">
+                      <div class="col">
+                        <div class="mochila-icono-metas"></div>
+                          <div class="mochila-icono-texto padding-top"><p>{{i18n.coachmark.general.metas}}</p></div>
+                      </div>
+                      <div class="col">
+                        <div class="mochila-icono-guardadito"></div>
+                          <div class="mochila-icono-texto padding-top"><p>{{i18n.coachmark.general.guardadito}}</p></div>
+                      </div>
+                      <div class="col">
+                          <div class="mochila-icono-bolsillos"></div>
+                          <div class="mochila-icono-texto padding-top"><p>{{i18n.coachmark.general.bolsillos}}</p></div>
+                      </div>
+                  </div>
+              </div>
+              <!--FIN HERRAMIENTAS-->
+
+              <!--BOTONES-->
+              <div class="mochila-buttons">
+                  <!--BOTON-->
+                  <div class="mochila-boton-plus"></div>
+                  <!--FIN BOTON-->
+              </div>
+              <!--FIN BOTONES-->
+
+              <div class="bottom-right-shadow"></div>
+            </ion-slide>
+            <!-- END SLIDE COACHMARK MONEY -->
+
+            <!--SLIDE COACHMARK TOOLS-->
+            <ion-slide class="coachmark-use-container">
+              <div class="modal-container">
+                <h1>{{i18n.coachmark.use.title}}</h1>
+                <p>{{i18n.coachmark.use.text}}</p>
+                <div class="coachmark-cuadrante">  <img src="images/coachmark-usatuplata.svg">  </div>
+                <p class="close-continue enlace-secundario text-end">
+                    <a href="#" ng-click="closeCoachMarksModal()">{{i18n.coachmark.use.close}}</a>
+                </p>
+              </div>
+              <div class="top-right-shadow">
+                <div class="rombo-dark-dis">
+
+                  <div class="mochila-saldo-dis">
+                    <h3>{{i18n.coachmark.general.disponible}}</h3>
+                    <p>{{i18n.coachmark.general.monto}}</p>
+                    <h3>{{i18n.coachmark.general.total}}</h3>
+                    <h5>{{i18n.coachmark.general.saldo}}</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mochila-layer">
+                <div class="mochila-top-shadow">
+                  <div class="menu-icon"></div>
+                </div>
+              </div>
+
+              <!--FIN LAYER DOWN-->
+
+
+              <!--HERRAMIENTAS-->
+              <div class="mochila-tools">
+                  <div class="row">
+                      <div class="col">
+                        <div class="mochila-icono-metas"></div>
+                          <div class="mochila-icono-texto padding-top"><p>{{i18n.coachmark.general.metas}}</p></div>
+                      </div>
+                      <div class="col">
+                        <div class="mochila-icono-guardadito"></div>
+                          <div class="mochila-icono-texto padding-top"><p>{{i18n.coachmark.general.guardadito}}</p></div>
+                      </div>
+                      <div class="col">
+                          <div class="mochila-icono-bolsillos"></div>
+                          <div class="mochila-icono-texto padding-top"><p>{{i18n.coachmark.general.bolsillos}}</p></div>
+                      </div>
+                  </div>
+              </div>
+              <!--FIN HERRAMIENTAS-->
+
+              <!--BOTONES-->
+              <div class="mochila-buttons">
+                <!--BOTON-->
+                <div class="mochila-boton-plus-dis"></div>
+                <!--FIN BOTON-->
+                <!--BOTON-->
+                <div class="mochila-boton-action"></div>
+                <!--FIN BOTON-->
+              </div>
+              <!--FIN BOTONES-->
+
+              <div class="bottom-right-shadow"></div>
+            </ion-slide>
+            <!-- END SLIDE COACHMARK MONEY -->
+        </ion-slide-box>
+    </ion-content>
+</ion-modal-view>

@@ -1,0 +1,56 @@
+<ion-view
+can-swipe-back="false"
+ng-controller="requestTokenController as tokenControl"
+class="enrollContent">
+    <!--HEADER-->
+    <ion-header-bar class="bar bar-header bar-light bar-token" align-title="center">
+         <div class="buttons" side="left">
+            <button class="ion-backicon icon-arrow" ng-click="tokenControl.goBack();"></button>
+          </div>
+          <h1 class="title">{{i18n.enrollment.requestTokenTitle}}</h1>
+    </ion-header-bar >
+    <!-- FIN VIEW -->
+
+    <ion-content scroll="false" class="padding requestToken">
+        <form name="formToken" ng-submit="formToken.$valid && tokenControl.validateToken()" novalidate>
+            <!--CODIGO TEXTO-->
+            <div class="row">
+                <div class="col">
+                    <div class="request-token-context">
+                        <p><span>{{i18n.enrollment.requestTokenContext}}</span></p>
+                    </div>
+                </div>
+            </div>
+            <!--FIN CODIGO TEXTO-->
+
+            <div class="phone-number text-center"><p>+57 {{tokenControl.currentPhoneNumber}}</p></div>
+
+            <!--INPUT-->
+            <div class="row row-phone-number">
+                    <div class="col">
+                        <label class=" item item-input input-white">
+                            <span class="input-white-label">{{i18n.enrollment.requestTokenInputCodePlaceHolder}}</span>
+                            <input type="tel"
+                            name="token"
+                            ng-model="tokenControl.token"
+                            ng-required="true"
+                            ng-focus="tokenControl.keyboardShow=true"
+                            ng-blur="tokenControl.validateFieldToken()"
+                            length-checker="tokenControl.token"
+                            length-size="4">
+                        </label>
+                    </div>
+            </div>
+            <!--FIN INPUT-->
+
+            <!--FAQ-->
+            <div class="row">
+                <div class="col">
+                    <div class="contextual-help"><a href="#" ng-click="tokenControl.getNewOtp();">{{i18n.enrollment.requestTokenContextualHelp}}</a></div>
+                </div>
+            </div>
+            <!--FIN FAQ-->
+
+        </form>
+    </ion-content>
+</ion-view>

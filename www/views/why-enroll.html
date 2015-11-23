@@ -1,0 +1,32 @@
+<ion-modal-view class="modalApp modal-whyEnroll">
+
+    <ion-content scroll="false" class="contenedor-black">
+        <!--CERRAR-->
+        <div class="row">
+            <div class="col col-close">
+                <button class="tool-dashboard-close btnClose" ng-click="whyEnroll.hide();"></button>
+            </div>
+        </div>
+        <!--FIN CERRAR-->
+
+        <div class="row">
+            <div class="col">
+                <!--MODAL-->
+                <div class="modal-content left padding">
+                    <h3 class="modal-title">{{i18n.enrollment.whyEnroll.title}}</h3>
+                    
+                    <br/>
+                    
+                    <h3><span>{{i18n.enrollment.whyEnroll.description}}</span></h3>
+                    
+                    <br/>
+                    
+                    <div class="icon-warning"></div>
+                    <p>{{i18n.enrollment.whyEnroll.textWarning}}</p>
+                    
+                </div>
+                <!--FIN MODAL-->
+            </div>
+         </div>
+    </ion-content>
+</ion-modal-view>

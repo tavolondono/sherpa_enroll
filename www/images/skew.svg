@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="360px" height="402px" viewBox="0 0 360 402" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M-84.2353377,282.251369 C-86.5760866,279.91062 -86.5693957,276.108826 -84.2306494,273.77008 L199.464209,-9.92477936 C201.807547,-12.2681175 205.484562,-12.1596792 207.687172,-9.67114115 L444.410984,257.782538 C446.609063,260.265957 446.497796,264.172327 444.147774,266.522349 L176.334893,534.335232 C173.991447,536.678678 170.198982,536.685689 167.853408,534.340115 L-84.2353377,282.251369 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Bolsillos-Index" sketch:type="MSArtboardGroup" transform="translate(0.000000, -67.000000)">
+            <g id="Mask">
+                <use fill="#00C5D6" fill-rule="evenodd" sketch:type="MSShapeGroup" transform="translate(180.000000, 262.241801) rotate(40.000000) translate(-180.000000, -262.241801) " xlink:href="#path-1"></use>
+                <use fill="none" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

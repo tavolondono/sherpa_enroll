@@ -1,0 +1,65 @@
+<ion-view  can-swipe-back="false" class="contenido-vinculacion" >    
+
+    <ion-content scroll='false' ng-controller="enrollController as enrollControl">
+        
+        <!--HEADER-->
+        <div class="bar bar-header bar-light aqua">
+            <button class="button ion-navicon icon-close"></button>
+            <h1 class="title">Información Personal</h1>
+            <button class="button ion-navicon icon-help" ng-click="enrollControl.showHelp();"></button>
+        </div>
+        <!--FIN HEADER-->
+        <div class="contenedor-vinculacion">
+            <div class="clearheader"></div>
+
+            <!--PASOS-->
+            <div class="row">
+                <div class="col">
+                    <div class="Txt-pasos">
+                        <p>1 de 5</p>
+                    </div>
+                </div>
+            </div> 
+            <!--FIN PASOS-->
+
+            <!--ICONO-->
+            <div class="row">
+                <div class="col">
+                    <div class="vinculacion-icono icono-nombre"></div>
+                </div>
+            </div> 
+            <!--FIN ICONO-->
+
+            <div class="clearnombre"></div>
+
+            <!--TEXTOS-->
+            <div class="row">
+                <div class="col">
+                    <div class="Txt-parrafo">
+                        <p><strong>Hola!</strong><br><strong>Queremos conocerte.</strong></p>
+                        <p>¿Cómo quieres que te llamemos?</p>
+                    </div>
+                </div>
+            </div> 
+            <!--FIN TEXTOS-->
+
+            <!--INPUT-->
+            <div class="row row-phone-number">
+                <div class="col">
+                    <label class=" item item-input input-nombre">
+                        <span class="input-label">Nombre</span>
+                        <input type="text">
+                    </label>
+                </div>
+            </div>        
+            <!--FIN INPUT-->
+
+            <!--BOTON-->
+            <div class="bar bar-footer botonCel padding">
+                <button class="button button-block button-assertive siguiente" ng-click="enrollControl.siguiente()">Siguiente</button> 
+            </div>        
+            <!--FIN BOTON-->
+        </div>
+    </ion-content>
+
+</ion-view>

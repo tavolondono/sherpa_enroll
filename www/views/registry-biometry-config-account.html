@@ -1,0 +1,75 @@
+<ion-view
+    view-title="{{i18n.liteRegistry.configureAccount.title}}"
+    can-swipe-back="false"
+    class="contenido-vinculacion biometry-config"
+    ng-controller="configBiometryRegistryController as configBiometryControl" >
+    <!--PASOS-->
+    <div class="row pasos-wizard">
+        <div class="col">
+            <div class="Txt-pasos">
+                <p><span class="active">4</span> de 5</p>
+            </div>
+        </div>
+    </div>
+    <!--FIN PASOS-->
+    <ion-content class="contract wizard-content">
+        <ion-list>
+            <ion-item ng-class="{'pass':configBiometryControl.hasDevice}" ng-click="configBiometryControl.goEnroll()">
+                <div class="row row-center active">
+                    <div class="col col-25 center">
+                        <div class="icon-dispositivo"></div>
+                    </div>
+                    <div class="col col-50 left">
+                        <h3>{{i18n.liteRegistry.configureAccount.secureDevice.title}}</h3>
+                        <p>{{i18n.liteRegistry.configureAccount.secureDevice.description}}</p>
+                    </div>
+                    <div class="col col-25 center">
+                        <i class="icon ion-ios-checkmark-outline"></i>
+                    </div>
+                </div>    
+            </ion-item>
+            <ion-item ng-class="{'pass':configBiometryControl.hasBiometry}" ng-click="configBiometryControl.goChooseBiometry()">
+                <div class="row row-center" 
+                     ng-class="{'active':(configBiometryControl.hasDevice && !configBiometryControl.hasBiometry) || (configBiometryControl.hasDevice && configBiometryControl.hasBiometry)}">
+                    <div class="col col-25 center">
+                        <div class="icon-dispositivo"></div>
+                    </div>
+                    <div class="col col-50 left">
+                        <h3>{{i18n.liteRegistry.configureAccount.biometryAccess.title}}</h3>
+                        <p>{{i18n.liteRegistry.configureAccount.biometryAccess.description}}</p>
+                    </div>
+                    <div class="col col-25 center">
+                        <i class="icon ion-ios-checkmark-outline"></i>
+                    </div>
+                </div>    
+            </ion-item>
+<!--            <ion-item ng-class="{'pass':configBiometryControl.hasPassword}" ng-click="configBiometryControl.goPassword()">
+                <div class="row row-center" ng-class="{'active':configBiometryControl.hasBiometry && configBiometryControl.hasDevice}">
+                    <div class="col col-25 center">
+                        <div class="icon-dispositivo"></div>
+                    </div>
+                    <div class="col col-50 left">
+                        <h3>{{i18n.liteRegistry.configureAccount.pinAccess.title}}</h3>
+                        <p>{{i18n.liteRegistry.configureAccount.pinAccess.description}}</p>
+                    </div>
+                    <div class="col col-25 center">
+                        <i class="icon ion-ios-checkmark-outline"></i>
+                    </div>
+                </div>    
+            </ion-item>-->
+        </ion-list>
+        <div class="row row-bottom">
+            <div class="col col-center">
+                <button type="submit"  class="button button-positive" ng-click="configBiometryControl.next();"
+                        ng-disabled="configBiometryControl.notContinue" >
+                    {{i18n.navigation.next}}</button>
+            </div>
+        </div>
+        <div class="row row-bottom">
+            <div class="col texto-cancelar center col-center">
+                <a ng-click="configBiometryControl.cancelProcess();" >{{i18n.navigation.cancel}}</a>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>
