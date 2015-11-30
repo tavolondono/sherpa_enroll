@@ -20,7 +20,8 @@ angular.module('App')
     self.hasDevice = false;
     self.hasBiometry = false;
     self.hasPassword = false;
-    
+    $scope.registryController.current.state = 'registry.chooseBiometry';
+
     
     if ($rootScope.actualUser) {
         if ($rootScope.actualUser.hasDeviceProvided !== undefined) {

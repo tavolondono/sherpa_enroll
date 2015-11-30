@@ -118,7 +118,10 @@ angular.module('App')
      * @private
      */
     function hideView() {
-        $rootScope.keySecurityModal.hide();
+        /*Validar si existe el modal*/
+        if ($rootScope.keySecurityModal) {
+            $rootScope.keySecurityModal.remove();
+        }
     }
 
     /**

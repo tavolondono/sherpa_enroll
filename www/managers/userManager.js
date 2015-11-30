@@ -1,6 +1,6 @@
 angular.module('App')
-        .factory('userManager', ['$localStorage',
-            function ($localStorage) {
+        .factory('userManager', ['$localStorage', '$rootScope',
+            function ($localStorage, $rootScope) {
                 var userHelper = {};
 
                 userHelper.sq = 0;
@@ -50,8 +50,29 @@ angular.module('App')
                 userHelper.saveUser = function (userObj) {
                     window.localStorage.setItem(userObj.sq, JSON.stringify(userObj));
                 };
-
-
+                
+                /**
+                 * Borra todos los datos
+                 * @returns {undefined}
+                 */
+                userHelper.clearAll = function() {
+                    $rootScope.actualUser = {
+                        'sq': 0,
+                        'biometry': {
+                            'facial': {
+                                'hasFacial': false,
+                                'enabled': false
+                            },
+                            'principal': 'none',
+                            'voice': {
+                                'hasFacial': false,
+                                'enabled': false
+                            }
+                        },
+                        'hasBiometry' : false
+                    };
+                    window.localStorage.clear();
+                }
 
 
 

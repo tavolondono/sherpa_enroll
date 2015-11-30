@@ -93,7 +93,7 @@ angular.module('App')
         }, 2000);
     };
     
-    self.getNewOtp();
+    
     $ionicModal.fromTemplateUrl('views/modal-token.html', {
         id: 'locationsModal',
         scope: $scope,
@@ -265,6 +265,7 @@ angular.module('App')
         }
         self.provisionedRegistry = $stateParams.provisionedRegistry || false;
         self.token = null;
+        self.getNewOtp();
     });
 
     /**
@@ -419,7 +420,13 @@ angular.module('App')
         var min = 0000;
         var max = 9999;
         var num = Math.floor(Math.random() * (max - min + 1)) + min;
-        
+        if (num < 1000) {
+            if (num < 100) {
+                num = '00' + num;
+            } else {
+                num = '0' + num;
+            }
+        }
         return String(num);
     };
 

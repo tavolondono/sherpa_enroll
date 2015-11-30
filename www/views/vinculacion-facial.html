@@ -1,19 +1,25 @@
-<ion-view can-swipe-back="false">    
-    <ion-content class="contract wizard-content" ng-controller="biometriaFacialController as biometriaControl">
+<ion-view can-swipe-back="false" class="contenido-vinculacion enrollContent" ng-controller="biometriaFacialController as biometriaControl">
+    <ion-nav-bar no-tap-scroll="true" class="bar-light bar bar-header disable-user-behavior nav-bar-wizard-registry" align-title="center">
+        <div class="button-container">
+            <ion-nav-buttons class="button-container">
+                <div class="bar bar-header bar-light aqua">
+                    <button class="button ion-navicon icon-arrow" ng-click="biometriaControl.atras();"></button>
+                    <div class="title-vinculacion-facial header-item">{{i18n.biometry.title}}</div>
+                    <button class="button ion-navicon icon-help" ng-click="biometriaControl.showHelp();"></button>
+                </div>
+            </ion-nav-buttons>
+        </div>
+    </ion-nav-bar>
+    
+    <ion-content class="contract wizard-content has-header" >
         <div class="contenedor-vinculacion">
 
-            <!--HEADER-->
-            <div class="bar bar-header bar-light aqua">
-                <button class="button ion-navicon icon-arrow" ng-click="biometriaControl.atras();"></button>
-                <h1 class="title">{{i18n.biometry.title}}</h1>
-                <button class="button ion-navicon icon-help" ng-click="biometriaControl.showHelp();"></button>
-            </div>
-            <!--FIN HEADER-->
+
 
             <div class="clearheader"></div>
 
             <!--PASOS-->
-            <div class="row">
+            <div class="row center">
                 <div class="col">
                     <div class="Txt-pasos">
                         <p>5 de 5</p>
@@ -31,7 +37,7 @@
             <!--FIN ICONO-->
 
             <br>
-            
+
             <!--FIN TEXTOS-->
 
             <!--BOTON-->
@@ -41,26 +47,28 @@
                             ng-disabled="biometriaControl.puedeSeguir" ng-click="biometriaControl.takePhoto();"
                             >{{i18n.biometry.takePicture}}</button>
                 </div>
-                <div class="col">
-                    <button class="button button-block button-assertive siguiente" 
-                            ng-disabled="!biometriaControl.puedeSeguir" ng-click="biometriaControl.siguiente()">
-                        {{i18n.navigation.next}}</button>
-                </div>
-            </div> 
-            <!--TEXTOS-->
+                
+            </div>
             <div class="row">
                 <div ng-repeat="foto in biometriaControl.foto" class="col">
                     <div class="Txt-parrafo">
                         <img src="{{foto.uri}}" style="width: 90px; height: 200px;"/>
                     </div>
                 </div>
+            </div>
+            <!--TEXTOS-->
+            <div class="row">                
+                <div class="col">
+                    <button class="button button-block button-assertive siguiente" 
+                            ng-disabled="!biometriaControl.puedeSeguir" ng-click="biometriaControl.siguiente()">
+                        {{i18n.navigation.next}}</button>
+                </div>
             </div> 
-            
-            <div class="row">
-                <div class="texto-cancelar"><a href="#">{{i18n.navigation.cancel}}</a></div> 
-            </div> 
-            <!--FIN BOTON-->
-
+            <div class="row row-bottom">
+                <div class="col texto-cancelar center col-center">
+                    <a ng-click="configBiometryControl.cancelProcess();" class="ng-binding">{{i18n.navigation.cancel}}</a>
+                </div>
+            </div>
         </div>
 
     </ion-content>

@@ -8,10 +8,10 @@ angular.module('App')
     .controller('userLoginController',
     ['$scope', '$state', 'configProvider', 'messagesProvider', 'invocationManager',
         '$filter', 'busyIndicator', 'toastProvider', '$ionicPopup','jsonStore', 
-        'errorManager', 'utilsProvider', '$rootScope', 'Camera',
+        'errorManager', 'utilsProvider', '$rootScope', 'Camera', 'userManager',
     function ($scope, $state, configProvider, messagesProvider, invocationManager, 
     $filter, busyIndicator, toast, $ionicPopup, jsonStore, errorManager, 
-    utilsProvider, $rootScope, Camera) {
+    utilsProvider, $rootScope, Camera, userManager) {
 
     var self = this;
 
@@ -72,14 +72,18 @@ angular.module('App')
     $scope.$on('$ionicView.beforeEnter', function(){
         if(utilsProvider.validateNull($rootScope.actualUser)) {
             console.log($rootScope.actualUser);
-            if(utilsProvider.validateNull($rootScope.actualUser.hasBiometry)) {
+            if($rootScope.actualUser.hasBiometry) {
                 self.doesNotBiometry = false;
-                if (utilsProvider.validateNull($rootScope.actualUser.hasFacial)) {
-                    self.hasFacial = true;
-                }
-                if (utilsProvider.validateNull($rootScope.actualUser.hasVoice)) {
-                    self.hasVoice = true;
-                }
+                if ($rootScope.actualUser.hasBiometry) {
+                    if (utilsProvider.validateNull($rootScope.actualUser.biometry.facial)) {
+                        self.hasFacial = $rootScope.actualUser.biometry.facial.enabled;
+                        userManager.saveUser($rootScope.actualUser);
+                    }                    
+                    if (utilsProvider.validateNull($rootScope.actualUser.biometry.voice)) {
+                        self.hasVoice = $rootScope.actualUser.biometry.voice.enabled;
+                        userManager.saveUser($rootScope.actualUser);
+                    }
+                }                
             } else {
                 self.doesNotBiometry = true;
             }
@@ -315,24 +319,28 @@ angular.module('App')
      * @returns {undefined}
      */
     self.takePhoto = function(){
-                Camera.getPicture().then(function(imageURI) {
-                    var alertPopup = $ionicPopup.alert({
-                        title: messagesProvider.biometry.facial.successLogin.title,
-                        template: messagesProvider.biometry.facial.successLogin.description
-                    });
-                    alertPopup.then(function (res) {
-                        $state.go("dashboard");
-                    });                          
-                    
-                }, function(err) {
-                    console.err(err);
-                }, {
-                    cameraDirection: 1,
-                    quality: 75,
-                    targetWidth: 60,
-                    targetHeight: 60,
-                    saveToPhotoAlbum: false
-                });
-            };
+        Camera.getPicture().then(function(imageURI) {
+            var alertPopup = $ionicPopup.alert({
+                title: messagesProvider.biometry.facial.successLogin.title,
+                template: messagesProvider.biometry.facial.successLogin.description
+            });
+            alertPopup.then(function (res) {
+                $state.go("dashboard");
+            });                          
+
+        }, function(err) {
+            console.err(err);
+        }, {
+            cameraDirection: 1,
+            quality: 75,
+            targetWidth: 60,
+            targetHeight: 60,
+            saveToPhotoAlbum: false
+        });
+    };
+    
+    self.takeVoice = function () {
+        $state.go('voice-login');
+    };
 
 }]);

@@ -9,11 +9,9 @@ angular.module('App')
             'logManager', 'hardwareBackButtonManager', '$cordovaDevice', 'userManager',
             '$rootScope', '$state', '$ionicPopup',
             function ($scope, messagesProvider, invocationManager, logManager,
-                    hardwareBackButtonManager, $cordovaDevice, userManager, 
+                    hardwareBackButtonManager, $cordovaDevice, userManager,
                     $rootScope, $state, $ionicPopup) {
                 hardwareBackButtonManager.disable();
-                
-                
                 var self = this;
                 var init = function () {
                     console.log("initializing device");
@@ -21,51 +19,51 @@ angular.module('App')
 
                         console.log("************* DECIVE INFO ***********");
                         console.log($cordovaDevice.getUUID());
-
                     }
                     catch (err) {
-                        console.log("Error " + err.message);                       
+                        console.log("Error " + err.message);
                     }
 
                 };
-
                 ionic.Platform.ready(function () {
                     init();
                 });
-                
-                self.clearData = function() {
+                self.clearData = function () {
                     // A confirm dialog
-                    
+
                     var confirmPopup = $ionicPopup.confirm({
                         title: '¡¡Borrar datos!!',
                         template: '¿Está seguro de borrar los datos guardados?'
                     });
                     confirmPopup.then(function (res) {
                         if (res) {
-                            $rootScope.actualUser = { 'sq': 0};
-                            localStorage.clear();
+                            userManager.clearAll();
                         } else {
                             console.log('You are not sure');
                         }
                     });
-                   
-                    
                 };
-                
-                
-                self.testNequi = function() {
-                    
+                self.testNequi = function () {
+
                     if (window.localStorage.getItem(0) == null) {
-                        $rootScope.actualUser = { 'sq': 0};
-                        window.localStorage.setItem(0,JSON.stringify($rootScope.actualUser));
+                        $rootScope.actualUser = {
+                            'sq': 0,
+                            'biometry': {
+                                'facial': {
+                                    'hasFacial': false,
+                                    'enabled': false
+                                },
+                                'principal': 'none',
+                                'voice': {
+                                    'hasFacial': false,
+                                    'enabled': false
+                                }
+                            }
+                        };
+                        window.localStorage.setItem(0, JSON.stringify($rootScope.actualUser));
                     } else {
                         $rootScope.actualUser = userManager.getUser(0);
                     }
                     $state.go("tour");
                 };
-                
-                
-                
-                
-                
             }]);

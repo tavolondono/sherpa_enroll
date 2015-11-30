@@ -6,8 +6,15 @@
 */
 angular.module('App')
     .controller('profileController',
-    ['hardwareBackButtonManager', '$scope', 'messagesProvider', 'invocationManager', 'busyIndicator', 'userState', '$ionicPopup', '$state', '$ionicModal', 'errorManager', 'configProvider', '$ionicScrollDelegate', 'getBalanceProvider', 'helpProvider',
-    function (hardwareBackButtonManager, $scope, messagesProvider, invocationManager, busyIndicator, userState, $ionicPopup, $state, $ionicModal, errorManager, configProvider, $ionicScrollDelegate, getBalanceProvider, helpProvider) {
+    ['hardwareBackButtonManager', '$scope', 'messagesProvider', 'invocationManager',
+        'busyIndicator', 'userState', '$ionicPopup', '$state', '$ionicModal', 
+        'errorManager', 'configProvider', '$ionicScrollDelegate', 
+        'getBalanceProvider', 'helpProvider', '$rootScope', 'keySecurityProvider',  '$timeout', 
+    function (hardwareBackButtonManager, $scope, messagesProvider, 
+    invocationManager, busyIndicator, userState, $ionicPopup, $state, 
+    $ionicModal, errorManager, configProvider, $ionicScrollDelegate, 
+    getBalanceProvider, helpProvider, $rootScope, keySecurity,  
+    $timeout) {
 
     hardwareBackButtonManager.enable();
 
@@ -136,25 +143,23 @@ angular.module('App')
         busyIndicator.hide();
         self.showProfile = true;
 
-        if (response.responseJSON.success) {
-            $scope.$apply(function() {
-                self.id             = response.responseJSON.data.id;
-                self.accountNumber  = response.responseJSON.data.accountNumber;
-                self.phoneNumber    = response.responseJSON.data.phoneNumber;
-                self.email          = response.responseJSON.data.email;
-                self.contract       = response.responseJSON.data.contract;
-                self.typeIdName     = response.responseJSON.data.typeIdName;
-                self.contractId     = response.responseJSON.data.contractId;
-                self.fullName       = response.responseJSON.data.fullName;
-                self.typeId         = response.responseJSON.data.typeId;
+        
+        
+            self.id             = $rootScope.actualUser.documentNumber;
+            self.accountNumber  = 1128394746;
+            self.phoneNumber    = $rootScope.actualUser.phoneNumber;
+            self.email          = $rootScope.actualUser.email;
+            self.contract       = "Resumen";
+            self.typeIdName     = "Cédula de ciudadanía";
+            self.contractId     = 5;
+            self.fullName       = $rootScope.actualUser.nickname;
+            self.typeId         = $rootScope.actualUser.documentType;
 
-                $scope.userApp.contract     = response.responseJSON.data.contract;
-                $scope.userApp.contractId   = response.responseJSON.data.contractId;
-            });
+            $scope.userApp.contract     = "Resumen";;
+            $scope.userApp.contractId   = 5;
+        
 
-        } else {
-            errorManager.showAsyncMessage(response.responseJSON.error);
-        }
+       
 
     }
 
@@ -182,12 +187,7 @@ angular.module('App')
 
         busyIndicator.show();
 
-        invocationData = invocationManager.getInvocationData(
-            configProvider.middlewareAdapter,
-            configProvider.getProfileUserProcedure,
-            params
-        );
-        invocationManager.invokeAdaptherMethod(invocationData, getProfileUserSuccess, getProfileUserFail);
+       getProfileUserSuccess();
     };
 
 
@@ -202,9 +202,7 @@ angular.module('App')
             template: messagesProvider.closeApp.message
         }).then(function(res){
             if( res ){
-                userState.logout(true).then(function(){
                     $state.go('home');
-                });
             }
         });
     };
@@ -234,20 +232,11 @@ angular.module('App')
         
         $ionicScrollDelegate.scrollTop();
         self.isUserEnroll = $scope.userApp.state === configProvider.userStates.enroll;
-        
+        self.balanceTotal = 600000;
         /* Si el usuario esta enrolado solo le mostramos su número de cuenta */
-        if(self.isUserEnroll) {
-            self.phoneNumber = $scope.userApp.phoneNumber;
-        } else {
-            getBalanceProvider.balanceTotal().then(function(balanceTotal){
-                self.balanceTotal = balanceTotal;
-                
-                if(balanceTotal === 0) {
-                    self.isBalanceZero = true;
-                }
-                self.getProfileUser();
-            });
-        }
+        
+        self.getProfileUser();
+           
     });
 
     /**
@@ -273,5 +262,40 @@ angular.module('App')
         self.id = null;
         self.typeIdName = null;
     }
+    
+    /**
+     * Metodo en el cual se envia la petición de validación de la
+     * clave de transacción del usuario, el callBack de la respuesta
+     * del provider de validación de la clave es `keySecurityValidation`.
+     * @method openSecurity
+     * @async
+     **/
+    self.openSecurity = function(){
+        $state.go('security');
+    };
+
+    /**
+     * CallBack de la validación de la contraseña, este metodo
+     * es llamado desde el provider `keySecuriryProvider`
+     * @method keySecurityValidation
+     * @param {Object} [response] objeto con la estructura de la respuesta
+     * @param {Boolean} [response.success] variable `true` o `false`
+     * @param {Object} [response.error] objeto con la descripción y el id del error
+     * @public
+     * @return Object Json con el resultado de la validación
+     * @async
+     */
+    self.keySecurityValidation = function(response){
+        if (response.responseJSON.success) {
+            busyIndicator.hide();
+            $state.go('security');
+            keySecurity.reset();
+        }else{
+            busyIndicator.hide();
+            if(response.responseJSON.error.toasShow){
+                errorManager.showAsyncMessage(response.responseJSON.error);
+            }
+        }
+    };
 
 }]);

@@ -53,12 +53,7 @@ angular.module('App')
      * @private
     */
     function getActiveContract() {
-
-        if($scope.registryController.registryModel.hasOwnProperty('contract') &&
-            $scope.registryController.registryModel.contract === null) {
             $scope.registryController.registryModel.contract = messagesProvider.liteRegistry.contract;
-            
-        }
     }
 
     /**

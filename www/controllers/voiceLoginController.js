@@ -7,7 +7,7 @@
  * Builded for Serfinansa.
  */
 angular.module('App')
-        .controller('voiceController', ['$scope', '$state', '$cordovaMedia',
+        .controller('voiceLoginController', ['$scope', '$state', '$cordovaMedia',
             '$ionicModal', '$ionicLoading', '$interval', '$stateParams', '$rootScope',
             'userManager', 'messagesProvider', '$ionicPopup', 'utilsProvider',
             function ($scope, $state, $cordovaMedia, $ionicModal, $ionicLoading,
@@ -15,9 +15,7 @@ angular.module('App')
                     $ionicPopup, utilsProvider) {
                 var self = this;
                 self.puedeSeguir = false;
-                self.foto = [];
-                var counter = 0;
-                self.pageToGo = $stateParams.toPage;
+
 
                 /**
                  * Propiedad donde se almacenan la categoría actual seleccionada. Sirve como caché para no realizar consultas innecesarias al servicio.
@@ -65,8 +63,11 @@ angular.module('App')
                 };
 
                 var amt = 0;
-
-                self.countTo = 6;
+                
+                /**
+                 * Tiempos de control
+                 */
+                self.countTo = 4;
                 self.countFrom = 0;
                 self.progressValue = 0;
                 self.type = "info";
@@ -78,7 +79,7 @@ angular.module('App')
 
 
                 self.siguiente = function () {
-                    $state.go(self.pageToGo);
+                    $state.go('dashboard');
                 };
 
                 self.atras = function () {
@@ -135,7 +136,7 @@ angular.module('App')
                 // Set audio position
                 //
                 self.setAudioPosition = function (position) {
-                    document.getElementById('audio_position').innerHTML = position;
+                    document.getElementById('audio_position_voice').innerHTML = position;
                 };
 
                 var resetValues = function () {
@@ -167,7 +168,7 @@ angular.module('App')
                     var recTime = 0;
                     recording = $interval(function () {
                         recTime = recTime + 0.5;
-                        if (recTime - Math.floor(recTime) == 0) {
+                        if (recTime - Math.floor(recTime) === 0) {
                             self.setAudioPosition('Quedan ' + (self.countTo - recTime) + " segundos");
                         }
                         amt = amt + 0.5;
@@ -177,8 +178,15 @@ angular.module('App')
                             self.type = "success";
                             finishValues();
                             $interval.cancel(recording);
-                            self.puedeSeguir = true;
+
                             self.isRecording = false;
+                            var alertPopup = $ionicPopup.alert({
+                                title: messagesProvider.biometry.facial.successLogin.title,
+                                template: messagesProvider.biometry.facial.successLogin.description
+                            });
+                            alertPopup.then(function (res) {
+                                $state.go("dashboard");
+                            });
                         }
                     }, 500);
                 };
@@ -187,18 +195,16 @@ angular.module('App')
                     var media = new Media(src, null, null, mediaStatusCallback);
                     $cordovaMedia.play(media);
                 };
-                
-                self.goHome = function () {
-                    $state.go('home');
-                };
 
                 self.siguiente = function () {
-                    
-                    if ($rootScope.actualUser.hasBiometry) {
-                        $rootScope.actualUser.biometry.voice = {
-                            'hasVoice': true,
-                            'enabled': true
+                    if (utilsProvider.validateNull($rootScope.actualUser.hasBiometry)) {
+                        if ($rootScope.actualUser.hasBiometry) {
+                            $rootScope.actualUser.biometry.voice = {
+                                'hasVoice': true,
+                                'enabled': true
+                            }
                         }
+                        ;
                     } else {
                         $rootScope.actualUser.hasBiometry = true;
                         $rootScope.actualUser.biometry = {
@@ -213,7 +219,6 @@ angular.module('App')
                             }
                         };
                     }
-                    
 
 
 

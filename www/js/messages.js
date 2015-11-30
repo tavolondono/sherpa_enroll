@@ -325,9 +325,25 @@ var Messages = {
             'security': {
                 'title': 'Seguridad',
                 'contextFirst': 'Aquí podrás cambiar tu',
-                'contextMiddle': 'clave de seguridad',
+                'contextMiddle': 'Clave Nequi',
                 'contextLast': 'además de otras opciones.',
-                'buttonConfiguration': 'Cambia configuraciones de seguridad'
+                'buttonConfiguration': 'Modifica tus configuraciones de seguridad',
+                'item' :{
+                    'title': 'Clave Nequi',
+                    'contextA' : 'Esta es tu única clave, no se la digas ni al espejo.',
+                    'actionText' : 'Cambiar clave de seguridad',
+                    'optionAlwaysText' : 'Pedir siempre',
+                    'text' : 'Por seguridad, seguiremos pidiéndote esta clave para montos mayores a $25.000.',
+                    'optionOpen' : 'Pedir esta clave al abrir la app',
+                    'newPassword' : 'Introduce la nueva clave:',
+                    'repeatPassword' : 'Repite la nueva clave:'
+                },
+                'biometry' : {
+                    'title' :  'Biometría',
+                    'faceRecognition' : 'Reconocimiento facial',
+                    'voiceRecognition' : 'Reconocimiento vocal',
+                },
+                'save': 'Guarda tus cambios'
             },
             'notifications': {
                 'title': 'Notificaciones',
@@ -354,11 +370,17 @@ var Messages = {
                 'contextC' : 'Y por si fuera poco, te daremos también un número de cuenta convencional, para que puedas usar tu cuenta en cualquier situación que necesites.',
                 'labelPhoneNumber' : 'Este es el celular que nos diste:',
                 'labelButton' : 'Abrirme una cuenta'
-            }
+            },
+            'keySecurity': {
+            'titlePage': 'Seguridad',
+            'title': 'Pon tu clave',
+            'description': 'No dudamos que seas tú, pero igual ingresa tu clave.'
+        }
         },
 
         /*
-         * Faqs messages
+         * 
+         *  messages
          */
         'faqs': {
             'registry.nickname' : {
@@ -401,7 +423,10 @@ var Messages = {
                 'context' : ['Tu rostro servirá como único método de ingreso.'],
                 'titleB' : 'Te recomendamos:',
                 'alert' : 'Sólo tú podrás continuar',
-                'list' : ['No compartas tus claves con nadie.', 'Trata de memorizar tu clave.', 'No reutilíces claves. Cuando sea necesario crea una nuevas. no seas flojo.', 'Usa tu clave sólo en aplicaciones confiables.']
+                'list' : ['Estar en un lugar iluminado.', 'Estar solo en la toma de las imágenes.', 
+                    'Sostener el celular a la altura de tu rostro', 'Tener una expresión del rostro natural.',
+                    'No moverte durante la toma de las fotografías'
+                    ]
             },
             'verifyEmail' : {
                 'title' : '¡Verifica tu correo!',
@@ -409,6 +434,15 @@ var Messages = {
                 'titleB' : '',
                 'alert' : '',
                 'list' : ['Te hemos enviado un mail con un', 'link, para poder activar tu cuenta.']
+            },
+            'registry.chooseBiometry' : {
+                'title' : '¿Por qué es importante utilizar la biometría en tu cuenta?',
+                'context' : ['La información de biometría nos permitirá aumentar la seguridad de tu cuenta, ya que te identificaremos por tus características físicas, las cuales son únicas.',
+                                'Solo necesitarás tu vos o rostro para acceder al APP y ya no tendrás que preocuparte más por recordar el PIN'
+                            ],
+                'titleB' : '',
+                'alert' : 'Sólo tú podrás continuar',
+                'list' : []
             }
         },
         /*
@@ -992,8 +1026,18 @@ var Messages = {
         },
         'biometry': {
             'title': 'Reconocimiento facial',
+            'titleVoice' : 'Reconocimiento por voz',
             'description': 'La biometría facial mide los puntos de tu cara... cómo ',
             'takePicture': 'Tomar foto',
+            'help' : {
+                'nextNeedFace' : 'A continuación necesitarás,',
+                'registerFace' : 'registrar tu rostro',
+                'weNeedAccessToCamera' : 'Por ello necesitamos acceder a tu cámara para que podamos escanear tu rostro.',
+                'youAreYoureOwnPassword' : 'Tú eres tu propia clave', 
+                'useBiometryAsSecurity' : 'Utiliza la biometría como seguridad y',
+                'forgetYourPassword' : 'olvídate de contraseñas', 
+                'advices' : 'Consejos'
+            },
             'modalZero': {
                 'title': '¡Empieza a guardar!',
                 'description': 'Aquí podrás separar plata. lo que separes estará bloqueado por, pero si la necesitas sólo tienes que devolverla al disponible.'
@@ -1017,7 +1061,11 @@ var Messages = {
             },
             'voice' : {
                 'title' : 'Voz',
-                'description' : 'Método por voz'
+                'description' : 'Método por voz',
+                'successLogin' : {
+                    'title' : 'Perfecto!!',
+                    'description' : 'Hemos reconocido tu voz, puedes comenzar a disfrutar de Nequi'
+                }
             }
         },
 

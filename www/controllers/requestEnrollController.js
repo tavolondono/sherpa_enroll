@@ -6,8 +6,13 @@
  */
 angular.module('App')
         .controller('requestEnrollController',
-                ['$timeout', '$scope', '$state', 'configProvider', 'invocationManager', 'busyIndicator', '$document', 'errorManager', 'hardwareBackButtonManager', '$ionicModal', 'messagesProvider',
-                    function ($timeout, $scope, $state, configProvider, invocationManager, busyIndicator, $document, errorManager, hardwareBackButtonManager, $ionicModal, messagesProvider) {
+                ['$timeout', '$scope', '$state', 'configProvider', 'invocationManager', 
+                    'busyIndicator', '$document', 'errorManager', 'hardwareBackButtonManager', 
+                    '$ionicModal', 'messagesProvider', '$rootScope', 'userManager', 
+                    function ($timeout, $scope, $state, configProvider, 
+                    invocationManager, busyIndicator, $document, errorManager, 
+                    hardwareBackButtonManager, $ionicModal, messagesProvider, 
+                    $rootScope, userManager) {
 
                         var self = this;
 
@@ -113,6 +118,8 @@ angular.module('App')
                                 busyIndicator.show();
                                 $state.go('token', {});
                                 $scope.userApp.phoneNumber = self.phoneNumber;
+                                $rootScope.actualUser.phoneNumber = self.phoneNumber;
+                                userManager.saveUser($rootScope.actualUser);
                             }
                         };
 

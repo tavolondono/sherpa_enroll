@@ -5,44 +5,53 @@
 angular.module('App')
         .controller('biometriaFacialController', ['$scope', '$state', 'Camera', 
         'messagesProvider', '$ionicModal', '$timeout', '$rootScope', 
-        'userManager', '$ionicPopup',
+        'userManager', '$ionicPopup', '$stateParams', 'utilsProvider',
         function ($scope, $state, Camera, messagesProvider, $ionicModal, $timeout,
-        $rootScope, userManager, $ionicPopup) {
+        $rootScope, userManager, $ionicPopup, $stateParams, utilsProvider) {
+            
             var self = this;
             self.puedeSeguir = false;
             self.foto = [];
             var counter = 0;
+
+            self.pageToGo = $stateParams.toPage;
+
+            /**
+             * Propiedad donde se almacenan la categoría actual seleccionada. Sirve como caché para no realizar consultas innecesarias al servicio.
+             * @property currentCategory
+             * @type String
+             */
+            self.currentCategory = '';
+
+            /**
+             * Propiedad que almacena la instancia del modal a ser presentado.
+             * @property faqsModal
+             * @type Object
+             */
+            self.faqsModal = {};
+
+            /**
+             * Propiedad para almacenar los datos de la categoria actual
+             * @property currentCategoryData
+             * @type Object
+             */
+            self.currentCategoryData = {};
+
+            /**
+             * 
+             */
+            $ionicModal.fromTemplateUrl('views/modal-facial.html', {
+                scope: $scope,
+                animation: 'slide-in-up'
+            }).then(function (modal) {
+                self.faqsModal = modal;
+                ;
+            });
             
             /**
-         * Propiedad donde se almacenan la categoría actual seleccionada. Sirve como caché para no realizar consultas innecesarias al servicio.
-         * @property currentCategory
-         * @type String
-         */
-        self.currentCategory = '';
-
-        /**
-         * Propiedad que almacena la instancia del modal a ser presentado.
-         * @property faqsModal
-         * @type Object
-         */
-        self.faqsModal = {};
-
-        /**
-         * Propiedad para almacenar los datos de la categoria actual
-         * @property currentCategoryData
-         * @type Object
-         */
-        self.currentCategoryData = {};
-
-        
-        $ionicModal.fromTemplateUrl('views/modal-facial.html', {
-            scope: $scope,
-            animation: 'slide-in-up'
-        }).then(function (modal) {
-            self.faqsModal = modal;
-            ;
-        });
-            
+             * Dispara el evento de la cámara
+             * @returns {undefined}
+             */
             self.takePhoto = function(){
                 Camera.getPicture().then(function(imageURI) {
                     console.log(imageURI);
@@ -83,16 +92,33 @@ angular.module('App')
 
 
             self.siguiente = function () {
-                $rootScope.actualUser.hasBiometry = true;
-                $rootScope.actualUser.biometryPrincipal = 'facial';
-                $rootScope.actualUser.hasFacial = true;
+                if ($rootScope.actualUser.hasBiometry) {                    
+                    $rootScope.actualUser.biometry.facial = {
+                        'hasFacial': true,
+                        'enabled': true
+                    };                                        
+                } else {
+                    $rootScope.actualUser.hasBiometry = true;
+                    $rootScope.actualUser.biometry = {
+                        'facial' : {
+                            'hasFacial' : true,
+                            'enabled' : true
+                        },
+                        'principal' :  'facial',
+                        'voice' : {
+                            'hasVoice' : false,
+                            'enabled' : false
+                        }
+                    };
+                }
+                
                 userManager.saveUser($rootScope.actualUser);
                 var alertPopup = $ionicPopup.alert({
                         title: messagesProvider.biometry.successPopUp.title,
                         template: messagesProvider.biometry.successPopUp.description
                     });
                     alertPopup.then(function (res) {
-                        $state.go("home");
+                        $state.go(self.pageToGo);
                     });
             };
 

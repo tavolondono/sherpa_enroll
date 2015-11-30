@@ -6,8 +6,10 @@
 */
 angular.module('App')
     .controller('liteRegistryController',
-    ['$scope', '$ionicHistory', 'messagesProvider', '$ionicPopup', '$state', 'hardwareBackButtonManager', '$timeout', 'configStyles',
-    function ($scope, $ionicHistory, messagesProvider, $ionicPopup, $state, hardwareBackButtonManager, $timeout, configStyles) {
+    ['$scope', '$ionicHistory', 'messagesProvider', '$ionicPopup', '$state', 
+        'hardwareBackButtonManager', '$timeout', 'configStyles', 'userManager',
+    function ($scope, $ionicHistory, messagesProvider, $ionicPopup, $state, 
+    hardwareBackButtonManager, $timeout, configStyles, userManager) {
 
     var self = this;
 
@@ -202,7 +204,8 @@ angular.module('App')
                 self.registryModel = {};
                 self.current.state = self.getFirstStepPath();
                 self.current.title = getFirstStepTitle();
-                $state.go('dashboard');
+                userManager.clearAll();
+                $state.go('home');
                 clearForms();
                 configStyles.backgroundColor.nameClass = '';
             } else {
@@ -308,7 +311,15 @@ angular.module('App')
                 title = messagesProvider.liteRegistry.nickname.title;
             break;
             case 'registry.nickname':
-                switchTo = 'dashboard';
+                switchTo = 'home';
+                title = messagesProvider.liteRegistry.nickname.title;
+            break;
+            case 'registry.biometryConfigAccount':
+                switchTo = 'registry.contract';
+                title = messagesProvider.liteRegistry.nickname.title;
+            break;
+            case 'registry.chooseBiometry':
+                switchTo = 'registry.biometryConfigAccount';
                 title = messagesProvider.liteRegistry.nickname.title;
             break;
             default:

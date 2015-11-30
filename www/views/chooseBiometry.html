@@ -1,12 +1,12 @@
 <ion-view view-title="Selecciona biometria"
 can-swipe-back="false"
 class="contenido-vinculacion">    
-    <ion-content class="contract wizard-content" ng-controller="chooseBiometryController as chooseBiometryControl">
+    <ion-content class="contract wizard-content chooseBiometryControl" ng-controller="chooseBiometryController as chooseBiometryControl">
         <div class="contenedor-vinculacion">
-
+            
             
             <div class="row pasos-wizard">
-                <div class="col">
+                <div class="col">                    
                     <div class="Txt-pasos">
                         <p><span class="active">4</span> de 5</p>
                     </div>
@@ -28,8 +28,8 @@ class="contenido-vinculacion">
             <div class="row row-center center">
                 <div class="col">
                     <div class="Txt-parrafo">
-                        <p><strong>Tú eres tu propia clave</strong></p>
-                        <p>Utiliza la biometría como seguridad y <br> olvídate de contraseñas </p>
+                        <p><strong>{{in18.biometry.help.youAreYoureOwnPassword}}</strong></p>
+                        <p>{{in18.biometry.help.useBiometryAsSecurity}}<br> {{in18.biometry.help.forgetYourPassword}} </p>
                     </div>
                 </div>
             </div> 
@@ -39,24 +39,26 @@ class="contenido-vinculacion">
             <!--FIN INPUT-->
             <!--INPUT-->
             <div class="row row-phone-number">
-                <div class="col">
+                <div class="col biometria-botonera">
                     
-                    <button class="button button-block button-assertive siguiente" ng-click="chooseBiometryControl.irFacial();">Facial</button>
+                    <button class="button button-block button-assertive siguiente" ng-click="chooseBiometryControl.showPermission();">Facial</button>
                     
                 </div>
-                <div class="col">
+                <div class="col biometria-botonera">
                     <button class="button button-block button-assertive siguiente" ng-click="chooseBiometryControl.irVoice();">Voz</button>
                 </div>
             </div>        
             <!--FIN INPUT-->
 
             <!--BOTON-->
-            <div class="row">
+<!--            <div class="row">
                 <button class="button button-block button-assertive siguiente">Huella</button>
-            </div> 
-            <div class="row">
-                <div class="texto-cancelar"><a href="#">Cancelar</a></div> 
-            </div> 
+            </div> -->            
+            <div class="row bar-footer footer-choosebiometry">
+                <div class="col texto-cancelar center col-center">
+                    <a ng-click="registryController.cancelProcess();" class="ng-binding">Cancela</a>
+                </div>
+            </div>
             <!--FIN BOTON-->
 
         </div>

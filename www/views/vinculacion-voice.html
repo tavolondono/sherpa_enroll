@@ -1,21 +1,22 @@
-<ion-view can-swipe-back="false">    
-    <ion-content class="contract wizard-content" ng-controller="voiceController as voiceControl">
+<ion-view can-swipe-back="false" ng-controller="voiceController as voiceControl" class="contenido-vinculacion enrollContent">
+    <ion-nav-bar no-tap-scroll="true" class="bar-light bar bar-header disable-user-behavior nav-bar-wizard-registry" align-title="center">
+        <div class="button-container">
+            <ion-nav-buttons class="button-container">
+                <div class="bar bar-header bar-light aqua">
+                    <button class="button ion-navicon icon-arrow" ng-click="voiceControl.atras();"></button>
+                    <div class="title-vinculacion-facial header-item">{{i18n.biometry.titleVoice}}</div>
+                    <button class="button ion-navicon icon-help" ng-click="voiceControl.showHelp();"></button>
+                </div>
+            </ion-nav-buttons>
+        </div>
+    </ion-nav-bar>
+    <ion-content class="contract wizard-content has-header" >
         <div class="contenedor-vinculacion">
-
-            <!--HEADER-->
-            <div class="bar bar-header bar-light aqua">
-                <button class="button ion-navicon icon-arrow" ng-click="voiceControl.atras();"></button>
-                <!--<h1 class="title">{{i18n.biometry.title}}</h1>-->
-                <h1 class="title">Voz</h1>
-                <button class="button ion-navicon icon-help" ng-click="voiceControl.showHelp();"></button>
-            </div>
-            <!--FIN HEADER-->
-
             <div class="clearheader"></div>
 
             <!--PASOS-->
             <div class="row">
-                <div class="col">
+                <div class="col center">
                     <div class="Txt-pasos">
                         <p>5 de 5</p>
                     </div>
@@ -24,33 +25,31 @@
             <!--FIN PASOS-->
 
             <br>
-            <div class="row">
-                <div class="col">
-                    <h1><strong>Presione el botón y diga la frase</strong></h1>
-                </div>
-            </div> 
-            <div class="row">
-                <div class="col">
-                    <h1>Nequi la aplicación que esperabas</h1>
-                </div>
-            </div> 
-            
-            <!--BOTON-->
-
+            <div class="row row-center center padding Txt-parrafo">
+                <p><strong>Presione el botón y diga la frase</strong></p>
+                <h2 class="oblique">Nequi la aplicación que esperabas</h2>
+            </div>
+                   
+           
 
             <div class="row">
-                <div class="col">
+                <div class="col center">
                     <li class="ion-android-microphone" ng-click="voiceControl.recordAudio();" data-pack="android" data-tags="recorder, speak, noise, music, sound" style="display: inline-block; font-size: 114px"></li>
                 </div>
-               <!-- <div class="col">
-                    <button class="button button-block button-assertive siguiente" ng-click="voiceControl.stopRecord();" >Stop</button>
+                <!-- <div class="col">
+                     <button class="button button-block button-assertive siguiente" ng-click="voiceControl.stopRecord();" >Stop</button>
+                 </div>
+                 <div class="col">
+                     <button class="button button-block button-assertive" ng-click="voiceControl.play('http://www.stephaniequinn.com/Music/Commercial%20DEMO%20-%2013.mp3')">Play from internet</button>
+                 </div>
+                 <div class="col">
+                     <button class="ion-android-microphone" ng-click="voiceControl.playRecordedAudio();">Play from recorded</button>
+                 </div>-->
+            </div> 
+            <div class="row" ng-show="voiceControl.isRecording">
+                <div class="col center">
+                    <div class="audio-wave"></div>
                 </div>
-                <div class="col">
-                    <button class="button button-block button-assertive" ng-click="voiceControl.play('http://www.stephaniequinn.com/Music/Commercial%20DEMO%20-%2013.mp3')">Play from internet</button>
-                </div>
-                <div class="col">
-                    <button class="ion-android-microphone" ng-click="voiceControl.playRecordedAudio();">Play from recorded</button>
-                </div>-->
             </div> 
             <div class="row" ng-show="voiceControl.isRecording">
                 <div class="col">
@@ -58,11 +57,11 @@
                     <span id="audio_position"></span>
                 </div>
             </div> 
-            <div class="row" ng-show="voiceControl.isRecording">
+            <div class="row" ng-show="voiceControl.puedeSeguir">
                 <div class="col">
-                    <uib-progressbar type="success" max="voiceControl.countTo" value="voiceControl.progressValue" class ="progress-striped active"> 
-                        
-                    </uib-progressbar>
+                    <div class="col">
+                     <button class="button button-block button-assertive" ng-click="voiceControl.siguiente();">{{i18n.navigation.next}}</button>
+                    </div>
                 </div>
             </div> 
         </div>

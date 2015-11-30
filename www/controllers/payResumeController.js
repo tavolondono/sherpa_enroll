@@ -664,7 +664,7 @@ angular.module('App')
         if($stateParams.code !== null && typeof($stateParams.code) !== 'undefined') {
             self.code = $stateParams.code;
             self.getPayResume(configProvider.paymentsSummaryType.resumen);
-            setStateUser();
+            //setStateUser();
         }
     });
 }]);

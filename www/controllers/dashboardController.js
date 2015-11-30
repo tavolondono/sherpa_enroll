@@ -127,7 +127,7 @@ angular.module('App')
     * @property firstLoadDashboard
     * @type Boolean
     */
-    self.firstLoadDashboard = true;
+    self.firstLoadDashboard = false;
 
     /**
     * Propiedad verificamos para mostrar el gif de 0 a 10000
@@ -232,15 +232,6 @@ angular.module('App')
     */
     function balanceSuccess(response) {
         busyIndicator.hide();
-        if(self.firstLoadDashboard){
-            $scope.welcomeSherpa.show();
-            self.firstLoadDashboard = false;
-        }
-        $timeout(function(){
-           self.balanceAvailable = response.spendBoundary;
-           self.balance = response.balance;
-           self.numPockets = response.numPockets;
-        }, 0);
     }
 
     /**
@@ -264,13 +255,10 @@ angular.module('App')
      */
     self.getBalance = function() {
         busyIndicator.show();
-        getBalanceProvider.balance().then(function(balance){
-            balanceSuccess(balance);
-            $scope.$broadcast('scroll.refreshComplete');
-        }, function(error){
-            balanceFail(error);
-            $scope.$broadcast('scroll.refreshComplete');
-        });
+       var balance = '';
+        balanceSuccess(balance);
+        $scope.$broadcast('scroll.refreshComplete');
+       
     };
 
     /**
@@ -537,13 +525,7 @@ angular.module('App')
      * @private
      */
     function setStateUser() {
-        jsonStore.find(configProvider.jsonStore.key).then(function(resp) {
-            if (typeof resp[0].json.data.auth.state !== 'undefined') {
-                self.isUserEnroll = resp[0].json.data.auth.state === configProvider.userStates.enroll;
-            } else {
-                self.isUserEnroll = true;
-            }
-        });
+        self.isUserEnroll = true;
     }
 
     /**
@@ -625,7 +607,7 @@ angular.module('App')
         $ionicScrollDelegate.scrollTop();
         setStateUser();
         self.showOptionRegister = $scope.userApp.state === configProvider.userStates.liteRegistry;
-        updateFirstLoadDashboard();
+        //updateFirstLoadDashboard();
         hardwareBackButtonManager.disable();
         self.numPockets = $scope.userApp.numPockets;
     });

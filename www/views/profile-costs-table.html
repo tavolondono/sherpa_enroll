@@ -1,0 +1,45 @@
+<ion-modal-view class="cash-in-costs">
+    <ion-content class="contenedor-black">
+    	<!--CERRAR-->
+        <div class="row">
+            <div class="col col-close">
+            	<button class="tool-dashboard-close" ng-click="profileCostsTable.hide();"></button>
+            </div>
+        </div> 
+    	<!--FIN CERRAR-->
+        
+    	<div class="row">
+            <div class="col">
+                <!--MODAL-->
+                <div class="perfil-modal-compartir left padding">
+                    <h3>{{i18n.cashin.costs.title}}</h3>
+                    <h3><span>{{i18n.cashin.costs.titleStep1}}</span></h3>
+                    <h4>{{i18n.cashin.costs.textStep1}}</h4>
+                    <h3><span>{{i18n.cashin.costs.titleStep2}}</span></h3>
+                    <h4>{{profileControl.accountNumber}}</h4>
+                    <div class="icon-warning"></div>
+                    <p>{{i18n.cashin.costs.textWarning}}</p>
+                    <!--COSTOS-->
+                    <div class="perfil-tabla-costos">
+                        <div class="perfil-tabla-item">
+                            <h5>{{i18n.cashin.costs.table.banco1Name}}</h5>
+                            <h6>{{i18n.cashin.costs.table.banco1Value}}</h6>
+                        </div>
+                        <div class="perfil-tabla-item border">
+                            <h5>{{i18n.cashin.costs.table.banco2Name}}</h5>
+                            <h6>{{i18n.cashin.costs.table.banco2Value}}</h6>
+                        </div>
+                        <div class="perfil-tabla-item">
+                            <h5>{{i18n.cashin.costs.table.banco3Name}}</h5>
+                            <h6>{{i18n.cashin.costs.table.banco3Value}}</h6>
+                        </div>
+                    </div>
+                    <!--FIN COSTOS-->
+                    <br>
+                    <p class="center"><a href="{{i18n.cashin.costs.redirect.url}}" class="link">{{i18n.cashin.costs.redirect.label}}</a></p>
+                </div>
+                <!--FIN MODAL-->
+            </div>
+         </div>
+	</ion-content>
+</ion-modal-view>

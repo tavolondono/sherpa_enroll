@@ -26,9 +26,10 @@ angular.module('App')
          * @type Object
          */
         self.currentCategoryData = {};
-
         
-        $ionicModal.fromTemplateUrl('views/modal-facial.html', {
+        $scope.registryController.current.state = 'registry.chooseBiometry';
+        
+        $ionicModal.fromTemplateUrl('views/modal-choose-biometry.html', {
             scope: $scope,
             animation: 'slide-in-up'
         }).then(function (modal) {
@@ -44,26 +45,46 @@ angular.module('App')
         self.atras = function () {
             $state.go("vinculacion-correo");
         };
-        
+              
         self.irFacial = function () {
-            $state.go("vinculacion-facial");
+            $state.go("facial-help", {toPage : 'home'});
+            self.requestCamPermission.hide();
+        };
+        self.showPermission = function () {
+            self.requestCamPermission.show();            
         };
         
         self.irVoice = function () {
             $state.go("vinculacion-voice");
         };
         
+        /**
+        * Se declara el modal para solicitar permisos de la camara
+        */
+        $ionicModal.fromTemplateUrl('views/modal-camera-permission.html', {
+            id: 'requestCamPermission',
+            scope: $scope,
+            animation: 'fade-in-scale'
+        }).then(function(modal) {
+            self.requestCamPermission = modal;
+        });
+
+        
         self.showHelp = function () {
-                    self.currentCategory = 'registry.facial';
-                    self.currentCategoryData = messagesProvider.faqs['registry.facial'];
+                    $scope.registryController.current.state = 'registry.chooseBiometry';
+                    self.currentCategoryData = messagesProvider.faqs['registry.chooseBiometry'];
                     $timeout(function() {
                         self.faqsModal.show();
                     }, 100);
                     
                 };
                 
-                self.hideHelp = function () {
-                    self.faqsModal.hide();
-                };
+        self.hideHelp = function () {
+            self.faqsModal.hide();
+        };
+        
+        self.hidePermisson = function () {
+            self.requestCamPermission.hide();
+        };
         
     }]);

@@ -2,12 +2,12 @@
 
     <!--HEADER-->
     <ion-header-bar class="bar bar-header bar-light bar-profile" align-title="center">
-        <div class="buttons" side="left">
+        <div class="button-action-bar" side="left">
             <button class="button ion-navicon icon-arrow" ng-click="$ionicGoBack()"></button>
         </div>
         <h1 class="title">{{i18n.profile.title}}</h1>
-        <div class="buttons" side="right" ng-show="!profileControl.isUserEnroll">
-            <button class="button ion-navicon icon-user"></button>
+        <div class="button-action-bar right" side="right" ng-show="!profileControl.isUserEnroll">
+            <button class="button ion-navicon icon-user disabled-acces"></button>
         </div>
     </ion-header-bar >
     <!-- FIN HEADER -->
@@ -34,7 +34,7 @@
                         </a>
                     </div>
                 </div>
-            </div> 
+            </div>
             <!--FIN BOX UNO-->
         </div>
 
@@ -73,7 +73,7 @@
                         <p>{{i18n.profile.closeAccount.context}}</p>
                         <h4>{{i18n.profile.closeAccount.labelTotal}} <span>{{profileControl.balanceTotal | currency : '$' : '0'}}</span></h4>
                         <div class="col">
-                            <button class="button button-block button-assertive button-close-account grey" 
+                            <button class="button button-block button-assertive button-close-account grey"
                             ng-class="{'button-deactivated': !profileControl.isBalanceZero}"
                             ng-click="profileControl.closeAccount();">
                                 {{i18n.profile.closeAccount.labelButton}}
@@ -109,7 +109,7 @@
                         <h4><a href="#" x-apple-data-detectors="false">+57 {{profileControl.phoneNumber}}</a></h4>
                         <div class="tf-resumen-line"></div>
                     </div>
-                    <div class="profile-box-bottom"><a href="#">{{i18n.profile.data.labelEditData}}</a></div>
+                    <div class="profile-box-bottom"><a class="disabled-acces" href="#">{{i18n.profile.data.labelEditData}}</a></div>
                 </div>
             </div>
             <!--FIN BOX DOS-->
@@ -123,7 +123,7 @@
                         <p>{{i18n.profile.security.contextFirst}} <strong>{{i18n.profile.security.contextMiddle}}</strong> {{i18n.profile.security.contextLast}}</p>
                         <div class="tf-resumen-line"></div>
                     </div>
-                    <div class="profile-box-bottom"><a href="#">{{i18n.profile.security.buttonConfiguration}}</a></div>
+                    <div class="profile-box-bottom"><a href="#" ng-click="profileControl.openSecurity()">{{i18n.profile.security.buttonConfiguration}}</a></div>
                 </div>
             </div>
             <!--FIN BOX TRES-->
@@ -136,7 +136,7 @@
                         <p>{{i18n.profile.notifications.contextFirst}} <strong>{{i18n.profile.notifications.contextLast}}</strong></p>
                         <div class="tf-resumen-line"></div>
                     </div>
-                    <div class="profile-box-bottom"><a href="#">{{i18n.profile.notifications.buttonConfiguration}}</a></div>
+                    <div class="profile-box-bottom"><a class="disabled-acces" href="#">{{i18n.profile.notifications.buttonConfiguration}}</a></div>
                 </div>
             </div>
             <!--FIN BOX CUATRO-->
@@ -153,10 +153,10 @@
                             <a ng-click="profileControl.showHelpView();">{{i18n.generalActions.help}}</a>
                         </li>
                         <li class="enlace-secundario">
-                            <a href="#/profileLegalAgreements">{{i18n.profile.inApp.legalAgreements}}</a>
+                            <a href="#" ng-click="profileControl.goAgreements();">{{i18n.profile.inApp.legalAgreements}}</a>
                         </li>
-                        <li class="enlace-secundario disabled-acces">
-                            <a href="#">{{i18n.profile.inApp.termsOfService}}</a>
+                        <li class="enlace-secundario">
+                            <a href="#" ng-click="profileControl.goTermsOfService();">{{i18n.profile.inApp.termsOfService}}</a>
                         </li>
                     </ul>
                 </div>
@@ -169,7 +169,7 @@
             <div class="col profile-close">
                 <a ng-click="profileControl.logout();">{{i18n.profile.labelButtonCloseSession}}</a>
             </div>
-        </div> 
+        </div>
         <!--FIN BOX CINCO-->
     </ion-content>
 </ion-view>

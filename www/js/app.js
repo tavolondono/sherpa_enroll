@@ -39,7 +39,21 @@ angular.module('App', ['ionic', 'ngAnimate', 'ngCordova', 'ui.bootstrap', 'count
                     errorSoftToken: null
                 };
                 
-                $rootScope.actualUser = { 'sq': 0};
+                $rootScope.actualUser = {
+                    'sq': 0,
+                    'biometry': {
+                        'facial': {
+                            'hasFacial': false,
+                            'enabled': false
+                        },
+                        'principal': 'none',
+                        'voice': {
+                            'hasFacial': false,
+                            'enabled': false
+                        }
+                    },
+                    'hasBiometry': false
+                };
                 if (window.localStorage.getItem(0) == null) {
                     window.localStorage.setItem(0,JSON.stringify($rootScope.actualUser));
                 } else {
@@ -94,11 +108,27 @@ angular.module('App', ['ionic', 'ngAnimate', 'ngCordova', 'ui.bootstrap', 'count
                 })                
                 .state('vinculacion-facial', {
                     url: '/vinculacion-facial',
-                    templateUrl: 'views/vinculacion-facial.html'
+                    templateUrl: 'views/vinculacion-facial.html',
+                    params: {
+                        toPage : 'home'
+                    },
+                    hideParams: 'YES'
+                })
+                .state('facial-help', {
+                    url: '/facial-help',
+                    templateUrl: 'views/facial-help.html',
+                    params: {
+                        toPage : 'home'
+                    },
+                    hideParams: 'YES'
                 })
                 .state('vinculacion-voice', {
                     url: '/vinculacion-voice',
-                    templateUrl: 'views/vinculacion-voice.html'
+                    templateUrl: 'views/vinculacion-voice.html',
+                    params: {
+                        toPage : 'home'
+                    },
+                    hideParams: 'YES'
                 })
                 .state('registry', {
                     url: '/registry',
@@ -187,6 +217,14 @@ angular.module('App', ['ionic', 'ngAnimate', 'ngCordova', 'ui.bootstrap', 'count
                 .state('profile', {
                     url: '/profile',
                     templateUrl: 'views/profile.html'
+                })
+                .state('security', {
+                    url: '/security',
+                    templateUrl: 'views/security.html'
+                })
+                .state('voice-login', {
+                    url: '/voice-login',
+                    templateUrl: 'views/voice-login.html'
                 })
 
 
