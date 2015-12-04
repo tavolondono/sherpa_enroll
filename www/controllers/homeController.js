@@ -66,4 +66,19 @@ angular.module('App')
                     }
                     $state.go("tour");
                 };
+                
+                self.morphoLaunchRegestry = function(){
+                    Morpho.launchRegistry(
+                            function(response) {
+                                console.log('exito');
+                                console.log(response);
+                        }, 
+                        function(error) { 
+                            console.log(error);
+                        }, 
+                        {'title': 'juan'});
+                        
+                        
+                        
+                };
             }]);

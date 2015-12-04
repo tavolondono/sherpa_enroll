@@ -77,7 +77,9 @@ angular.module('App')
 
 
 
-
+                self.goHome = function () {
+                    $state.go('home');
+                };
                 self.siguiente = function () {
                     $state.go('dashboard');
                 };

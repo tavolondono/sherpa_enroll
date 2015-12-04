@@ -3,7 +3,9 @@
  * Builded for Serfinansa.
  */
 angular.module('App')
-    .controller('chooseBiometryController',['$scope', '$state', 'messagesProvider', "$ionicModal",
+    .controller('chooseBiometryController',['$scope', '$state', 'messagesProvider', 
+        '$ionicModal', '$ionicPopup', 'userManager', 'hardwareBackButtonManager', 
+        'configStyles',
     function ($scope, $state, messagesProvider, $ionicModal){
         var self = this;
         /**
@@ -47,15 +49,14 @@ angular.module('App')
         };
               
         self.irFacial = function () {
-            $state.go("facial-help", {toPage : 'home'});
-            self.requestCamPermission.hide();
+            $state.go("vinculacion-facial", {toPage : "home"});
         };
         self.showPermission = function () {
             self.requestCamPermission.show();            
         };
         
         self.irVoice = function () {
-            $state.go("vinculacion-voice");
+            $state.go("vinculacion-voice", {toPage : "home"});
         };
         
         /**

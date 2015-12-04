@@ -11,9 +11,9 @@
 
     <ion-content scroll="false">
 
-        <ion-scroll class="scroll-origin-money-balance" direction="y">
+<!--        <ion-scroll class="scroll-origin-money-balance" direction="y">
             <ion-refresher pulling-text="Cargando..." on-refresh="originMoneyControl.getBalance()"></ion-refresher>
-            <!--SALDO-->
+            SALDO
             <div class="origin-money-balance-container">
                 <div class="origin-money-balance padding">
                     <div class="row">
@@ -26,27 +26,53 @@
                     </div>
                 </div>
             </div>
+             END SALDO 
+        </ion-scroll>-->
+        <ion-scroll class="scroll-origin-money-balance" direction="y">
+            <ion-refresher pulling-text="Cargando..." on-refresh="originMoneyControl.getBalance()"></ion-refresher>
+            <!--SALDO-->
+            <div class="contenedor-saldo-top origin-money-balance-container">
+                <div class="origin-money-balance padding">
+                    <div class="row">
+                        <div class="col col-50">
+                            <p>{{i18n.generalActions.available}}
+                            <ng-pluralize class="saldo-bolsillo" count="originMoneyControl.numPockets"
+                            when="{'0': '',
+                            'one': '+ {{originMoneyControl.numPockets}} {{i18n.generalActions.pocket}}',
+                            'other': '+ {{originMoneyControl.numPockets}} {{i18n.generalActions.pockets}}' }"></ng-pluralize>
+                            </p>
+                        </div>
+                        <div class="col right"><p><span>{{originMoneyControl.balanceAvailable | currency : '$' : '0'}}</span></p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col"><p>{{i18n.generalActions.total}}</p></div>
+                        <div class="col right"><p>{{originMoneyControl.balance | currency : '$' : '0'}}</p></div>
+                    </div>
+                </div>
+            </div>
             <!-- END SALDO -->
-        </ion-scroll>
+        </ion-scroll>        
         
-        <!--SELECCION DE ORIGEN TITLE-->
+         <!--SELECCION DE ORIGEN TITLE-->
         <div class="origin-money-instructions">
-            <h3>{{i18n.originMoney.instructions}} <span>{{originMoneyControl.actionButton}}</span></h3>
+            <h3>{{i18n.originMoney.instructions}} <span>{{originMoneyControl.actionInstructions}}</span></h3>
         </div>
         <!--END SELECCION DE ORIGEN TITLE-->
 
         <!-- POCKETS -->
         <div class="row row-pockets">
             <div class="pockets-container">
-                <ion-slide-box on-slide-changed="originMoneyControl.selectOriginTransfer($index)" show-pager="false">
-                    <ion-slide ng-repeat="pocket in originMoneyControl.pockets">
-                        <div class="pocket">
-                            <div class="header-pocket">
-                                <div class="iconPocket icon{{pocket.pocketType}}"></div>
-                            </div>
-                            <div class="content-pocket">
-                                <h2 class="title-pocket">{{pocket.name}}</h2>
-                                <p>{{pocket.value| currency : '$' : '0'}}</p>
+                <ion-slide-box class="slide-box-content" on-slide-changed="originMoneyControl.selectOriginTransfer($index)" show-pager="false" delegate-handle="originMoneySlide">
+                    <ion-slide ng-repeat="pocket in originMoneyControl.pockets">                        
+                        <div class="pocket-container">
+                            <div class="pocket">
+                                <div class="header-pocket">
+                                    <div class="iconPocket icon{{pocket.pocketType}}"></div>
+                                </div>
+                                <div class="content-pocket">
+                                    <h2 class="title-pocket">{{pocket.name}}</h2>
+                                    <p>{{pocket.value| currency : '$' : '0'}}</p>
+                                </div>
                             </div>
                         </div>
                     </ion-slide>

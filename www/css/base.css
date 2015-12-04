@@ -449,3 +449,14 @@ h2.oblique {
 .contenedor-login-celular .login-clear-header.voice-login-clear {
     height: 100px;
 }
+
+.ion-android-microphone.button {
+    border-radius: 40px;
+    background-color: #ff2f73;
+    color: #fff;
+    border-color: transparent;
+}
+
+.biometry-config .col-50 p {
+    white-space: normal;
+}

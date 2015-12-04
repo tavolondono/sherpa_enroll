@@ -9,9 +9,11 @@
 angular.module('App')
     .controller('configBiometryRegistryController',
      ['$scope', 'messagesProvider', 'invocationManager', 'busyIndicator', 
-         'errorManager', '$ionicModal', '$state', '$rootScope',
+         'errorManager', '$ionicModal', '$state', '$rootScope', '$ionicPopup', 
+        'userManager', 'hardwareBackButtonManager', 'configStyles',
        function ($scope, messagesProvider, invocationManager, busyIndicator, 
-       errorManager, $ionicModal, $state, $rootScope) {
+       errorManager, $ionicModal, $state, $rootScope, $ionicPopup, 
+        userManager, hardwareBackButtonManager, configStyles) {
 
     var self = this;
     
@@ -142,5 +144,47 @@ angular.module('App')
     self.next = function() {
         $state.go('dashboard');
     };
+    
+    
+    /**
+    * Metodo para cancelar el proceso de vinculación liviana realizado con el wizard
+    * @method cancelProcess
+    * @public
+    */
+    self.cancelProcess = function () {
+        $ionicPopup.confirm({
+            title: messagesProvider.liteRegistry.cancelDialogTitle,
+            template: messagesProvider.liteRegistry.cancelDialogText
+        }).then(function (response) {
+            if (response) {
+                self.registryModel = {};
+                userManager.clearAll();
+                $state.go('home');
+                configStyles.backgroundColor.nameClass = '';
+            } else {
+                hardwareBackButtonManager.enable(self.cancelProcess);
+            }
+        });
+    };
+    
+    /**
+    * Metodo para obtener la primera pantalla del wizard
+    * @method getFirstStepPath
+    * @public
+    */
+    self.getFirstStepPath = function() {
+        return 'registry.nickname';
+    };
+
+    /**
+    * Metodo para obtener el primer titulo de la primera pantalla del wizard
+    * @method getFirstStepTitle
+    * @private
+    */
+    function getFirstStepTitle() {
+        return messagesProvider.liteRegistry.advantage.title;
+    }
+
+
 
 }]);

@@ -141,21 +141,21 @@ angular.module('App')
     * @property balance
     * @type Double
     */
-    self.balance = null;
+    self.balance = 150000;
 
     /**
     * Propiedad donde se almacena el saldo disponible para el usuario.
     * @property balanceAvailable
     * @type Double
     */
-    self.balanceAvailable = null;
+    self.balanceAvailable = 120000;
 
     /**
     * Propiedad donde se almacena el numero de bolsillos.
     * @property numPockets
     * @type Double
     */
-    self.numPockets = 0;
+    self.numPockets = 2;
 
     /**
     * Propiedad para mostrar el botón de registro en el dashboard

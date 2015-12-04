@@ -339,6 +339,34 @@ angular.module('App')
         });
     };
     
+    self.authenticationSuccess = function (data){
+        var alertSuccessPopup = $ionicPopup.alert({
+            title: messagesProvider.biometry.facial.successLogin.title,
+            template: messagesProvider.biometry.facial.successLogin.description
+        });
+        alertSuccessPopup.then(function (res) {
+            $state.go("dashboard");
+        });
+    };
+    
+    self.authenticationError = function (data){
+        var alertErrorPopup = $ionicPopup.alert({
+            title: messagesProvider.biometry.facial.errorLogin.title,
+            template: messagesProvider.biometry.facial.errorLogin.description
+        });
+        alertErrorPopup.then(function (res) {
+            console.log(data);
+        });
+    };
+    
+    self.launchAuthentication = function(){
+        Morpho.launchAuthentication(
+            self.authenticationSuccess, 
+            self.authenticationError, 
+            {'title': ''}
+        );  
+    };
+    
     self.takeVoice = function () {
         $state.go('voice-login');
     };

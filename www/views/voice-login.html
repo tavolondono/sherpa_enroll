@@ -25,23 +25,30 @@
 
 
             <div class="row row-center center padding Txt-parrafo">
-                <p><strong>Presione el botón y diga la frase</strong></p>
-                <h2 class="oblique">Nequi la aplicación que esperabas</h2>
+                <h2>Frase:</h2>
             </div>
 
+            <div class="row row-center center padding Txt-parrafo">
+                <h2 class="oblique">"Nequi la aplicación que esperabas"</h2>
+            </div>
 
 
             <div class="row">
                 <div class="col center">
-                    <li class="ion-android-microphone" ng-click="voiceLoginControl.recordAudio();" data-pack="android" data-tags="recorder, speak, noise, music, sound" style="display: inline-block; font-size: 114px"></li>
+                    <li class="ion-android-microphone button" ng-click="voiceLoginControl.recordAudio();" data-pack="android" data-tags="recorder, speak, noise, music, sound" style="display: inline-block; font-size: 114px"></li>
                 </div>
             </div> 
-            <div class="row" ng-show="voiceLoginControl.isRecording">
+            <div class="row center">
+                <div class="col">
+                    <p><strong>Presiona el botón y dí la frase</strong></p>
+                </div>
+            </div>
+            <div class="row center" ng-show="voiceLoginControl.isRecording">
                 <div class="col center">
                     <div class="audio-wave"></div>
                 </div>
             </div> 
-            <div class="row" ng-show="voiceLoginControl.isRecording">
+            <div class="row center" ng-show="voiceLoginControl.isRecording">
                 <div class="col">
                     <p id="media">Grabando frase... </p>
                     <span id="audio_position_voice"></span>

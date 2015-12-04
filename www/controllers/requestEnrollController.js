@@ -173,5 +173,9 @@ angular.module('App')
                             }
                             self.validateForm();
                         };
+                        
+                        self.goBack = function () {
+                            $state.go('registry.biometryConfigAccount');
+                        };
 
                     }]);

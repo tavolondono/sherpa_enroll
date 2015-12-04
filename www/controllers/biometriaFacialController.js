@@ -5,9 +5,9 @@
 angular.module('App')
         .controller('biometriaFacialController', ['$scope', '$state', 'Camera', 
         'messagesProvider', '$ionicModal', '$timeout', '$rootScope', 
-        'userManager', '$ionicPopup', '$stateParams', 'utilsProvider',
+        'userManager', '$ionicPopup', '$stateParams', 'utilsProvider', 'hardwareBackButtonManager',
         function ($scope, $state, Camera, messagesProvider, $ionicModal, $timeout,
-        $rootScope, userManager, $ionicPopup, $stateParams, utilsProvider) {
+        $rootScope, userManager, $ionicPopup, $stateParams, utilsProvider, hardwareBackButtonManager) {
             
             var self = this;
             self.puedeSeguir = false;
@@ -91,7 +91,8 @@ angular.module('App')
                 
 
 
-            self.siguiente = function () {
+            self.registrySuccess = function (response) {
+                console.log(response);
                 if ($rootScope.actualUser.hasBiometry) {                    
                     $rootScope.actualUser.biometry.facial = {
                         'hasFacial': true,
@@ -114,16 +115,64 @@ angular.module('App')
                 
                 userManager.saveUser($rootScope.actualUser);
                 var alertPopup = $ionicPopup.alert({
-                        title: messagesProvider.biometry.successPopUp.title,
-                        template: messagesProvider.biometry.successPopUp.description
-                    });
-                    alertPopup.then(function (res) {
-                        $state.go(self.pageToGo);
-                    });
+                    title: messagesProvider.biometry.successPopUp.title,
+                    template: messagesProvider.biometry.successPopUp.description
+                });
+                alertPopup.then(function (res) {
+                    $state.go(self.pageToGo);
+                });
             };
 
             self.atras = function () {
-                $state.go("registry.biometryConfigAccount");
+                $state.go(self.pageToGo);
+            };
+            
+            self.registryError = function (response) {
+               console.log(response);
+               var alertPopup = $ionicPopup.alert({
+                    title: messagesProvider.biometry.errorPopUp.title,
+                    template: messagesProvider.biometry.errorPopUp.description
+                });
+                alertPopup.then(function (res) {
+                    console.log(res);
+                });
+            };
+            
+            self.morphoLaunchRegestry = function(){
+                Morpho.launchRegistry(
+                    self.registrySuccess, 
+                    self.registryError, 
+                    {'title': ''}
+                );  
+            };
+            
+            /**
+            * Metodo para cancelar el proceso de vinculación liviana realizado con el wizard
+            * @method cancelProcess
+            * @public
+            */
+            self.cancelProcess = function () {
+                $ionicPopup.confirm({
+                    title: messagesProvider.liteRegistry.cancelDialogTitle,
+                    template: messagesProvider.liteRegistry.cancelDialogText
+                }).then(function (response) {
+                    if (response) {
+                        self.registryModel = {};
+                        userManager.clearAll();
+                        $state.go('home');
+                        
+                    } else {
+                        hardwareBackButtonManager.enable(self.cancelProcess);
+                    }
+                });
             };
 
+            /**
+            * Metodo para obtener la primera pantalla del wizard
+            * @method getFirstStepPath
+            * @public
+            */
+            self.getFirstStepPath = function() {
+                return 'registry.nickname';
+            };
         }]);

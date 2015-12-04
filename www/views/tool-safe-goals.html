@@ -1,41 +1,47 @@
-<ion-modal-view class="tool-dashboard-bkg">
-    <ion-content class="container-tool-dashboard" scroll="false">
-        <!--CERRAR-->
-        <div class="row">
-            <div class="col col-close">
-                <button class="tool-dashboard-close" ng-click="safeGoals.hide();"></button>
+<ion-modal-view class="modal-view-sherpa modal-view-button-double tool-dashboard tool-dashboard-safeGoals">
+    <!--CERRAR-->
+    <div class="row close-modal">
+        <div class="col">
+            <div class="close-modal-div">
+                <a href="#" ng-click="safeGoals.hide();"></a>
             </div>
         </div>
-        <!--FIN CERRAR-->
+    </div>
+    <!--FIN CERRAR-->
+    <ion-content class="modal-content-sherpa" scroll="false">
 
         <!--MARQUEE-->
         <div class="row">
             <div class="col">
-                <div class="tool-dashboard-marquee safe-goal">
+                <div class="safe-goal">
                     <div class="tool-dashboard-icon-safe-goals"></div>
                     <div class="tool-dashboard-text">
                         <h3>{{i18n.dashboard.tools.safeGoals.title}}</h3>
                         <p>{{i18n.dashboard.tools.safeGoals.context}}</p>
-                        <p><strong>{{i18n.dashboard.tools.subTitle}}</strong></p>
+                        <p ng-show="!dashboardControl.isUserEnroll"><strong>{{i18n.dashboard.tools.subTitle}}</strong></p>
                     </div>
                 </div>
             </div>
         </div>
         <!--MARQUEE-->
 
-        <!--BOTON-->
-        <div ng-show="(dashboardControl.isUserEnroll)" class="row">
-            <div class="col">
-                <a href="#/registry/nickname" ng-click="closeToolModal(safeGoals);">
-                    <button class="button button-block button-positive">{{i18n.generalActions.registry}}</button>
-                </a>
-            </div>
-        </div>
-        <div ng-show="(dashboardControl.isUserEnroll)" class="row">
-            <div class="col keep-trying">
-                <a href="#/dashboard" ng-click="safeGoals.hide();">{{i18n.generalActions.keepTrying}}</a>
-            </div>
-        </div>
-        <!--FIN BOTON-->
     </ion-content>
+    <!--BOTON-->
+    <div ng-show="dashboardControl.isUserEnroll" class="bar bar-footer keep-stash">
+        <div class="row">
+            <div class="col">
+                <div class="btn-primario">
+                    <a href="#/registry/nickname" ng-click="closeToolModal(safeGoals);">
+                        <button class="button button-block button-positive">{{i18n.generalActions.registry}}</button>
+                    </a>
+                </div>
+
+                <div class="btn-secundario enlace-secundario">
+                    <a href="#/dashboard" ng-click="safeGoals.hide();">{{i18n.generalActions.keepTrying}}</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--FIN BOTON-->
 </ion-modal-view>

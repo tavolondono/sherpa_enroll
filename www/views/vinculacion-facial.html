@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="col">
                     <button class="button button-block button-assertive siguiente" 
-                            ng-disabled="biometriaControl.puedeSeguir" ng-click="biometriaControl.takePhoto();"
+                            ng-disabled="biometriaControl.puedeSeguir" ng-click="biometriaControl.morphoLaunchRegestry();"
                             >{{i18n.biometry.takePicture}}</button>
                 </div>
                 
@@ -66,7 +66,7 @@
             </div> 
             <div class="row row-bottom">
                 <div class="col texto-cancelar center col-center">
-                    <a ng-click="configBiometryControl.cancelProcess();" class="ng-binding">{{i18n.navigation.cancel}}</a>
+                    <a ng-click="biometriaControl.cancelProcess();" class="ng-binding">{{i18n.navigation.cancel}}</a>
                 </div>
             </div>
         </div>

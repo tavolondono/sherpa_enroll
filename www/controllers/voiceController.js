@@ -66,7 +66,7 @@ angular.module('App')
 
                 var amt = 0;
 
-                self.countTo = 6;
+                self.countTo = 4;
                 self.countFrom = 0;
                 self.progressValue = 0;
                 self.type = "info";

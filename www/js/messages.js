@@ -241,7 +241,7 @@ var Messages = {
                 'title': 'Configura tu cuenta',
                 'secureDevice': {
                     'title' : 'Asegura tu dispositivo',
-                    'description' : 'Vamos a enviar un cóidgo para asegurar tu celular'                    
+                    'description' : 'Vamos a enviar un código para asegurar tu celular'                    
                 },
                 'biometryAccess': {
                     'title' : 'Biometría',
@@ -324,9 +324,9 @@ var Messages = {
             },
             'security': {
                 'title': 'Seguridad',
-                'contextFirst': 'Aquí podrás cambiar tu',
-                'contextMiddle': 'Clave Nequi',
-                'contextLast': 'además de otras opciones.',
+                'contextFirst': 'Aquí podrás cambiar tus',
+                'contextMiddle': 'Opciones de Biometría',
+                'contextLast': '',
                 'buttonConfiguration': 'Modifica tus configuraciones de seguridad',
                 'item' :{
                     'title': 'Clave Nequi',
@@ -1049,6 +1049,10 @@ var Messages = {
             'successPopUp' : {
                 'title' : '¡¡¡Lo hiciste!!!',
                 'description' : 'Haz terminado de crear tu cuenta, te invitamos a iniciar sesión'
+            }, 
+            'errorPopUp' : {
+                'title' : 'Lo lamentamos',
+                'description' : 'No se ha podido completar el registro'
             },
             'facial' : {
                 'title' : 'Facial',
@@ -1057,6 +1061,10 @@ var Messages = {
                 'successLogin' : {
                     'title' : 'Perfecto!!',
                     'description' : 'Te hemos reconocido, puedes comenzar a disfrutar de Nequi'
+                },
+                'errorLogin' : {
+                    'title' : 'Intenta de nuevo',
+                    'description' : 'No te pudimos reconocer, intenta de nuevo'
                 }
             },
             'voice' : {

@@ -95,7 +95,7 @@ angular.module('App')
             if (model === 1) {
                 if (!$rootScope.actualUser.biometry.facial.hasFacial) {
                     console.log('Face: ');
-                    $state.go("facial-help", {toPage : 'security'});
+                    $state.go("vinculacion-facial", {toPage : 'security'});
                 } else {
                     $rootScope.actualUser.biometry.facial.enabled = self.biometryCheckboxModel.facial;
                 }
@@ -284,7 +284,7 @@ angular.module('App')
     **/
     $scope.$on('$ionicView.beforeEnter', function(){
         $ionicScrollDelegate.scrollTop();
-        self.almostOneValidation();
+        
         if (utilsProvider.validateNull($rootScope.actualUser.biometry)) {
             if(utilsProvider.validateNull($rootScope.actualUser.biometry.facial)) {
                 self.biometryCheckboxModel.facial = $rootScope.actualUser.biometry.facial.enabled;
@@ -295,6 +295,7 @@ angular.module('App')
                 self.canDisableVoice = false;
             }
         }
+        self.almostOneValidation();
         hardwareBackButtonManager.enable(self.goBack);
         
         

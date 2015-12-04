@@ -1,18 +1,18 @@
 <ion-view
 can-swipe-back="false"
-class="enrollContent">
+class="enrollContent" ng-controller="requestEnrollController as enControl" >
     <!--HEADER-->
     <ion-header-bar class="bar bar-header bar-light bar-enroll" align-title="center">
         <div class="buttons" side="left">
-            <a href="#/home">
-                <button class="ion-backicon icon-arrow" ng-click="$ionicGoBack()"></button>
+            <a href="#">
+                <button class="ion-backicon icon-arrow" ng-click="enControl.goBack()"></button>
             </a>
         </div>
         <h1 class="title">{{i18n.enrollment.requestPhoneTitle}}</h1>
     </ion-header-bar >
     <!-- FIN VIEW -->
 
-    <ion-content ng-controller="requestEnrollController as enControl" class="padding requestPhone">
+    <ion-content class="padding requestPhone">
         <form name="formEnroll" ng-submit="formEnroll.$valid && enControl.sendRequestEnroll()" novalidate>
             <!--CELULAR TEXTO-->
             <div class="row">
