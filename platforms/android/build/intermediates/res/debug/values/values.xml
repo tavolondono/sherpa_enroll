@@ -1,0 +1,1325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string-array name="capture_face_welcome_registration_steps" translatable="false">
+        <item>@string/label_capture_face_welcome_step_1</item>
+        <item>@string/label_capture_face_welcome_step_2</item>
+        <item>@string/label_capture_face_welcome_step_3</item>
+        <item>@string/label_capture_face_welcome_step_4</item>
+        <item>@string/label_capture_face_welcome_step_5</item>
+    </string-array>
+    <string-array name="capture_password_homomorphic_welcome_registration_steps" translatable="false">
+        <item>@string/label_capture_password_homomorphic_welcome_step_1</item>
+        <item>@string/label_capture_password_homomorphic_welcome_step_2</item>
+        <item>@string/label_capture_password_homomorphic_welcome_step_3</item>
+    </string-array>
+    <string-array name="capture_password_welcome_registration_steps" translatable="false">
+        <item>@string/label_capture_password_welcome_step_1</item>
+        <item>@string/label_capture_password_welcome_step_2</item>
+        <item>@string/label_capture_password_welcome_step_3</item>
+    </string-array>
+    <string-array name="capture_pin_homomorphic_welcome_registration_steps" translatable="false">
+        <item>@string/label_capture_pin_homomorphic_welcome_step_1</item>
+        <item>@string/label_capture_pin_homomorphic_welcome_step_2</item>
+    </string-array>
+    <string-array name="service_blocked_steps" translatable="false">
+        <item>@string/label_welcome_step_1</item>
+        <item>@string/label_welcome_step_2</item>
+        <item>@string/label_welcome_step_3</item>
+    </string-array>
+    <string-array name="welcome_steps" translatable="false">
+        <item>@string/label_welcome_step_1</item>
+        <item>@string/label_welcome_step_2</item>
+        <item>@string/label_welcome_step_3</item>
+    </string-array>
+    <color name="black_background">#000000</color>
+    <color name="black_morpho_end">#696969</color>
+    <color name="black_morpho_plain_end">#808080</color>
+    <color name="black_morpho_start">#8f8f8f</color>
+    <color name="blue_link">#008fdd</color>
+    <color name="blue_morpho_plain">#198ae0</color>
+    <color name="blue_morpho_plain_pressed">#1573bb</color>
+    <color name="circular_progress_default_background">#787878</color>
+    <color name="circular_progress_default_progress">#bada55</color>
+    <color name="circular_progress_default_subtitle">#D1D1D1</color>
+    <color name="circular_progress_default_title">#bada55</color>
+    <color name="color_background">@color/color_other_4</color>
+    <color name="color_button_negative_default">@color/color_primary_1</color>
+    <color name="color_button_negative_disabled">@color/color_other_6</color>
+    <color name="color_button_negative_enabled">@color/color_primary_1</color>
+    <color name="color_button_negative_focused">@color/color_primary_1</color>
+    <color name="color_button_negative_pressed">@color/color_primary_1</color>
+    <color name="color_button_neutral_default">@color/color_other_1</color>
+    <color name="color_button_neutral_disabled">@color/color_other_6</color>
+    <color name="color_button_neutral_enabled">@color/color_other_1</color>
+    <color name="color_button_neutral_focused">@color/color_other_1</color>
+    <color name="color_button_neutral_pressed">@color/color_other_1</color>
+    <color name="color_button_positive_default">@color/color_primary_2</color>
+    <color name="color_button_positive_disabled">@color/color_other_6</color>
+    <color name="color_button_positive_enabled">@color/color_primary_2</color>
+    <color name="color_button_positive_focused">@color/color_primary_2</color>
+    <color name="color_button_positive_pin_pad_default">@color/color_primary_2</color>
+    <color name="color_button_positive_pin_pad_disabled">@color/color_primary_2</color>
+    <color name="color_button_positive_pin_pad_enabled">@color/color_primary_2</color>
+    <color name="color_button_positive_pin_pad_focused">@color/color_primary_2</color>
+    <color name="color_button_positive_pin_pad_pressed">@color/color_other_1</color>
+    <color name="color_button_positive_pressed">@color/color_primary_2</color>
+    <color name="color_font_dark">#373737</color>
+    <color name="color_font_light">#949494</color>
+    <color name="color_font_primary_1">@color/color_primary_1</color>
+    <color name="color_font_primary_2">@color/color_primary_2</color>
+    <color name="color_font_regular">#949494</color>
+    <color name="color_font_white">@color/color_other_4</color>
+    <color name="color_other_1">#79b6d3</color>
+    <color name="color_other_2">#77c23f</color>
+    <color name="color_other_3">#f29300</color>
+    <color name="color_other_4">#ffffff</color>
+    <color name="color_other_5">#000000</color>
+    <color name="color_other_6">#949494</color>
+    <color name="color_primary_1">#ef2646</color>
+    <color name="color_primary_2">#1f85b7</color>
+    <color name="color_progress_bar_1">@color/color_primary_1</color>
+    <color name="color_progress_bar_2">@color/color_other_3</color>
+    <color name="color_progress_bar_3">@color/color_other_2</color>
+    <color name="color_progress_bar_background">@color/color_font_light</color>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/custom-play-services-5.0.89/res/values/common_colors.xml -->
+    <eat-comment/>
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="common_signin_btn_dark_text_default">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_dark_text_focused">@android:color/white</color>
+    <color name="common_signin_btn_dark_text_pressed">@android:color/white</color>
+    <color name="common_signin_btn_default_background">#FFDD4B39</color>
+    <color name="common_signin_btn_light_text_default">#FF737373</color>
+    <color name="common_signin_btn_light_text_disabled">#FFAAAAAA</color>
+    <color name="common_signin_btn_light_text_focused">#FF737373</color>
+    <color name="common_signin_btn_light_text_pressed">@android:color/white</color>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <color name="csZbarScannerBackground">#000000</color>
+    <color name="csZbarScannerTextBackground">#88000000</color>
+    <color name="csZbarScannerTextColor">#ffffff</color>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <color name="etis_color_dark_blue">#1f85b7</color>
+    <color name="etis_color_green">#77c23f</color>
+    <color name="etis_color_light_blue">#79b6d3</color>
+    <color name="etis_color_red">#ef2646</color>
+    <color name="etis_color_white">#ffffff</color>
+    <color name="etis_font_color_black">#373737</color>
+    <color name="etis_font_color_blue">#1f85b7</color>
+    <color name="etis_font_color_grey">#949494</color>
+    <color name="etis_font_color_red">#ef2646</color>
+    <color name="green_morpho_focused_start">#4DBD33</color>
+    <color name="green_morpho_pressed_start">#4DBD33</color>
+    <color name="green_morpho_start">#4DBD33</color>
+    <color name="red_morpho_focused_start">#F7BE45</color>
+    <color name="red_morpho_pressed_start">#e24350</color>
+    <color name="red_morpho_start">#d53f4b</color>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/custom-play-services-5.0.89/res/values/wallet_colors.xml -->
+    <eat-comment/>
+    <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="wallet_bright_foreground_holo_light">#ff000000</color>
+    <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
+    <color name="wallet_dim_foreground_holo_dark">#bebebe</color>
+    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
+    <color name="wallet_dim_foreground_inverse_holo_dark">#323232</color>
+    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
+    <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
+    <color name="wallet_hint_foreground_holo_dark">#808080</color>
+    <color name="wallet_hint_foreground_holo_light">#808080</color>
+    <color name="wallet_holo_blue_light">#ff33b5e5</color>
+    <color name="wallet_link_text_light">#0000ee</color>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <color name="white_morpho">#FFFFFF</color>
+    <declare-styleable name="AdsAttrs"><attr format="string" name="adSize"/><attr format="string" name="adSizes"/><attr format="string" name="adUnitId"/></declare-styleable>
+    <declare-styleable name="CircularProgressBar"><attr format="boolean" name="hasShadow"/><attr format="boolean" name="showPercentage"/><attr format="string" name="progressColor"/><attr format="string" name="backgroundColor"/><attr format="integer" name="backgroundAplha"/><attr format="string" name="title"/><attr format="dimension" name="titleTextSize"/><attr format="integer" name="maximumPercentageTitle"/><attr format="string" name="titleColor"/><attr format="dimension" name="strokeWidth"/></declare-styleable>
+    <declare-styleable name="MapAttrs"><attr format="enum" name="mapType"><enum name="none" value="0"/><enum name="normal" value="1"/><enum name="satellite" value="2"/><enum name="terrain" value="3"/><enum name="hybrid" value="4"/></attr><attr format="float" name="cameraBearing"/><attr format="float" name="cameraTargetLat"/><attr format="float" name="cameraTargetLng"/><attr format="float" name="cameraTilt"/><attr format="float" name="cameraZoom"/><attr format="boolean" name="uiCompass"/><attr format="boolean" name="uiRotateGestures"/><attr format="boolean" name="uiScrollGestures"/><attr format="boolean" name="uiTiltGestures"/><attr format="boolean" name="uiZoomControls"/><attr format="boolean" name="uiZoomGestures"/><attr format="boolean" name="useViewLifecycle"/><attr format="boolean" name="zOrderOnTop"/></declare-styleable>
+    <declare-styleable name="MorphoThemeAttributes"><attr format="reference" name="themeVersion"/><attr format="reference" name="titleText"/><attr format="reference" name="contentText"/><attr format="reference" name="descriptionText"/><attr format="reference" name="contentTutorialText"/><attr format="reference" name="captureFaceCountDownText"/><attr format="reference" name="positiveButton"/><attr format="reference" name="negativeButton"/><attr format="reference" name="neutralButton"/><attr format="reference" name="switchPositive"/><attr format="reference" name="buttonPinPadNeutralStyle"/><attr format="reference" name="buttonPinPadNegativeStyle"/><attr format="reference" name="buttonPinPadPositiveStyle"/><attr format="reference" name="buttonPinPadNeutralSmallStyle"/><attr format="reference" name="buttonPinPadNegativeSmallStyle"/><attr format="reference" name="buttonPinPadPositiveSmallStyle"/><attr format="reference" name="moaPinButton"/><attr format="reference" name="moaPasswordButton"/><attr format="reference" name="moaFaceButton"/><attr format="reference" name="welcomeSteps"/><attr format="reference" name="captureFaceWelcomeRegistrationSteps"/><attr format="reference" name="capturePasswordHomomorphicWelcomeRegistrationSteps"/><attr format="reference" name="capturePinHomomorphicWelcomeRegistrationSteps"/><attr format="reference" name="capturePasswordWelcomeRegistrationSteps"/><attr format="reference" name="serviceBlockedSteps"/><attr format="reference" name="iconFaceSuccessTick"/><attr format="reference" name="iconLargeSuccessTick"/><attr format="reference" name="iconLargeConnectionLost"/><attr format="reference" name="iconLargeDeviceNotEligible"/><attr format="reference" name="iconLargeDevice"/><attr format="reference" name="iconLargeQrCodeNotRecognised"/><attr format="reference" name="iconLargeQrCodeRecognised"/><attr format="reference" name="iconLargeVerificationFaceFailed"/><attr format="reference" name="iconLargeVerificationPinFailed"/><attr format="reference" name="iconLargeVerificationPasswordFailed"/><attr format="reference" name="iconLargeVerificationFaceSuccess"/><attr format="reference" name="iconLargeVerificationPinSuccess"/><attr format="reference" name="iconLargeVerificationPasswordSuccess"/><attr format="reference" name="iconLargeFaceInfo"/><attr format="reference" name="iconLargeFaceNotCaptured"/><attr format="reference" name="iconLargeFaceNotRecognised"/><attr format="reference" name="iconLargeLocationEnabled"/><attr format="reference" name="iconLargeLocationDisabled"/><attr format="reference" name="iconLargeServiceBlocked"/><attr format="reference" name="iconLargeFaceDefaultNotCaptured"/><attr format="reference" name="iconTutorialFace1"/><attr format="reference" name="iconTutorialFace2"/><attr format="reference" name="iconTutorialFace3"/><attr format="reference" name="iconPositionFaceDetected"/><attr format="reference" name="iconPositionFaceNotDetected"/><attr format="reference" name="iconPositionQrCodeDetected"/><attr format="reference" name="iconPositionQrCodeNotDetected"/><attr format="reference" name="iconStepsNotDone"/><attr format="reference" name="iconStepsFailure"/><attr format="reference" name="iconStepsSuccess"/><attr format="reference" name="iconListItemTick"/><attr format="reference" name="iconStepTutorialSelected"/><attr format="reference" name="iconStepTutorialNotSelected"/><attr format="reference" name="iconMenuHelp"/><attr format="reference" name="iconMenuBack"/><attr format="reference" name="iconMenuCancel"/><attr format="reference" name="iconArrowInfoLeft"/><attr format="reference" name="iconArrowInfoRight"/><attr format="reference" name="iconTryAgainAttemptDone"/><attr format="reference" name="iconTryAgainAttemptNotDone"/><attr format="string" name="capturePasswordRegexInfo"/><attr format="string" name="capturePinRegexInfo"/><attr format="reference" name="progressBar"/><attr format="reference" name="layoutFragment"/><attr format="reference" name="layoutDoubleButton"/><attr format="reference" name="layoutSingleButton"/><attr format="reference" name="layoutListStepItem"/><attr format="reference" name="layoutMSC"/><attr format="reference" name="layoutMSCInfo"/><attr format="reference" name="layoutBody"/><attr format="reference" name="layoutStepStatus"/></declare-styleable>
+    <declare-styleable name="WalletFragmentOptions"><attr format="enum" name="theme"><enum name="holo_dark" value="0"/><enum name="holo_light" value="1"/></attr><attr format="enum" name="environment"><enum name="production" value="1"/><enum name="sandbox" value="0"/><enum name="strict_sandbox" value="2"/></attr><attr format="reference" name="fragmentStyle"/><attr format="enum" name="fragmentMode"><enum name="buyButton" value="1"/><enum name="selectionDetails" value="2"/></attr></declare-styleable>
+    <declare-styleable name="WalletFragmentStyle"><attr format="dimension" name="buyButtonHeight"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="dimension" name="buyButtonWidth"><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr><attr format="enum" name="buyButtonText"><enum name="buy_with_google" value="1"/><enum name="buy_now" value="2"/><enum name="book_now" value="3"/></attr><attr format="enum" name="buyButtonAppearance"><enum name="classic" value="1"/><enum name="grayscale" value="2"/><enum name="monochrome" value="3"/></attr><attr format="reference" name="maskedWalletDetailsTextAppearance"/><attr format="reference" name="maskedWalletDetailsHeaderTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsBackground"/><attr format="reference" name="maskedWalletDetailsButtonTextAppearance"/><attr format="reference|color" name="maskedWalletDetailsButtonBackground"/><attr format="color" name="maskedWalletDetailsLogoTextColor"/><attr format="enum" name="maskedWalletDetailsLogoImageType"><enum name="classic" value="1"/><enum name="monochrome" value="2"/></attr></declare-styleable>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="app_margin_left">5dp</dimen>
+    <dimen name="app_margin_right">5dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="circular_progress_bar_height">140dp</dimen>
+    <dimen name="circular_progress_bar_width">140dp</dimen>
+    <dimen name="clickable_list_item_height">44dp</dimen>
+    <dimen name="cross_hairs_margin">70dp</dimen>
+    <dimen name="cross_hairs_min_size">300dp</dimen>
+    <dimen name="etis_button_height">48dp</dimen>
+    <dimen name="etis_font_content_height">16sp</dimen>
+    <dimen name="etis_font_count_down_height">150sp</dimen>
+    <dimen name="etis_font_description_height">14sp</dimen>
+    <dimen name="etis_font_pin_pad_medium_height">14sp</dimen>
+    <dimen name="etis_font_pin_pad_portrait_height">25sp</dimen>
+    <dimen name="etis_font_pin_pad_small_height">10sp</dimen>
+    <dimen name="etis_font_title_height">32sp</dimen>
+    <dimen name="etis_marging_10">10dp</dimen>
+    <dimen name="etis_marging_20">20dp</dimen>
+    <dimen name="etis_marging_44">44dp</dimen>
+    <dimen name="etis_marging_5">5dp</dimen>
+    <dimen name="font_content_height">16sp</dimen>
+    <dimen name="font_description_height">14sp</dimen>
+    <dimen name="font_title_height">32sp</dimen>
+    <dimen name="icon_captures_height">50dp</dimen>
+    <dimen name="icon_captures_width">50dp</dimen>
+    <dimen name="icon_large_height">100dp</dimen>
+    <dimen name="icon_medium_height">20dp</dimen>
+    <dimen name="icon_medium_width">36dp</dimen>
+    <dimen name="icon_small_height">10dp</dimen>
+    <dimen name="layout_double_button_height">126dp</dimen>
+    <dimen name="layout_single_button_height">@dimen/button_height</dimen>
+    <dimen name="layout_space_buttons">5dp</dimen>
+    <dimen name="line_spacing_content_height">5dp</dimen>
+    <dimen name="line_spacing_description_height">5dp</dimen>
+    <dimen name="line_spacing_title_height">5dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_medium">10dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_xlarge">30dp</dimen>
+    <dimen name="margin_xxlarge">44dp</dimen>
+    <dimen name="margin_xxxlarge">48dp</dimen>
+    <dimen name="min_width_pin_pad">300dp</dimen>
+    <dimen name="switch_item_height">25dp</dimen>
+    <dimen name="switch_item_width">25dp</dimen>
+    <dimen name="tapable_item_height">44dp</dimen>
+    <integer name="defaultTimeOut">20</integer>
+    <integer name="default_user_inactivity">600000</integer>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/custom-play-services-5.0.89/res/values/version.xml -->
+    <eat-comment/>
+    <integer name="google_play_services_version">5089000</integer>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <integer name="network_default_timeout">20</integer>
+    <integer name="passwordLengthMaximum">16</integer>
+    <integer name="passwordLengthMinimum">4</integer>
+    <item name="password_max_length" type="integer">20</item>
+    <integer name="pinLengthMaximum">10</integer>
+    <integer name="pinLengthMinimum">4</integer>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/core-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="account_type" translatable="false">morpho.etrust</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="action_exit">Exit</string>
+    <string name="action_help">Help</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_logout">Logout</string>
+    <string name="action_more_options">More Options</string>
+    <string name="action_settings">Settings</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="action_skip">Skip</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="activity_name">@string/launcher_name</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="app_locale">en</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Nequi</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="auth_token_label_full_access">Full access for the account</string>
+    <string name="auth_token_label_notification_only_access">Remote authentication request</string>
+    <string name="auth_token_label_read_only_access">Read only access for the account</string>
+    <string name="auth_token_label_unknown">Unknwon access requested</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="authenticate">Authenticate</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="authentication_failure_title">Authentication</string>
+    <string name="bubble_activation_message">To activate your account please enter your email address, activation code or scan a valid QR code.</string>
+    <string name="bubble_activation_title">Account activation</string>
+    <string name="bubble_authentication_face_message">Position the camera until your face has been detected. The white corners will turn green.</string>
+    <string name="bubble_authentication_face_title">Face image recognition</string>
+    <string name="bubble_authentication_password_message">Please enter your password.</string>
+    <string name="bubble_authentication_password_title">Password authentication selected</string>
+    <string name="bubble_enrol_password_message">Please enter your new password.</string>
+    <string name="bubble_enrol_password_title">Set password</string>
+    <string name="bubble_enrol_pin_code_message">Please enter your new pin code.</string>
+    <string name="bubble_enrol_pin_code_title">Set pin code</string>
+    <string name="button_accept">Accept</string>
+    <string name="button_accept_to_continue">ACCEPT TO CONTINUE</string>
+    <string name="button_activation_code_manually">ENTER ACTIVATION CODE MANUALLY</string>
+    <string name="button_add_Account">ADD ACCOUNT</string>
+    <string name="button_add_a_password">ADD A PASSWORD</string>
+    <string name="button_add_a_pin">ADD A PIN</string>
+    <string name="button_add_your_face">ADD YOUR FACE</string>
+    <string name="button_authorise_with_your">AUTHORISE WITH YOUR</string>
+    <string name="button_back">Back</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_cancel_registration">Cancel Registration</string>
+    <string name="button_confirm">CONFIRM</string>
+    <string name="button_continue">CONTINUE</string>
+    <string name="button_entry_manually">Manually</string>
+    <string name="button_exit">EXIT</string>
+    <string name="button_finish">FINISH</string>
+    <string name="button_finish_registration">FINISH REGISTRATION</string>
+    <string name="button_i_am_ready">I\'M READY</string>
+    <string name="button_localisation_settings">Settings</string>
+    <string name="button_next">NEXT</string>
+    <string name="button_next_step">NEXT STEP</string>
+    <string name="button_re_enter_qr_code">RE-ENTER CODE</string>
+    <string name="button_registration_later">REGISTER LATER</string>
+    <string name="button_registration_start">START REGISTRATION NOW</string>
+    <string name="button_rescan">Rescan</string>
+    <string name="button_restart">Continue</string>
+    <string name="button_retry">Retry</string>
+    <string name="button_see_tutorial">SEE THE TUTORIAL</string>
+    <string name="button_send_feedback">Report Error</string>
+    <string name="button_settings">GO TO SETTINGS</string>
+    <string name="button_skip">Skip</string>
+    <string name="button_start_face_registration">START FACE REGISTRATION</string>
+    <string name="button_start_registration">START REGISTRATION</string>
+    <string name="button_tell_me_why">TELL ME WHY</string>
+    <string name="button_try_again">TRY AGAIN</string>
+    <string name="button_update">Update</string>
+    <string name="button_verify">Verify</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/custom-play-services-5.0.89/res/values/common_strings.xml -->
+    <eat-comment/>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable Google Play services</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">This app won\'t work unless you enable Google Play services.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
+    <string name="common_google_play_services_error_notification_requested_by_msg">Requested by <ns1:g id="app_name">%1$s</ns1:g></string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Get Google Play services</string>
+    <string msgid="2122112764540849864" name="common_google_play_services_install_text_phone">This app won\'t run without Google Play services, which are missing from your phone.</string>
+    <string msgid="7351599665250191022" name="common_google_play_services_install_text_tablet">This app won\'t run without Google Play services, which are missing from your tablet.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Get Google Play services</string>
+    <string name="common_google_play_services_invalid_account_text">The specified account does not exist on this device. Please choose a different account.</string>
+    <string name="common_google_play_services_invalid_account_title">Invalid Account</string>
+    <string name="common_google_play_services_needs_enabling_title">An application requires Google Play services to be enabled.</string>
+    <string name="common_google_play_services_network_error_text">A data connection is required to connect to Google Play services.</string>
+    <string name="common_google_play_services_network_error_title">Network Error</string>
+    <string name="common_google_play_services_notification_needs_installation_title">An application requires installation of Google Play services.</string>
+    <string name="common_google_play_services_notification_needs_update_title">An application requires an update for Google Play services.</string>
+    <string name="common_google_play_services_notification_ticker">Google Play services error</string>
+    <string name="common_google_play_services_unknown_issue">Unknown issue with Google Play services.</string>
+    <string name="common_google_play_services_unsupported_date_text">The date on the device appears to be incorrect. Please check the date on the device.</string>
+    <string name="common_google_play_services_unsupported_text">Google Play services, which some of your applications rely on, is not supported by your device. Please contact the manufacturer for assistance.</string>
+    <string name="common_google_play_services_unsupported_title">Google Play services</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Update</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">This app won\'t run unless you update Google Play services.</string>
+    <string msgid="1788179980625863495" name="common_google_play_services_update_title">Update Google Play services</string>
+    <string name="common_signin_button_text">Sign in</string>
+    <string name="common_signin_button_text_long">Sign in with Google</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="csZbarScannerInstructions">Please point your camera at the QR code.</string>
+    <string name="csZbarScannerTitle">Scan QR Code</string>
+    <string name="error_message_authentication">Registration should be carried out first!</string>
+    <string name="error_message_error_authentication">Error in Authentication</string>
+    <string name="error_message_error_authentication1">Authentication was not completed</string>
+    <string name="error_message_registration">Something went wrong in the registration</string>
+    <string name="error_message_registration1">Registration was not completed</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="etis_sdk_version" translatable="false">2.1-RC01</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/core-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="feedback_app_url" translatable="false">https://etis.morpho.com</string>
+    <string name="feedback_piwik_id_site" translatable="false">1</string>
+    <string name="feedback_server_url" translatable="false">https://etis.morpho.com/piwik/piwik.php</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="hello_world">Hello world!</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="image_desc" translatable="false">Image description</string>
+    <string name="label_account_list_title">Select an account</string>
+    <string name="label_account_management_list_empty">No options</string>
+    <string name="label_account_management_list_item_biometric">Biometric</string>
+    <string name="label_account_management_list_item_devices">Devices</string>
+    <string name="label_account_management_list_item_pending_transactions">Pending transactions</string>
+    <string name="label_account_management_list_title">Account management</string>
+    <string name="label_activation_code">Activation code</string>
+    <string name="label_activation_credentials_success_description">Your QR code was processed successfully. You will be registered after our 3 minutes setup process.</string>
+    <string name="label_activation_credentials_success_screen_title">Activation</string>
+    <string name="label_activation_credentials_success_title">Great!</string>
+    <string name="label_activation_email">Email address</string>
+    <string name="label_activation_failure_title">Activation failure!</string>
+    <string name="label_activation_password">Password</string>
+    <string name="label_activation_password_repeat">Repeat password</string>
+    <string name="label_activation_process_title">Activation in progress…</string>
+    <string name="label_activation_success_title">Activation success!</string>
+    <string name="label_authentication_face_device_screen_title">Face verification</string>
+    <string name="label_authentication_face_move_your_face">Turn your face</string>
+    <string name="label_authentication_face_not_detected">Face not detected</string>
+    <string name="label_authentication_face_progress_bar_description">Please wait while we verify your face.</string>
+    <string name="label_authentication_face_server_screen_title">Face verification</string>
+    <string name="label_authentication_face_stay_there">Please wait</string>
+    <string name="label_authentication_face_tutorial_description">Hold the phone in front of you and turn your head left and right as shown in the animation above.</string>
+    <string name="label_authentication_face_tutorial_screen_title">Face verification</string>
+    <string name="label_authentication_face_tutorial_title">How to turn the face around</string>
+    <string name="label_authentication_failed">Authentication failed!</string>
+    <string name="label_authentication_failure_face_description">We weren\'t able to recognise your face. Check your lighting conditions and try again.</string>
+    <string name="label_authentication_failure_face_title">Face not recognised</string>
+    <string name="label_authentication_failure_last_chance_description_face">If you fail to authenticate your Face now, the service will be blocked!</string>
+    <string name="label_authentication_failure_last_chance_description_password">If you fail to enter the right Password, the service will be blocked!</string>
+    <string name="label_authentication_failure_last_chance_description_pin">If you fail to enter the right Pin, the service will be blocked!</string>
+    <string name="label_authentication_failure_no_tries">No tries remaining</string>
+    <string name="label_authentication_failure_password_description">The password you entered appears to be incorrect. Please try again.</string>
+    <string name="label_authentication_failure_password_title">Incorrect PASSWORD</string>
+    <string name="label_authentication_failure_pin_description">The number you entered appears to be incorrect. Please try again.</string>
+    <string name="label_authentication_failure_pin_title">Incorrect PIN</string>
+    <string name="label_authentication_failure_service_blocked_description">You can retry later</string>
+    <string name="label_authentication_failure_service_blocked_description_2_end">or wait for 24 hours</string>
+    <string name="label_authentication_failure_service_blocked_description_2_start">You can retry with your</string>
+    <string name="label_authentication_failure_service_blocked_title">Service blocked</string>
+    <string name="label_authentication_failure_tries">tries remaining</string>
+    <string name="label_authentication_failure_try_remaining">try remaining!</string>
+    <string name="label_authentication_failure_use_of_face_blocked">Use of Face blocked</string>
+    <string name="label_authentication_failure_use_of_password_blocked">Use of Password blocked</string>
+    <string name="label_authentication_failure_use_of_pin_blocked">Use of Pin blocked</string>
+    <string name="label_authentication_methods_face">Face</string>
+    <string name="label_authentication_moa_choice_description">You can now choose to authenticate with one of the next means of authentication to access this application.</string>
+    <string name="label_authentication_moa_choice_screen_title">Authentication</string>
+    <string name="label_authentication_moa_choice_title">Authentication</string>
+    <string name="label_authentication_moa_fail_screen_title_face">Face verification</string>
+    <string name="label_authentication_moa_fail_screen_title_password">Password verification</string>
+    <string name="label_authentication_moa_fail_screen_title_pin">Pin verification</string>
+    <string name="label_authentication_password_homomorphic_screen_title">Password verification</string>
+    <string name="label_authentication_password_progress_bar_description">Please wait while we verify your password.</string>
+    <string name="label_authentication_password_server_screen_title">Password verification</string>
+    <string name="label_authentication_pin_homomorphic_screen_title">Pin verification</string>
+    <string name="label_authentication_pin_progress_bar_description">Please wait while we verify your pin.</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="label_authentication_request_read_only_access">Launching authentication…</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="label_authentication_success_description">You are authenticated.</string>
+    <string name="label_authentication_success_screen_title">Authentication</string>
+    <string name="label_authentication_success_title">Great!</string>
+    <string name="label_authentication_successfull">Authentication Successful!</string>
+    <string name="label_capture_face_description">Hold the camera in front of your face</string>
+    <string name="label_capture_face_device_screen_title">Face registration</string>
+    <string name="label_capture_face_progress_bar_description">Please wait while we verify your face.</string>
+    <string name="label_capture_face_server_screen_title">Face registration</string>
+    <string name="label_capture_face_tutorial_1_description">Keep your phone in front of your face.\nWe don\'t need to see your nostrils.</string>
+    <string name="label_capture_face_tutorial_1_screen_title">Face registration</string>
+    <string name="label_capture_face_tutorial_2_description">Make sure that you are in a well lit place, and that the light source is NOT behind you.</string>
+    <string name="label_capture_face_tutorial_2_screen_title">Face registration</string>
+    <string name="label_capture_face_tutorial_3_description">Make sure there\'s only you in the frame of the photo.</string>
+    <string name="label_capture_face_tutorial_3_screen_title">Face registration</string>
+    <string name="label_capture_face_tutorial_screen_title">Face registration</string>
+    <string name="label_capture_face_welcome_description">We will take 3 photos of your face.\nMake sure to:</string>
+    <string name="label_capture_face_welcome_screen_title">Face registration</string>
+    <string name="label_capture_face_welcome_step_1">Have good lighting conditions</string>
+    <string name="label_capture_face_welcome_step_2">Be alone in the shot</string>
+    <string name="label_capture_face_welcome_step_3">Hold the phone at face level</string>
+    <string name="label_capture_face_welcome_step_4">Have natural face expression</string>
+    <string name="label_capture_face_welcome_step_5">Don\'t move during the shots</string>
+    <string name="label_capture_password_description_1">Your Password should be at least 4 characters including numbers and letters, no space and maximum 16 characters.</string>
+    <string name="label_capture_password_description_2">Please confirm your Password by entering it for the second time.</string>
+    <string name="label_capture_password_hint_1">Enter Password</string>
+    <string name="label_capture_password_hint_2">Re-enter Password</string>
+    <string name="label_capture_password_homomorphic_welcome_description">You will have to enter a password.\nMake sure to:</string>
+    <string name="label_capture_password_homomorphic_welcome_screen_title">Password registration</string>
+    <string name="label_capture_password_homomorphic_welcome_step_1">It has at least 4 characters</string>
+    <string name="label_capture_password_homomorphic_welcome_step_2">It must contains letters and numbers</string>
+    <string name="label_capture_password_homomorphic_welcome_step_3">It has a maximum length of 16 characters</string>
+    <string name="label_capture_password_progress_bar_description">Please wait while we enrol your PASSWORD</string>
+    <string name="label_capture_password_screen_title">Password registration</string>
+    <string name="label_capture_password_title_1">Enter Password</string>
+    <string name="label_capture_password_title_2">Re-enter Password</string>
+    <string name="label_capture_password_welcome_description">You will have to enter a password.\nMake sure to:</string>
+    <string name="label_capture_password_welcome_screen_title">Password registration</string>
+    <string name="label_capture_password_welcome_step_1">It has at least 4 characters</string>
+    <string name="label_capture_password_welcome_step_2">It must contains letters and numbers</string>
+    <string name="label_capture_password_welcome_step_3">It has a maximum length of 16 characters</string>
+    <string name="label_capture_pin_description_1">Your PIN must be between 4 and 10 numbers</string>
+    <string name="label_capture_pin_description_2">Please confirm your PIN by entering it for the second time.</string>
+    <string name="label_capture_pin_hint_1">Enter PIN</string>
+    <string name="label_capture_pin_hint_2">Re-enter your PIN</string>
+    <string name="label_capture_pin_homomorphic_welcome_description">You will have to enter a pin.\nMake sure to:</string>
+    <string name="label_capture_pin_homomorphic_welcome_screen_title">Pin registration</string>
+    <string name="label_capture_pin_homomorphic_welcome_step_1">It has at least 4 digits</string>
+    <string name="label_capture_pin_homomorphic_welcome_step_2">It has a maximum length of 10 numbers</string>
+    <string name="label_capture_pin_progress_bar_description">Please wait while we enrol your PIN</string>
+    <string name="label_capture_pin_screen_title">Pin registration</string>
+    <string name="label_capture_pin_title_1">Enter PIN</string>
+    <string name="label_capture_pin_title_2">Re-enter your PIN</string>
+    <string name="label_congratulations_enrollment_message">You have successfully completed the setup process!</string>
+    <string name="label_congratulations_title">Congratulations!</string>
+    <string name="label_connection_lost_description">We had a problem connecting to our servers. Please check your mobile connection, join a WiFi network and try again.</string>
+    <string name="label_connection_lost_description_end">to our servers. Please check your connection and try again.</string>
+    <string name="label_connection_lost_description_start">We had a problem delivering your</string>
+    <string name="label_connection_lost_screen_title">Connection lost</string>
+    <string name="label_connection_lost_screen_title_activation">Activation</string>
+    <string name="label_connection_lost_screen_title_face_registration">FACE registration</string>
+    <string name="label_connection_lost_screen_title_password_registration">PASSWORD registration</string>
+    <string name="label_connection_lost_screen_title_pin_registration">PIN registration</string>
+    <string name="label_connection_lost_title">Connection lost</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="label_create_account_request">Creating account…</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="label_credentials_success_title">Credentials verified!</string>
+    <string name="label_device_not_eligible_explanation_description">Your device does not support minimum required configuration to allow this service. Please consult service provider website for more information.</string>
+    <string name="label_device_not_eligible_explanation_screen_title">Activation</string>
+    <string name="label_device_not_eligible_screen_title">Activation</string>
+    <string name="label_device_not_eligible_title">Device not eligible</string>
+    <string name="label_empty_list_accounts">Accounts not available</string>
+    <string name="label_enrolment_failed">Enrol failed!</string>
+    <string name="label_enter_pin">Enter pin</string>
+    <string name="label_failure">Failure!</string>
+    <string name="label_hello">Hello </string>
+    <string name="label_init_msc">Loading camera…</string>
+    <string name="label_loading">Loading…</string>
+    <string name="label_localisation_message">Localisation is required for security reason to check unusual use of your device.\nBy denying Localisation the service won\'t be able to verify</string>
+    <string name="label_localisation_question_message">Allow localisation for fraud detection</string>
+    <string name="label_location_description">This app requires your location for security reasons.</string>
+    <string name="label_location_disabled_title">Location disabled</string>
+    <string name="label_location_enabled_title">Location enabled</string>
+    <string name="label_location_screen_title">Location</string>
+    <string name="label_manual_activation_description">Your identifier and activation code are printed under the QR code image</string>
+    <string name="label_manual_activation_hint_activation_code">Activation Code</string>
+    <string name="label_manual_activation_hint_server_address">Server address</string>
+    <string name="label_manual_activation_hint_user_id">User ID</string>
+    <string name="label_manual_activation_screen_title">Activation</string>
+    <string name="label_manual_activation_title">Activation Code</string>
+    <string name="label_none">None</string>
+    <string name="label_number_0" translatable="false">0</string>
+    <string name="label_number_1" translatable="false">1</string>
+    <string name="label_number_2" translatable="false">2</string>
+    <string name="label_number_3" translatable="false">3</string>
+    <string name="label_number_4" translatable="false">4</string>
+    <string name="label_number_5" translatable="false">5</string>
+    <string name="label_number_6" translatable="false">6</string>
+    <string name="label_number_7" translatable="false">7</string>
+    <string name="label_number_8" translatable="false">8</string>
+    <string name="label_number_9" translatable="false">9</string>
+    <string name="label_of">of</string>
+    <string name="label_or">or</string>
+    <string name="label_purpose_of_request_description">To access your APP account you need to authenticate with your face</string>
+    <string name="label_purpose_of_request_screen_title">Authentication</string>
+    <string name="label_purpose_of_request_title">Purpose of request</string>
+    <string name="label_qr_code_failure_screen_title">Activation</string>
+    <string name="label_qr_code_failure_title">Code was not recognised</string>
+    <string name="label_registration_activation_process_screen_title">Activation</string>
+    <string name="label_registration_authentication_face_tutorial_screen_title">Face registration</string>
+    <string name="label_registration_authentication_fail_description"/>
+    <string name="label_registration_authentication_fail_screen_title">Face verification</string>
+    <string name="label_registration_authentication_fail_title">Verification failed</string>
+    <string name="label_registration_face_success_info_description">Let\'s test the registration by verifying your face once. After you\'re ready turn your face left.</string>
+    <string name="label_registration_face_success_info_screen_title">Face registration</string>
+    <string name="label_registration_face_success_info_title">Verify registration</string>
+    <string name="label_registration_moa_choice_description">You can now choose to register one of the next means of authentication for further authentication use.</string>
+    <string name="label_registration_moa_choice_screen_title">Registration</string>
+    <string name="label_registration_moa_choice_title">Registration</string>
+    <string name="label_registration_moa_fail_description_face">Check your lighting conditions, and look directly to the camera.</string>
+    <string name="label_registration_moa_fail_description_password">The password you reentered differs from the one you first entered. Please try again to create a new password.</string>
+    <string name="label_registration_moa_fail_description_pin">The PIN you reentered differs from the one you first entered. Please try again to create a new PIN.</string>
+    <string name="label_registration_moa_fail_screen_title_face">Face registration</string>
+    <string name="label_registration_moa_fail_screen_title_password">Password registration</string>
+    <string name="label_registration_moa_fail_screen_title_pin">Pin registration</string>
+    <string name="label_registration_moa_fail_title_face">Face NOT captured</string>
+    <string name="label_registration_moa_fail_title_password">Incorrect Password</string>
+    <string name="label_registration_moa_fail_title_pin">Incorrect PIN</string>
+    <string name="label_registration_success_description">You successfully completed registration.</string>
+    <string name="label_registration_success_description_1">You successfully completed</string>
+    <string name="label_registration_success_description_2">registration.</string>
+    <string name="label_registration_success_description_3_face">You can add your face now if you wish.</string>
+    <string name="label_registration_success_description_3_password">You can add a password now if you wish.</string>
+    <string name="label_registration_success_description_3_pin">You can add a pin now if you wish.</string>
+    <string name="label_registration_success_progress_bar_description">Please wait while we finish your registration</string>
+    <string name="label_registration_success_screen_title">Registration</string>
+    <string name="label_registration_success_title">Great!</string>
+    <string name="label_repeat_pin">Repeat pin</string>
+    <string name="label_retrieving_info_process_description">Retrieving info from server…</string>
+    <string name="label_retrieving_info_process_screen_title">Authentication</string>
+    <string name="label_retrieving_info_title">Retrieving account info…</string>
+    <string name="label_scan_passport_screen_title">Passport</string>
+    <string name="label_scan_passport_to_proceed">Scan the Passport to proceed</string>
+    <string name="label_scan_qr_code_screen_title">Activation</string>
+    <string name="label_scan_qr_code_to_proceed">Scan the QR Code to proceed</string>
+    <string name="label_welcome_registration_description">To start registration you will need</string>
+    <string name="label_welcome_registration_screen_title">Registration</string>
+    <string name="label_welcome_registration_title">Hello,</string>
+    <string name="label_welcome_step_1">Good lighting conditions</string>
+    <string name="label_welcome_step_2">Privacy</string>
+    <string name="label_welcome_step_3">2 minutes of your time</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="management">Account management</string>
+    <string name="message_authentication">Successful Authentication </string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/core-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="message_feedback_dont_know" translatable="false">I don\'t know</string>
+    <string name="message_feedback_face_bright_sunlight" translatable="false">Bright sunlight</string>
+    <string name="message_feedback_face_failure_physical" translatable="false">My physical appearance changed</string>
+    <string name="message_feedback_face_failure_poor_conditions" translatable="false">Low light conditions</string>
+    <string name="message_feedback_face_multiple_faces" translatable="false">Multiple faces</string>
+    <string name="message_feedback_face_successfull_not_face" translatable="false">It\'s not a face</string>
+    <string name="message_feedback_its_not_me" translatable="false">It\'s not me</string>
+    <string name="message_feedback_its_not_me_my_twin" translatable="false"> It\'s not me but my twin</string>
+    <string name="message_feedback_other" translatable="false">Other</string>
+    <string name="message_feedback_voice_failure_poor_conditions" translatable="false">Noisy environment</string>
+    <string name="message_feedback_voice_foreign_country" translatable="false">Voice from a foreign country people</string>
+    <string name="message_feedback_voice_many_people_speaking" translatable="false">Many people speaking</string>
+    <string name="message_feedback_voice_modified" translatable="false">Voice modified</string>
+    <string name="message_feedback_voice_not_correct_sentence" translatable="false">Not the correct sentence</string>
+    <string name="message_feedback_voice_successfull_not_voice" translatable="false">It\'s not a voice</string>
+    <string name="message_feedback_voice_synthetic_voice" translatable="false">It\'s a synthetic voice</string>
+    <string name="message_feedback_voice_too_low" translatable="false">Voice too low</string>
+    <string name="message_label_failed_tree_times" translatable="false">Failed 3 times</string>
+    <string name="message_label_preferred_mode_not_working" translatable="false">Preferred mode not working</string>
+    <string name="message_label_system_error" translatable="false">System error</string>
+    <string name="message_label_unknown" translatable="false">System error</string>
+    <string name="message_label_wrongly_authenticated" translatable="false">Wrongly authenticated</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="message_registration">Successful Registration</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="moa_face">FACE</string>
+    <string name="moa_password">PASSWORD</string>
+    <string name="moa_pin_pad">PIN</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/core-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="network_type_unknown" translatable="false">UNKNOWN</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="password_policy">(?=.*[0-9a-zA-Z]).{4,16}$</string>
+    <string name="pin_policy">(?=.*[0-9]).{4,10}$</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/default_minimum_settings.xml -->
+    <eat-comment/>
+    <string name="pref_default_account_label" translatable="false">Morpho eTIS</string>
+    <string name="pref_default_account_type" translatable="false">morpho.etis.sample</string>
+    <string name="pref_default_client_id" translatable="false">2bb81405-1bbc-499a-aff4-c41bf0801f7d</string>
+    <string name="pref_default_front_app_provider_url" translatable="false"/>
+    <string name="pref_default_gcm_provider" translatable="false">GCM</string>
+    <string name="pref_default_gcm_sender_id" translatable="false">130427858015</string>
+    <string name="pref_default_identity_provider_url" translatable="false"/>
+    <string name="pref_default_log_piwik_id_site" translatable="false">1</string>
+    <string name="pref_default_log_server_url" translatable="false">https://etis.preprod.morpho.com/piwik/piwik.php</string>
+    <string name="pref_default_service_provider" translatable="false">ba91218f-fb79-4711-acde-423e5ee999fe</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/core-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="recognition_token_face" translatable="false">face</string>
+    <string name="recognition_token_password" translatable="false">password</string>
+    <string name="recognition_token_voice" translatable="false">voice</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="register">Register</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="registration_tutorial_section_1">Tutorial 1</string>
+    <string name="registration_tutorial_section_2">Tutorial 2</string>
+    <string name="registration_tutorial_section_3">Tutorial 3</string>
+    <string name="registration_tutorial_section_4">Tutorial 4</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/hardware-nfc-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="response_address_range_exceeded" translatable="false">Address range exceeded</string>
+    <string name="response_ask_or_give_random_not_executed" translatable="false">Ask or give random not executed</string>
+    <string name="response_authentication_failed" translatable="false">Authentication failed</string>
+    <string name="response_authentication_method_blocked" translatable="false">Authentication method blocked</string>
+    <string name="response_class_not_supported" translatable="false">Class not supported</string>
+    <string name="response_command_aborted" translatable="false">Command aborted</string>
+    <string name="response_command_incompatible_with_file_structure" translatable="false">Command not compatible with file structure</string>
+    <string name="response_command_not_allowed" translatable="false">Command not allowed</string>
+    <string name="response_command_not_allowed_ef_not_selected" translatable="false">Command not allowed EF not selected</string>
+    <string name="response_command_not_supported" translatable="false">Command not supported</string>
+    <string name="response_data_maybe_erroneous" translatable="false">Data maybe erroneus</string>
+    <string name="response_execution_error_icc" translatable="false">Execution error ICC</string>
+    <string name="response_execution_error_ifd" translatable="false">Execution error IFD</string>
+    <string name="response_execution_stoped" translatable="false">Execution stoped</string>
+    <string name="response_expected_secure_messages_data_objetcs_missing" translatable="false">Expected secure messages data objects missing</string>
+    <string name="response_failed" translatable="false">Response failed</string>
+    <string name="response_fci_format_error" translatable="false">FCI format error</string>
+    <string name="response_fewer_bytes_readed_than_specified" translatable="false">Fewer bytes readed than specified</string>
+    <string name="response_fid_not_found" translatable="false">FID not found</string>
+    <string name="response_file_not_found" translatable="false">File not found</string>
+    <string name="response_function_not_suported" translatable="false">Function not supported</string>
+    <string name="response_functions_not_supported" translatable="false">Functions not supported</string>
+    <string name="response_incorrect_parametes" translatable="false">Incorrect parameters P1 or P2</string>
+    <string name="response_incorrect_parametes_data_portion" translatable="false">Incorrect parameters data portion</string>
+    <string name="response_incorrect_parametes_general" translatable="false">Incorrect parameters general</string>
+    <string name="response_increase_or_decrease_limit_exceeded" translatable="false">Increase or decrease limit exceeded</string>
+    <string name="response_insufficient_memory" translatable="false">Insufficient memory</string>
+    <string name="response_lc_inconsistent_with_p1_p2" translatable="false">Lc incosistent with p1 or p2</string>
+    <string name="response_lc_inconsistent_with_tlv" translatable="false">Lc incosistent with TLV</string>
+    <string name="response_logical_channels_not_supported" translatable="false">Logical channels not supported</string>
+    <string name="response_memory_error" translatable="false">Memory error</string>
+    <string name="response_no_ef_selected" translatable="false">No EF selected</string>
+    <string name="response_no_error" translatable="false">No error</string>
+    <string name="response_no_information" translatable="false">No information</string>
+    <string name="response_no_pin_defined" translatable="false">No pin defined</string>
+    <string name="response_not_supported" translatable="false">Not supported</string>
+    <string name="response_pin_verification_not_successfully" translatable="false">Pin verification not successfully</string>
+    <string name="response_record_not_found" translatable="false">Record not found</string>
+    <string name="response_referenced_data_invalidated" translatable="false">Referenced data invalidated</string>
+    <string name="response_referenced_data_not_found" translatable="false">Referenced data not found</string>
+    <string name="response_requested_information_not_available" translatable="false">Requested information not available</string>
+    <string name="response_secure_messages_data_objetcs_incorrect" translatable="false">Secure messages data objects incorrect</string>
+    <string name="response_secure_messaging_not_supported" translatable="false">Secure messaging not supported</string>
+    <string name="response_security_state_not_satisfied" translatable="false">Security state not satisfied</string>
+    <string name="response_selected_file_invalidated" translatable="false">Selected file invalidated</string>
+    <string name="response_selected_file_type_doesnt_match_command" translatable="false">Selected file type doesn\'t match command</string>
+    <string name="response_unexpected_length" translatable="false">Unexpected length</string>
+    <string name="response_unexpected_value" translatable="false">Unexpected value</string>
+    <string name="response_usage_conditions_not_satisfied" translatable="false">Usage conditions not satisfied</string>
+    <string name="response_writing_eeprom_not_successfully" translatable="false">Writing eeprom not successfully</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="restart_face_registration">RESTART FACE REGISTRATION</string>
+    <string name="switch_accept">I accept</string>
+    <string name="tab_face">Face</string>
+    <string name="tab_password">Password</string>
+    <string name="tab_pin_pad">Pin pad</string>
+    <string name="tab_warning">Warning</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/core-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="temp_file_dir" translatable="false">Etis</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="theme_version" translatable="false">Theme version 1</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_entry">Morpho eTIS Getting Started</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_my_app">Morpho eTIS Getting Started</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="title_activity_registration_tutorial">RegistrationTutorial</string>
+    <string name="url_analytics">mid-device-analytics-service-2.0-SNAPSHOT/</string>
+    <string name="url_front_app">mid-front-app/</string>
+    <string name="url_idp">mid-idp/idp/</string>
+    <string name="url_pattern">https?://[\\w\\.]+:?[\\d]*/([\\w\\.]+/{1})*</string>
+    <string name="use_dummy_data">Use dummy data</string>
+    <string name="verificationblocked">You can retry in 24 hours</string>
+    <string name="verificationfailed">Your face verification has failed, please restart face registration process</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/custom-play-services-5.0.89/res/values/wallet_strings.xml -->
+    <eat-comment/>
+    <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <string name="warning_camera_portrait">Orientation mode is not supported</string>
+    <string name="warning_check_legal_agreement">You must accept the legal agreement.</string>
+    <string name="warning_message_authentication_authorize_response_empty">Authorize response empty</string>
+    <string name="warning_message_authentication_device_not_eligible">Device not eligible</string>
+    <string name="warning_message_authentication_device_unavailable">Device unavailable</string>
+    <string name="warning_message_authentication_error">There was an error with the authentication process.</string>
+    <string name="warning_message_authentication_error_unknown">Unknown error</string>
+    <string name="warning_message_cancel_rest_operation">Are you sure that you want to cancel?</string>
+    <string name="warning_message_cancel_transaction">Are you sure you want to cancel this transaction?</string>
+    <string name="warning_message_email_is_not_valid">Not a valid email address</string>
+    <string name="warning_message_error_activation_code_incorrect">Activation code incorrect</string>
+    <string name="warning_message_error_activation_failure">Activation failure</string>
+    <string name="warning_message_error_application_not_found">Application not found</string>
+    <string name="warning_message_error_device_authenticator_error">Your device is not eligible for this service</string>
+    <string name="warning_message_error_device_authenticator_illegal_state">Device authenticator illegal state</string>
+    <string name="warning_message_error_device_authenticator_init_failure">Device authenticator init failure</string>
+    <string name="warning_message_error_device_authenticator_key_gen_failure">Device authenticator key gen failure</string>
+    <string name="warning_message_error_device_authenticator_process_failure">Device authenticator process failure</string>
+    <string name="warning_message_error_device_not_found">Device not found</string>
+    <string name="warning_message_error_device_registration_failure">Device registration failure</string>
+    <string name="warning_message_error_enroling_face">Please repeat face image acquisition</string>
+    <string name="warning_message_error_enroling_voice">Please repeat voice acquisition</string>
+    <string name="warning_message_error_enroll_failure">Enroll failure</string>
+    <string name="warning_message_error_enroll_insufficient_sample">Enroll insufficient sample</string>
+    <string name="warning_message_error_enroll_sample_rejected">Enroll sample rejected</string>
+    <string name="warning_message_error_face_not_match">Face not match</string>
+    <string name="warning_message_error_face_processing_failure">Face not recognised</string>
+    <string name="warning_message_error_forbidden_moa">Forbidden MOA</string>
+    <string name="warning_message_error_in_activation">There was an error during the activation process. Please check your credentials and the network connectivity</string>
+    <string name="warning_message_error_invalid_operation_status">Invalid Registration operation status</string>
+    <string name="warning_message_error_means_of_authentication_empty">Means of authentication not configured</string>
+    <string name="warning_message_error_means_of_authentication_invalid">Means of authentication not invalid</string>
+    <string name="warning_message_error_moa_not_enrolled">MOA not enrolled</string>
+    <string name="warning_message_error_no_pending_verification">No pending verification</string>
+    <string name="warning_message_error_password_incorrect">Password incorrect</string>
+    <string name="warning_message_error_person_not_found">Person not found</string>
+    <string name="warning_message_error_qr_code_invalid">Qr code invalid</string>
+    <string name="warning_message_error_remote_exception">Remote exception</string>
+    <string name="warning_message_error_request_validation_failure">Request validation failure</string>
+    <string name="warning_message_error_unknown_operation_id">Unknown operation ID</string>
+    <string name="warning_message_error_verification_failure">Verification failure</string>
+    <string name="warning_message_exit_app">Are you sure you want to exit?</string>
+    <string name="warning_message_link_error">There was an error linking the device.</string>
+    <string name="warning_message_logout">Are you sure that you want to logout?</string>
+    <string name="warning_message_moa_locked">Verification failure count (liveness) exceeded max number of retries</string>
+    <string name="warning_message_moa_verification_blocked">Verification failure count (matching and liveness) exceeded max number of retries</string>
+    <string name="warning_message_need_to_reauthenticate">Please authenticate again</string>
+    <string name="warning_message_network_error">There was an error with the network.</string>
+    <string name="warning_message_network_session_timeout">Your session has expired</string>
+    <string name="warning_message_password_invalid">Required characters missing</string>
+    <string name="warning_message_passwords_are_not_equals_or_are_empty">Passwords are required and must be equal</string>
+    <string name="warning_message_pin_invalid">Pins must contain between 4 and 10 characters and match</string>
+    <string name="warning_message_remove_account">Are you sure that you want to remove the account?</string>
+    <string name="warning_message_remove_authentication_method">Are you sure you want to remove this authentication method?</string>
+    <string name="warning_message_server_unavailable">The server is not available, please try again in a few minutes.</string>
+    <string name="warning_message_server_url_is_not_valid">Not a valid server address</string>
+    <string name="warning_message_unauthorize">Session timeout</string>
+    <string name="warning_message_unlink_device">Unlink this device from your account?</string>
+    <string name="warning_message_update_device_error">There was an error updating the device.</string>
+    <string name="warning_message_url_morpho">Visit Morpho web page?</string>
+    <string name="warning_message_url_validation">Not a valid URL, please check the syntax</string>
+    <string name="warning_session_expired">Your session has expired</string>
+    <string name="warning_title_dialog">Warning</string>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+
+
+    </style>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Button" parent="android:Widget.Button">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textColor">@color/color_font_white</item>
+        <item name="android:textSize">@dimen/font_content_height</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">@dimen/margin_large</item>
+    </style>
+    <style name="Button_Pin_Pad_Negative_Small_Style" parent="Button_Pin_Pad_Negative_Style">
+        <item name="android:textSize">@dimen/etis_font_pin_pad_small_height</item>
+    </style>
+    <style name="Button_Pin_Pad_Negative_Style" parent="Button_Pin_Pad_Style">
+        <item name="android:src">@drawable/ic_remove</item>
+    </style>
+    <style name="Button_Pin_Pad_Neutral_Small_Style" parent="Button_Pin_Pad_Neutral_Style">
+        <item name="android:textSize">@dimen/etis_font_pin_pad_small_height</item>
+    </style>
+    <style name="Button_Pin_Pad_Neutral_Style" parent="Button_Pin_Pad_Style">
+
+    </style>
+    <style name="Button_Pin_Pad_Positive_Small_Style" parent="Button_Pin_Pad_Positive_Style">
+        <item name="android:textSize">@dimen/etis_font_pin_pad_small_height</item>
+    </style>
+    <style name="Button_Pin_Pad_Positive_Style" parent="Button_Pin_Pad_Style">
+        <item name="android:src">@drawable/ic_arrow_forward</item>
+    </style>
+    <style name="Button_Pin_Pad_Style" parent="Button">
+        <item name="android:background">@drawable/positive_pin_pad_button</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+
+        <item name="android:textSize">@dimen/etis_font_pin_pad_portrait_height</item>
+    </style>
+    <style name="CaptureFaceCountDownText" parent="android:Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textSize">@dimen/etis_font_count_down_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_other_4</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="CircularProgressBar" parent="Widget.ProgressBar.CircularProgressBar">
+        <item name="hasShadow">false</item>
+        <item name="strokeWidth">7dp</item>
+        <item name="android:max">100</item>
+        <item name="showPercentage">false</item>
+    </style>
+    <style name="Content_Text" parent="android:Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/font_content_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_font_dark</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="Content_Tutorial_Text" parent="Content_Text">
+        <item name="android:layout_marginTop">@dimen/margin_xxxlarge</item>
+    </style>
+    <style name="Description_Text" parent="android:Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/font_description_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_font_dark</item>
+    </style>
+    <style name="EtisActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/color_background</item>
+        <item name="android:textColor">@color/color_font_dark</item>
+    </style>
+    <style name="Icon" parent="android:Widget">
+    </style>
+    <style name="IconArrowLeft" parent="Icon">
+        <item name="android:src">@drawable/ic_arrow_l</item>
+    </style>
+    <style name="IconArrowRigth" parent="Icon">
+        <item name="android:src">@drawable/ic_arrow_r</item>
+    </style>
+    <style name="IconFaceSuccessTick" parent="Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_green_check_white</item>
+    </style>
+    <style name="IconLarge" parent="Icon">
+        <item name="android:layout_height">@dimen/icon_large_height</item>
+        <item name="android:layout_marginBottom">@dimen/margin_xlarge</item>
+    </style>
+    <style name="IconLargeConnectionLost" parent="IconLarge">
+        <item name="android:src">@drawable/ic_connection_lost</item>
+    </style>
+    <style name="IconLargeDevice" parent="IconLarge">
+        <item name="android:src">@drawable/ic_android_version</item>
+    </style>
+    <style name="IconLargeDeviceNotEligible" parent="IconLarge">
+        <item name="android:src">@drawable/ic_device_not_eligible</item>
+    </style>
+    <style name="IconLargeFaceDefaultNotCaptured" parent="IconLarge">
+        <item name="android:src">@drawable/face_not_captured</item>
+    </style>
+    <style name="IconLargeFaceInfo" parent="IconLarge">
+        <item name="android:src">@drawable/ic_face_blue</item>
+    </style>
+    <style name="IconLargeFaceNotCaptured" parent="IconLarge">
+        <item name="android:src">@drawable/ic_camera_x</item>
+    </style>
+    <style name="IconLargeFaceNotRecognised" parent="IconLarge">
+        <item name="android:src">@drawable/ic_face_not_recognised</item>
+    </style>
+    <style name="IconLargeLocationDisabled" parent="IconLarge">
+        <item name="android:src">@drawable/ic_location_red</item>
+    </style>
+    <style name="IconLargeLocationEnabled" parent="IconLarge">
+        <item name="android:src">@drawable/ic_location_blue</item>
+    </style>
+    <style name="IconLargeQrCodeNotRecognised" parent="IconLarge">
+        <item name="android:src">@drawable/ic_qr_not_recognized</item>
+    </style>
+    <style name="IconLargeQrCodeRecognised" parent="IconLarge">
+        <item name="android:src">@drawable/ic_qr_ok</item>
+    </style>
+    <style name="IconLargeServiceBlocked" parent="IconLarge">
+        <item name="android:src">@drawable/ic_device_not_eligible</item>
+    </style>
+    <style name="IconLargeSuccessTick" parent="IconLarge">
+        <item name="android:src">@drawable/ic_green_check</item>
+    </style>
+    <style name="IconLargeVerificationFaceFailed" parent="IconLarge">
+        <item name="android:src">@drawable/ic_face_not_verified</item>
+    </style>
+    <style name="IconLargeVerificationFaceSuccess" parent="IconLarge">
+        <item name="android:src">@drawable/ic_face_verified</item>
+    </style>
+    <style name="IconLargeVerificationPasswordFailed" parent="IconLarge">
+        <item name="android:src">@drawable/ic_password_incorrect</item>
+    </style>
+    <style name="IconLargeVerificationPasswordSuccess" parent="IconLarge">
+        <item name="android:src">@drawable/ic_password_correct</item>
+    </style>
+    <style name="IconLargeVerificationPinFailed" parent="IconLarge">
+        <item name="android:src">@drawable/ic_pin_incorrect</item>
+    </style>
+    <style name="IconLargeVerificationPinSuccess" parent="IconLarge">
+        <item name="android:src">@drawable/ic_pin_correct</item>
+    </style>
+    <style name="IconListItemTick" parent="Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_small_green_check</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/margin_small</item>
+    </style>
+    <style name="IconMenu" parent="Icon">
+    </style>
+    <style name="IconMenuBack" parent="IconMenu">
+        <item name="android:src">@drawable/ic_menu_back</item>
+    </style>
+    <style name="IconMenuCancel" parent="IconMenu">
+        <item name="android:src">@drawable/ic_menu_close</item>
+    </style>
+    <style name="IconMenuHelp" parent="IconMenu">
+        <item name="android:src">@drawable/ic_menu_help</item>
+    </style>
+    <style name="IconPositionFaceDetected" parent="Icon">
+        <item name="android:src">@drawable/ic_face_outline_green</item>
+    </style>
+    <style name="IconPositionFaceNotDetected" parent="Icon">
+        <item name="android:src">@drawable/ic_face_outline</item>
+    </style>
+    <style name="IconPositionQrCodeDetected" parent="Icon">
+        <item name="android:src">@drawable/ic_qr_code_bounds_green</item>
+    </style>
+    <style name="IconPositionQrCodeNotDetected" parent="Icon">
+        <item name="android:src">@drawable/ic_qr_code_bounds_white</item>
+    </style>
+    <style name="IconStepTutorialNotSelected" parent="Icon">
+        <item name="android:src">@drawable/ic_off</item>
+    </style>
+    <style name="IconStepTutorialSelected" parent="Icon">
+        <item name="android:src">@drawable/ic_on</item>
+    </style>
+    <style name="IconStepsFailure" parent="Icon">
+        <item name="android:src">@drawable/ic_progress_red</item>
+    </style>
+    <style name="IconStepsNotDone" parent="Icon">
+        <item name="android:src">@drawable/ic_progress_grey</item>
+    </style>
+    <style name="IconStepsSuccess" parent="Icon">
+        <item name="android:src">@drawable/ic_progress_blue</item>
+    </style>
+    <style name="IconTryAgainAttemptDone" parent="Icon">
+        <item name="android:layout_marginRight">@dimen/margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:src">@drawable/ic_try_red</item>
+    </style>
+    <style name="IconTryAgainAttemptNotDone" parent="Icon">
+        <item name="android:layout_marginRight">@dimen/margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small</item>
+        <item name="android:src">@drawable/ic_try_grey</item>
+    </style>
+    <style name="IconTutorialFace1" parent="Icon">
+        <item name="android:layout_marginTop">@dimen/margin_xxxlarge</item>
+        <item name="android:src">@drawable/ic_tutorial_1</item>
+    </style>
+    <style name="IconTutorialFace2" parent="Icon">
+        <item name="android:layout_marginTop">@dimen/margin_xxxlarge</item>
+        <item name="android:src">@drawable/ic_tutorial_2</item>
+    </style>
+    <style name="IconTutorialFace3" parent="Icon">
+        <item name="android:layout_marginTop">@dimen/margin_xxxlarge</item>
+        <item name="android:src">@drawable/ic_tutorial_3</item>
+    </style>
+    <style name="LayoutBody" parent="android:Widget">
+        <item name="android:paddingLeft">@dimen/margin_large</item>
+        <item name="android:paddingRight">@dimen/margin_large</item>
+
+    </style>
+    <style name="LayoutDoubleButton" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_double_button_height</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/color_background</item>
+    </style>
+    <style name="LayoutFragment" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_background</item>
+    </style>
+    <style name="LayoutListStepItem" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+    </style>
+    <style name="LayoutMSC" parent="android:Widget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/color_other_5</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <style name="LayoutMSCInfo" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_double_button_height</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/color_background</item>
+    </style>
+    <style name="LayoutSingleButton" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/layout_single_button_height</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="LayoutStepStatus" parent="android:Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+        <item name="android:layout_marginBottom">@dimen/margin_large</item>
+    </style>
+    <style name="MoaButton" parent="android:Widget.Button">
+        <item name="android:layout_width">@dimen/icon_large_height</item>
+        <item name="android:layout_height">@dimen/icon_large_height</item>
+        <item name="android:textColor">@color/color_font_dark</item>
+        <item name="android:textSize">@dimen/font_content_height</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:drawablePadding">@dimen/margin_small</item>
+        <item name="android:layout_marginLeft">@dimen/margin_xlarge</item>
+        <item name="android:layout_marginRight">@dimen/margin_xlarge</item>
+
+    </style>
+    <style name="MoaFaceButton" parent="MoaButton">
+        <item name="android:drawableTop">@drawable/ic_face_blue</item>
+        <item name="android:text">@string/moa_face</item>
+    </style>
+    <style name="MoaPasswordButton" parent="MoaButton">
+        <item name="android:drawableTop">@drawable/ic_password_blue</item>
+        <item name="android:text">@string/moa_password</item>
+    </style>
+    <style name="MoaPinButton" parent="MoaButton">
+        <item name="android:drawableTop">@drawable/ic_pin_blue</item>
+        <item name="android:text">@string/moa_pin_pad</item>
+    </style>
+    <style name="Morpho" parent="MorphoBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. --> 
+
+        <!-- New Etis theme-->
+        <item name="themeVersion">@string/theme_version</item>
+
+        <!-- Switch -->
+        <item name="switchPositive">@style/Positive_Switch</item>
+
+        <!-- Buttons -->
+        <item name="positiveButton">@style/Positive_Button</item>
+        <item name="negativeButton">@style/Negative_Button</item>
+        <item name="neutralButton">@style/Neutral_Button</item>
+
+        <item name="buttonPinPadNeutralStyle">@style/Button_Pin_Pad_Neutral_Style</item>
+        <item name="buttonPinPadNegativeStyle">@style/Button_Pin_Pad_Negative_Style</item>
+        <item name="buttonPinPadPositiveStyle">@style/Button_Pin_Pad_Positive_Style</item>
+
+        <item name="buttonPinPadNeutralSmallStyle">@style/Button_Pin_Pad_Neutral_Small_Style</item>
+        <item name="buttonPinPadNegativeSmallStyle">@style/Button_Pin_Pad_Negative_Small_Style</item>
+        <item name="buttonPinPadPositiveSmallStyle">@style/Button_Pin_Pad_Positive_Small_Style</item>
+
+        <!-- Textfields -->
+        <item name="titleText">@style/Title_Text</item>
+        <item name="contentText">@style/Content_Text</item>
+        <item name="descriptionText">@style/Description_Text</item>
+
+        <item name="contentTutorialText">@style/Content_Tutorial_Text</item>
+        <item name="captureFaceCountDownText">@style/CaptureFaceCountDownText</item>
+
+        <!-- Image buttons -->
+        <item name="moaPinButton">@style/MoaPinButton</item>
+        <item name="moaPasswordButton">@style/MoaPasswordButton</item>
+        <item name="moaFaceButton">@style/MoaFaceButton</item>
+
+        <!-- List mStepsSatus -->
+        <item name="welcomeSteps">@array/welcome_steps</item>
+        <item name="captureFaceWelcomeRegistrationSteps">@array/capture_face_welcome_registration_steps</item>
+        <item name="capturePasswordHomomorphicWelcomeRegistrationSteps">@array/capture_password_homomorphic_welcome_registration_steps</item>
+        <item name="capturePinHomomorphicWelcomeRegistrationSteps">@array/capture_pin_homomorphic_welcome_registration_steps</item>
+        <item name="capturePasswordWelcomeRegistrationSteps">@array/capture_password_welcome_registration_steps</item>
+        <item name="serviceBlockedSteps">@array/service_blocked_steps</item>
+
+
+
+        <!-- Icons -->
+        <item name="iconLargeSuccessTick">@style/IconLargeSuccessTick</item>
+        <item name="iconLargeConnectionLost">@style/IconLargeConnectionLost</item>
+        <item name="iconLargeDeviceNotEligible">@style/IconLargeDeviceNotEligible</item>
+        <item name="iconLargeDevice">@style/IconLargeDevice</item>
+        <item name="iconLargeQrCodeNotRecognised">@style/IconLargeQrCodeNotRecognised</item>
+        <item name="iconLargeQrCodeRecognised">@style/IconLargeQrCodeRecognised</item>
+        <item name="iconLargeVerificationFaceFailed">@style/IconLargeVerificationFaceFailed</item>
+        <item name="iconLargeVerificationPinFailed">@style/IconLargeVerificationPinFailed</item>
+        <item name="iconLargeVerificationPasswordFailed">@style/IconLargeVerificationPasswordFailed</item>
+        <item name="iconLargeVerificationFaceSuccess">@style/IconLargeVerificationFaceSuccess</item>
+        <item name="iconLargeVerificationPinSuccess">@style/IconLargeVerificationPinSuccess</item>
+        <item name="iconLargeVerificationPasswordSuccess">@style/IconLargeVerificationPasswordSuccess</item>
+        <item name="iconLargeFaceInfo">@style/IconLargeFaceInfo</item>
+        <item name="iconLargeFaceDefaultNotCaptured">@style/IconLargeFaceDefaultNotCaptured</item>
+        <item name="iconLargeFaceNotCaptured">@style/IconLargeFaceNotCaptured</item>
+        <item name="iconLargeFaceNotRecognised">@style/IconLargeFaceNotRecognised</item>
+        <item name="iconLargeLocationEnabled">@style/IconLargeLocationEnabled</item>
+        <item name="iconLargeLocationDisabled">@style/IconLargeLocationDisabled</item>
+        <item name="iconLargeServiceBlocked">@style/IconLargeServiceBlocked</item>
+        <item name="iconTutorialFace1">@style/IconTutorialFace1</item>
+        <item name="iconTutorialFace2">@style/IconTutorialFace2</item>
+        <item name="iconTutorialFace3">@style/IconTutorialFace3</item>
+        <item name="iconPositionFaceDetected">@style/IconPositionFaceDetected</item>
+        <item name="iconPositionFaceNotDetected">@style/IconPositionFaceNotDetected</item>
+        <item name="iconPositionQrCodeDetected">@style/IconPositionQrCodeDetected</item>
+        <item name="iconPositionQrCodeNotDetected">@style/IconPositionQrCodeNotDetected</item>
+        <item name="iconStepsNotDone">@style/IconStepsNotDone</item>
+        <item name="iconStepsFailure">@style/IconStepsFailure</item>
+        <item name="iconStepsSuccess">@style/IconStepsSuccess</item>
+        <item name="iconListItemTick">@style/IconListItemTick</item>
+        <item name="iconStepTutorialSelected">@style/IconStepTutorialSelected</item>
+        <item name="iconStepTutorialNotSelected">@style/IconStepTutorialNotSelected</item>
+        <item name="iconMenuHelp">@style/IconMenuHelp</item>
+        <item name="iconMenuBack">@style/IconMenuBack</item>
+        <item name="iconMenuCancel">@style/IconMenuCancel</item>
+        <item name="iconFaceSuccessTick">@style/IconFaceSuccessTick</item>
+
+        <item name="iconArrowInfoLeft">@style/IconArrowLeft</item>
+        <item name="iconArrowInfoRight">@style/IconArrowRigth</item>
+
+        <item name="iconTryAgainAttemptDone">@style/IconTryAgainAttemptDone</item>
+        <item name="iconTryAgainAttemptNotDone">@style/IconTryAgainAttemptNotDone</item>
+
+
+        <!-- Layouts -->
+        <item name="layoutDoubleButton">@style/LayoutDoubleButton</item>
+        <item name="layoutSingleButton">@style/LayoutSingleButton</item>
+        <item name="layoutListStepItem">@style/LayoutListStepItem</item>
+        <item name="layoutFragment">@style/LayoutFragment</item>
+        <item name="layoutMSC">@style/LayoutMSC</item>
+        <item name="layoutMSCInfo">@style/LayoutMSCInfo</item>
+        <item name="layoutBody">@style/LayoutBody</item>
+        <item name="layoutStepStatus">@style/LayoutStepStatus</item>
+
+        <!-- Progress bar -->
+        <item name="progressBar">@style/CircularProgressBar</item>
+        <!-- Action bar-->
+        <item name="android:actionBarStyle">@style/EtisActionBar</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_menu_back</item>
+
+
+        <!-- Texts -->
+        <item name="capturePasswordRegexInfo">@string/label_capture_password_description_1</item>
+        <item name="capturePinRegexInfo">@string/label_capture_pin_description_1</item>
+    </style>
+    <style name="MorphoBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="Negative_Button" parent="Button">
+        <item name="android:background">@drawable/negative_button</item>
+    </style>
+    <style name="Neutral_Button" parent="Button">
+        <item name="android:background">@drawable/neutral_button</item>
+    </style>
+    <style name="Positive_Button" parent="Button">
+        <item name="android:background">@drawable/positive_button</item>
+    </style>
+    <style name="Positive_Switch" parent="Switch">
+        <item name="android:thumb">@drawable/positive_switch_thumb</item>
+        <item name="android:track">@drawable/positive_switch_bg</item>
+    </style>
+    <style name="Switch" parent="android:Widget.CompoundButton">
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textColor">@color/color_font_dark</item>
+        <item name="android:textSize">@dimen/font_content_height</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">@dimen/margin_large</item>
+        <item name="android:paddingRight">@dimen/margin_large</item>
+        <item name="android:textOn"/>
+        <item name="android:textOff"/>
+        <item name="android:switchMinWidth">@dimen/switch_item_width</item>
+    </style>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/custom-play-services-5.0.89/res/values/admob_iap_style.xml -->
+    <eat-comment/>
+    <style name="Theme.IAPTheme" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Title_Text" parent="android:Widget.TextView">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textSize">@dimen/font_title_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_font_dark</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/custom-play-services-5.0.89/res/values/wallet_styles.xml -->
+    <eat-comment/>
+    <style name="WalletFragmentDefaultButtonTextAppearance">
+        <item name="android:textColor">@color/wallet_primary_text_holo_light</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_light</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_light</item>
+        <item name="android:textColorLink">@color/wallet_link_text_light</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsHeaderTextAppearance" parent="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="WalletFragmentDefaultDetailsTextAppearance">
+        <item name="android:textColor">@color/wallet_secondary_text_holo_dark</item>
+        <item name="android:textColorHighlight">@color/wallet_highlighted_text_holo_dark</item>
+        <item name="android:textColorHint">@color/wallet_hint_foreground_holo_dark</item>
+        <item name="android:textColorLink">@color/wallet_holo_blue_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="WalletFragmentDefaultStyle">
+        <item name="buyButtonHeight">48dp</item>
+        <item name="buyButtonWidth">match_parent</item>
+        <item name="buyButtonText">buy_with_google</item>
+        <item name="buyButtonAppearance">classic</item>
+        <item name="maskedWalletDetailsTextAppearance">@style/WalletFragmentDefaultDetailsTextAppearance</item>
+        <item name="maskedWalletDetailsHeaderTextAppearance">@style/WalletFragmentDefaultDetailsHeaderTextAppearance</item>
+        <item name="maskedWalletDetailsBackground">@color/wallet_bright_foreground_holo_light</item>
+        <item name="maskedWalletDetailsButtonBackground">@android:drawable/btn_default</item>
+        <item name="maskedWalletDetailsButtonTextAppearance">@style/WalletFragmentDefaultButtonTextAppearance</item>
+        <item name="maskedWalletDetailsLogoTextColor">@color/wallet_bright_foreground_holo_dark</item>
+        <item name="maskedWalletDetailsLogoImageType">classic</item>
+    </style>
+    <!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Widget.ProgressBar.CircularProgressBar" parent="android:Widget">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="progressColor">@color/color_other_2</item>
+        <item name="hasShadow">true</item>
+        <item name="showPercentage">true</item>
+        <item name="strokeWidth">20dp</item>
+        <item name="backgroundAplha">20</item>
+        <item name="titleColor">@color/color_other_2</item>
+        <item name="titleTextSize">@dimen/font_title_height</item>
+        <item name="maximumPercentageTitle">17</item>
+        <item name="android:layout_width">@dimen/circular_progress_bar_width</item>
+        <item name="android:layout_height">@dimen/circular_progress_bar_height</item>
+    </style>
+    <style name="ptr_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/ptr_pulltorefresh_arrow</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+    <style name="ptr_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="ptr_headerContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0px</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+    <style name="ptr_last_updated" parent="ptr_text">
+        <item name="android:textStyle">normal</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+
+    </style>
+    <style name="ptr_spinner" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:indeterminate">true</item>
+        <item name="android:layout_marginLeft">25dp</item>
+    </style>
+    <style name="ptr_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="ptr_textwrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+</resources>

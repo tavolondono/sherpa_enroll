@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\commons-codec-1.10.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4b95f4897fa13f2cd904aee711aeafc0c5295cd8">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\commons-codec-1.10-e5eee490bdf7b71bbc1643c95cbe36b2b97190d0.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\MSC-interface.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="312d619481b75c89079f2ef20dc347319fbc956c">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\MSC-interface-38925fff726f2aca3ca35a28f4930b55d71b73fb.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\pinh-impl-r61.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d17dfaf898ba8ffd0be9c91a154bdd9144a8eab7">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\pinh-impl-r61-c16f2ec627dcb3c760a4acd273341fb11374f86f.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\pinh-interface-r61.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a06b9d72b3e89268991dbf1e60256bced5dfed87">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\pinh-interface-r61-be82d9085108bb96f6d6e06957d18bb02e9fe69f.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\exploded-aar\core-2.1-RC01\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1733d3ea20e08b2ccb3e590bd145323da49efbc2">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\classes-db760e372ccd9193171737880ea83025ef714cb6.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\exploded-aar\msc-normalmsc-2.1-RC01\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="cb652ca22e62722bdd98f50491ac499382fe8727">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\classes-d055c409afa84ba67bc3fc6681904381b0a8e221.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\guava-18.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="cce0823396aa693798f8882e64213b1772032b09">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\guava-18.0-f7731a29798c28065a5678b0fab1518574025fb2.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\exploded-aar\hardware-camera-2.1-RC01\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="81375c05ce021784ab8ebb0531333bbdf6dae3f7">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\classes-d62ed8a3c0b31aa4bdd33a159360de535ccaaebc.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\slf4j-android-1.7.7.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f1c194a0753f5005eb57d69bccc7091460edd15a">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\slf4j-android-1.7.7-28fb88b05109692918772a37fe9a3ae695c41d7b.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\device-authenticator-impl-2.1-RC01.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7d79011bfe2d1d3ac60b6bb1cb1982a314022381">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\device-authenticator-impl-2.1-RC01-86c7d386d2c24313df8f6d865f04473272652cf1.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9748c18f3e58325d36941b8a663116ef7fd2ce49">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\classes-be206b8ff0d8b539fddfc9b7e4047a38e973f170.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\prov-1.51.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6755081df770180856ca48694b40cd34c2208128">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\prov-1.51.0.0-5bb9f8a8be353eefc30574be1fe0ad1745b8bc2e.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\exploded-aar\hardware-voice-2.1-RC01\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c0b0d40c3cb0bfbf775d9b0d6ff7d72c5fd4f753">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\classes-ae8027c7325c64ef2a8e2a5ef28584f2e1580772.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\identityx-sdk-3.2.2.209.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7c6dbabe9f89fbe64302a6603a7344c629177076">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\identityx-sdk-3.2.2.209-2bdb8f18c38322a19f09aaa5e0bb00b6365fe982.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\slf4j-api-1.7.7.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2b8019b6249bb05d81d3a3094e468753e2b21311">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\slf4j-api-1.7.7-41cf2ec319ff1124392584fcbe92fa70dce575f4.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\support-v4-19.1.0-b4237c23cbd7bbddf0223e00e1d98a79898a44ef.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\exploded-aar\hardware-nfc-2.1-RC01\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2900271bf9cc8fbe9f7e8f76ce10b0b367daa916">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\classes-29d4c097ae32c03808e9f0e39ab5681557d23d7e.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\flowtext-1.0.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d3f4133aec579f9de34eb60de3f0e923974a5439">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\flowtext-1.0.1-81a282b6fc6612f5c6b2ef1e341cc60fa4f9e7e2.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\securerandom-2.1-RC01.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="59a2fd118d0b2964d01b004ae4c60379afaa041d">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\securerandom-2.1-RC01-f188978d3fa55962b1be6d973424cb752360cd6b.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\zbar.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0a7b88ba1496a0b4af76069ad40dacd3897149e0">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\zbar-4886609a4df2d1ec8244ec06516e502f0d27f42e.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\android-async-http-1.4.6.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\android-async-http-1.4.6-995fe6b5750d70f71aacc391c3a2f0cbb3eafb4e.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\device-authenticator-common-2.1-RC01.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3d927a08ef24e59b74cd1812694c3367b590b50d">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\device-authenticator-common-2.1-RC01-65e4b8aac44fdd3f3b6cad463c412b08de731021.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\exploded-aar\gcm-2.1-RC01\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="661bec1648647cb70703779fb6e86bff3a03bf53">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\classes-d5636786927022976f23d175493bcbe8af2f7d18.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\pinh-crypto-r61.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ec1fb9784d9ef670ce2539aa8c62fb22e867bfcc">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\pinh-crypto-r61-1f40d439ee0d526d76f32891b454083bc5a18a0b.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\exploded-aar\mid-android-sdk-normal-2.1-RC01\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="528f02aaf39d2b4586a48e8c83fc1ab38bf38738">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\classes-6177d10b34b2723116fb4704d1cf225071760ac3.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\device-environment-interface-2.1-RC01.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9fdfb9db1c81d77f43b90e999966ae9a46f7a48a">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\device-environment-interface-2.1-RC01-8e581a4f6f1533e57d84067365e097d9b6ccaa2c.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\pkix-1.51.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="40a445852ca58187fc616e3a8b42de463bf14b8b">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\pkix-1.51.0.0-f2cae1ffc3263abe8a5c600c426aaf373c6aa34f.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\support-annotations-19.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5622de20ceb4850c3c1e0ba4749dcaac6cc762ae">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\support-annotations-19.1.0-d96f57ac09b29ae2c7250440298dbba7720ac214.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\daon-face-api-1.2.0.32.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5499f95fde66fd6db0dc4981453a019c685372cb">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\daon-face-api-1.2.0.32-3d147a41bf1f841f723ad5c75cc23b74d67db0b8.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\libs\core-1.51.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0f642963312ea0e615ad65f28adc5a5b3a2a0862">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\core-1.51.0.0-ca7eff5fcd24fcf153fa8549a7ef652cef343e31.jar" />
+    </item>
+    <item
+        jar="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\exploded-aar\custom-play-services-5.0.89\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c86a0b54a9332b3e6cf00f4e9c4b6180275f987">
+        <dex dex="D:\AndroidProjects\Bancolombia\Bancolombia-enrolamiento\sherpa_enroll\platforms\android\build\intermediates\pre-dexed\debug\classes-a30146ea4167a0e4ef024cc33355bfa733f179b8.jar" />
+    </item>
+
+</items>

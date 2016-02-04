@@ -1,0 +1,32 @@
+<ion-modal-view
+ class="insufficient-balance modal-sherpa-view" can-swipe-back="false">
+
+    <ion-content scroll="false" class="padding modal-sherpa-container">
+
+        <!--MODAL-->
+    	<div class="pagos-modal-denegado modal-sherpa">
+        	<h3>{{i18n.payResume.errorBalance.title}}</h3>
+            <div ng-bind-html="i18n.payResume.errorBalance.body"></div>
+            <!--BOTON-->
+            <div class="row">
+                <div class="col">
+                    <button ng-click="payResumeControl.redirect('cashin','insufficient')" class="button button-block button-assertive siguiente">{{i18n.payResume.errorBalance.button}}</button>
+                </div>
+            </div>
+            <!--FIN BOTON-->
+
+            <!--OPERATIONRESULT TEXTO-->
+            <div class="row padding center">
+                <div class="col padding">
+                    <p class="enlace-secundario">
+                        <a href="#" ng-click="payResumeControl.closeModal('insufficientBalance');">{{i18n.generalActions.cancel}}</a>
+                    </p>
+                </div>
+            </div>
+            <!--FIN OPERATIONRESULT TEXTO-->
+
+        </div>
+
+        <!--FIN MODAL-->
+    </ion-content>
+</ion-view>

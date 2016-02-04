@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+        <fragment
+        android:id="@+id/passwordAuthenticationFragment"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        class="morpho.etis.android.sdk.mid_android_sdk.ui.fragments.authentication.homomorphic.HomomorphicPinPadAuthenticationFragment" />
+
+</RelativeLayout>
+<!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/layout/authentication_homomorphic_pin_pad_activity.xml -->

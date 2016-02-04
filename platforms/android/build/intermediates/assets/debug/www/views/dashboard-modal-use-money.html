@@ -1,0 +1,25 @@
+<ion-modal-view class="modal-sherpa-view dashBoard-modal">
+    <!--BOTONES-->
+    <div class="bar bar-footer bar-footer-dashBoard">
+        <div class="row">
+            <div class="col pagos-botones">
+                <div class="enviar btnOption" ng-class="{'disabled-acces': dashboardControl.isUserEnroll}">
+                    <a href="#" ng-click="dashboardControl.goToTransferContact('send');"></a>
+                </div>
+                <div class="pedir btnOption" ng-class="{'disabled-acces': dashboardControl.isUserEnroll}">
+                    <a href="#" ng-click="dashboardControl.goToTransferContact('request');"></a>
+                </div>
+                <div class="pagar btnOption">
+                    <a href="#" ng-click="dashboardControl.goPayments();"></a>
+                </div>
+                <div class="sacar btnOption" ng-class="{'disabled-acces': dashboardControl.isUserEnroll}">
+                    <a href="#" ng-click="dashboardControl.goCashOut();"></a>
+                </div>
+                <div class="cerrar btnOption">
+                    <a href="#" ng-click="dashboardControl.hideUseMoney();"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FIN BOTONES-->
+</ion-modal-view>

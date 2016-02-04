@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.TestTabActivity" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>
+<!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/menu/test_tab.xml -->

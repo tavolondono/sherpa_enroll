@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <shape>
+
+            <gradient
+                android:startColor="@color/color_progress_bar_background"
+                android:centerColor="@color/color_progress_bar_background"
+                android:endColor="@color/color_progress_bar_background"
+                android:angle="0"
+                />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+
+                <gradient
+                    android:startColor="@color/color_progress_bar_2"
+                    android:centerColor="@color/color_progress_bar_2"
+                    android:endColor="@color/color_progress_bar_2"
+                    android:angle="0"
+                    />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list><!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/drawable/progress_bar_orange.xml --><!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/drawable/progress_bar_orange.xml -->

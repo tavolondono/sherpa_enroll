@@ -1,0 +1,35 @@
+<ion-modal-view can-swipe-back="false" scroll="false" class="modal-view-sherpa permisos">
+    
+    <div class="contenedor-permisos">
+
+        <!--ICONO-->
+        <div class="clear-iconotop"></div>
+        <div class="face-permisos-icono"></div>
+        <!--FIN ICONO-->
+
+        <!--TEXTO-->
+        <div class="row">
+            <div class="col">
+                <div class="face-permisos-texto padding">
+                    <p><strong>{{i18n.biometry.help.nextNeedFace}} <br>{{i18n.biometry.help.registerFace}}</strong></p>
+                    <p>{{i18n.biometry.help.weNeedAccessToCamera}}</p>
+                </div>
+            </div>
+        </div>
+        <!--FIN TEXTO-->
+
+        <!--BOTON-->
+        <div class="bar bar-footer botonCel padding">
+            <div class="row">
+                <div class="col">
+                    <button class="button button-block button-assertive permiso" ng-click="chooseBiometryControl.hidePermisson();">{{i18n.generalActions.nowNot}}</button> 
+                </div>
+                <div class="col">
+                    <button class="button button-block button-assertive permiso" ng-click="chooseBiometryControl.irFacial();">{{i18n.generalActions.yes}}</button> 
+                </div>
+            </div>
+        </div>        
+        <!--FIN BOTON-->
+
+    </div>
+</ion-modal-view>

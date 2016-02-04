@@ -1,0 +1,103 @@
+<ion-view can-swipe-back="false">    
+    <ion-content class="contract wizard-content" ng-controller="vinculacionDocumentoController as vinculacionDocumentoControl">
+        <div class="contenedor-vinculacion" style ="height: auto">
+            <div class="bar bar-header bar-light aqua">
+                <button class="button ion-navicon icon-arrow" ng-click="vinculacionDocumentoControl.atras();"></button>
+                <h1 class="title">Información Personal</h1>
+                <button class="button ion-navicon icon-help"></button>
+            </div>
+            <!--FIN HEADER-->
+
+            <div class="clearheader"></div>
+
+            <!--PASOS-->
+            <div class="row">
+                <div class="col">
+                    <div class="Txt-pasos">
+                        <p>2 de 5</p>
+                    </div>
+                </div>
+            </div> 
+            <!--FIN PASOS-->
+
+            <!--ICONO-->
+            <div class="row">
+                <div class="col">
+                    <div class="vinculacion-icono icono-documento"></div>
+                </div>
+            </div> 
+            <!--FIN ICONO-->
+
+            <br>
+
+            <!--TEXTOS-->
+            <div class="row">
+                <div class="col">
+                    <div class="Txt-parrafo">
+                        <p><strong>Hola Andrés</strong></p>
+                        <p>Ahora, necesitaremos tu documento <br> de identificación.</p>
+                    </div>
+                </div>
+            </div> 
+            <!--FIN TEXTOS-->
+
+            <!--SELECT-->
+            <div class="row row-phone-number">
+                <div class="col">
+                    <label class="item item-input item-select select-documento">
+                        <div class="input-label">
+                            Documento
+                        </div>
+                        <select>
+                            <option>Cédula de ciudadanía</option>
+                            <option>Tarjeta de identidad</option>
+                        </select>
+                    </label>            
+                </div>
+            </div>   
+            <!--FIN SELECT-->
+            <!--INPUT-->
+            <div class="row row-phone-number">
+                <div class="col">
+                    <label class=" item item-input input-documento">
+                        <span class="input-label">Fecha de nacimiento</span>
+                        <input type="date">
+                    </label>
+                </div>
+            </div>        
+            <!--FIN INPUT-->
+            <!--INPUT-->
+            <div class="row row-phone-number">
+                <div class="col">
+                    <label class=" item item-input input-documento">
+                        <span class="input-label">Número de documento</span>
+                        <input type="number">
+                    </label>
+                </div>
+            </div>        
+            <!--FIN INPUT-->
+            <!--INPUT-->
+            <div class="row row-phone-number">
+                <div class="col">
+                    <label class=" item item-input input-documento">
+                        <span class="input-label">Fecha de expedición</span>
+                        <input type="date">
+                    </label>
+                </div>
+            </div>        
+            <!--FIN INPUT-->
+
+
+            <!--BOTON-->
+            <div class="row">
+                <button class="button button-block button-assertive siguiente" ng-click="vinculacionDocumentoControl.siguiente()">Siguiente</button>
+            </div> 
+            <div class="row">
+                <div class="texto-cancelar"><a href="#">Cancelar</a></div> 
+            </div> 
+            <!--FIN BOTON-->
+        </div>
+        <!--HEADER-->
+    </ion-content>
+
+</ion-view>

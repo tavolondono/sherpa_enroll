@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circular="http://schemas.android.com/apk/res-auto"
+    style="?attr/layoutFragment"
+    >
+
+    <include layout="@layout/circular_progress_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutLogic"
+        >
+    </RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/layout/activation_process_fragment.xml --><!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/layout/activation_process_fragment.xml -->

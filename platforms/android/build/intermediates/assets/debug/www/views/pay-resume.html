@@ -1,0 +1,61 @@
+<ion-view class="pay-resume-container" ng-controller="payResumeController as payResumeControl" can-swipe-back="false">
+
+    <!--HEADER-->
+    <ion-header-bar class="bar bar-header bar-light bar-pay-resum" align-title="center">
+        <div class="buttons" side="left">
+            <button class="button ion-navicon-white icon-arrow" ng-click="payResumeControl.goBack()"></button>
+        </div>
+        <h1 class="title"><span>{{i18n.payResume.title}}</span></h1>
+    </ion-header-bar>
+    <!-- FIN HEADER -->
+
+    <!-- CONTENT PAY RESUM -->
+    <ion-content class="pay-resum-content">
+
+        <ion-refresher pulling-text="{{i18n.generalActions.loading}}..." on-refresh="payResumeControl.getBalance()"> </ion-refresher>
+
+        <!--SALDO-->
+        <div class="balance padding">
+            <div class="row">
+                <div class="col"><p>{{i18n.generalActions.available}}</p></div>
+                <div class="col text-right"><p><span>{{payResumeControl.spendBoundary | currency : '$' : '0'}}</span></p></div>
+            </div>
+            <div class="row">
+                <div class="col"><p>{{i18n.generalActions.total}}</p></div>
+                <div class="col text-right"><p>{{payResumeControl.balance | currency : '$' : '0'}}</p></div>
+            </div>
+        </div>
+        <div class="balance-bg"></div>
+        <!--FIN SALDO-->
+
+        <!--BOX RESUMEN-->
+        <div class="row">
+            <div class="col">
+                <div class="resume-box">
+                    <h3>{{i18n.payResume.labelLocation}}</h3>
+                    <p>{{payResumeControl.pointName}}</p>
+                    <div class="line"></div>
+                    <h3>{{i18n.payResume.labelQuantity}}</h3>
+                    <p>{{payResumeControl.mountToPay | currency : '$' : '0'}}</p>
+                </div>
+            </div>
+        </div>
+        <!--FIN BOX RESUMEN-->
+
+        <!--BOTONES-->
+         <div class="row bar-footer" ng-class="{'bar': payResumeControl.classBar}">
+            <div class="col">
+                <button class="button button-block button-assertive" ng-class="{'button-available': payResumeControl.buttonAvailable}" ng-click="payResumeControl.sendPay();">
+                    {{i18n.generalActions.pay}}
+                </button>
+                <div class="button-cancel enlace-secundario">
+                    <a ng-click="payResumeControl.goBack()">{{i18n.generalActions.cancel}}</a>
+                </div>
+            </div>
+         </div>
+        <!--FIN BOTONES-->
+
+    </ion-content>
+    <!-- END CONTENT PAY RESUM -->
+
+</ion-view>

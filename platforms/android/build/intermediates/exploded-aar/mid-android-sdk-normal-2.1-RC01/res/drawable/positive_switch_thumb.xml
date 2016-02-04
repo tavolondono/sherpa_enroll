@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:width="2dp" android:color="@color/color_background"/>
+                </shape>
+            </item>
+            <item>
+                <bitmap android:src="@drawable/ic_off"/>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true"  android:drawable="@drawable/ic_on" />
+    <item android:state_checked="true"  android:drawable="@drawable/ic_on" />
+    <!--<item                               android:drawable="@drawable/ic_off" />-->
+    <item android:state_checked="false">
+        <layer-list>
+            <item>
+            <shape android:shape="oval">
+                <solid android:width="2dp" android:color="@color/color_background"/>
+            </shape>
+            </item>
+            <item>
+                <bitmap android:src="@drawable/ic_off"/>
+            </item>
+        </layer-list>
+    </item>
+</selector><!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/drawable/positive_switch_thumb.xml -->

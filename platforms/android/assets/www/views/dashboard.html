@@ -1,0 +1,99 @@
+<ion-view
+can-swipe-back="false"
+ng-controller="dashboardController as dashboardControl">
+    <ion-content class="dashboard-container">
+
+        <!--<ion-refresher pulling-text="Cargando..." on-refresh="dashboardControl.getBalance()"> </ion-refresher>-->
+        <!--LAYER UP-->
+
+        <div ng-show="dashboardControl.firstLoadDashboard" ng-click="dashboardControl.openTourTouch();" class="maskDashboard"> </div>
+
+        <div on-swipe-right="dashboardControl.goToMovements();" class="dashboard-layer-up">
+
+            <!--ICON MENU-->
+            <div class="mochila-menu">
+                <a href="#/profile" class="menu-position"><div class="menu-icon"></div> </a>
+            </div>
+            <!--FIN ICON MENU-->
+
+            <!--SALDO-->
+            <div class="mochila-saldo">
+                <h3 ng-show="dashboardControl.numPockets == 0">{{i18n.dashboard.availableFreeTitle}}</h3>
+                <h3 ng-show="dashboardControl.numPockets > 0">{{i18n.dashboard.availableFreeTitle}} + {{dashboardControl.numPockets}} {{i18n.dashboard.pockets}}</h3>
+                <p ng-if="!dashboardControl.mountLoandGif">{{dashboardControl.balanceAvailable | currency : '$' : '0' }}</p>
+                <p ng-if="dashboardControl.mountLoandGif"><img src="images/counter.gif"></p>
+                <h3>{{i18n.generalActions.total}}</h3>
+                <p><span>{{dashboardControl.balance | currency : '$' : '0' }}</span></p>
+            </div>
+            <div class="wrap-money-partition" ng-show="!dashboardControl.isUserEnroll" ng-click="dashboardControl.openMoneyPartition()"></div>
+            <!--FIN SALDO-->
+
+            <!--HERRAMIENTAS-->
+            <div class="mochila-tools">
+                <div class="row">
+                    <div class="col">
+                        <div ng-click="openToolModal(safeGoals);">
+                            <div class="mochila-icono-metas"></div>
+                            <div class="mochila-icono-texto padding"><p>{{i18n.dashboard.keepGoalTitle}}</p></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div ng-click="dashboardControl.goToSaved();">
+                            <div class="mochila-icono-stash"></div>
+                            <div class="mochila-icono-texto padding"><p>{{i18n.dashboard.keepStashTitle}}</p></div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div ng-click="dashboardControl.goToPockets();">
+                            <div class="mochila-icono-pockets"></div>
+                            <div class="mochila-icono-texto padding"><p>{{i18n.dashboard.pocketsTitle}}</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--FIN HERRAMIENTAS-->
+
+            <!--BOTON-->
+            <a ng-click="dashboardControl.goToTransfers();" class="mochila-boton-action movimientos"></a>
+            <a ng-click="dashboardControl.goToCashIn();" class="mochila-boton-action recargas"></a>
+            <!--FIN BOTON
+            <div class="row padding">
+                <a class="item item-icon-left" ng-click="dashboardControl.goToTransactionalId();">
+                    <i class="icon ion-cash"></i>
+                    Me piden plata (Temporal)
+                  </a>
+            </div>
+            <div class="row padding">
+                <a class="item item-icon-left" ng-click="dashboardControl.isProvisioned();">
+                    <i class="icon ion-cash"></i>
+                    Está aprovisionado en Detect ID? (Temporal)
+                  </a>
+            </div>
+            <div class="row padding">
+                <a class="item item-icon-left" ng-click="dashboardControl.tryToRegister();">
+                    <i class="icon ion-cash"></i>
+                    Generar soft token (Temporal)
+                  </a>
+            </div>
+            <div class="row padding">
+                <a class="item item-icon-left" ng-click="dashboardControl.logoutEnroll();">
+                    <i class="icon ion-cash"></i>
+                    Logout Enrolado (Temporal)
+                  </a>
+            </div-->
+            <!--FIN BOTON-->
+        </div>
+        <!--FIN LAYER UP-->
+
+        <!--LAYER DOWN-->
+        <div class="dashboard-layer-bkg block">
+            <div class="dashboard-rombo-light"></div>
+        </div>
+        <div class="dashboard-layer-bkg">
+            <div class="dashboard-menu"></div>
+            <div class="dashboard-rombo-dark" ng-class="{'linked':!dashboardControl.isUserEnroll}"></div>
+            <div class="dashboard-top" ng-class="{'linked':!dashboardControl.isUserEnroll}"></div>
+        </div>
+        <!--FIN LAYER DOWN-->
+    </ion-content>
+</ion-view>

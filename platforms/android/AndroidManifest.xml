@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest android:hardwareAccelerated="true" android:versionCode="1" android:versionName="0.0.1" package="com.ionicframework.sherpaenroll532309" xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="app.cloudstringers.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:supportsRtl="true">
+        <meta-data android:name="PREFERENCE_CLIENT_ID" android:value="@string/pref_default_client_id" />
+        <meta-data android:name="PREFERENCE_ACCOUNT_TYPE" android:value="@string/pref_default_account_type" />
+        <meta-data android:name="PREFERENCE_FRONT_APP_PROVIDER" android:value="@string/pref_default_front_app_provider_url" />
+        <meta-data android:name="PREFERENCE_IDENTITY_PROVIDER" android:value="@string/pref_default_identity_provider_url" />
+        <meta-data android:name="PREFERENCE_SERVICE_PROVIDER" android:value="@string/pref_default_service_provider" />
+        <meta-data android:name="PREFERENCE_NOTIFICATION_PROVIDER" android:value="@string/pref_default_gcm_provider" />
+        <meta-data android:name="PREFERENCE_GCM_ENABLED" android:value="true" />
+        <meta-data android:name="PREFERENCE_NOTIFICATION_SENDER_ID" android:value="@string/pref_default_gcm_sender_id" />
+        <meta-data android:name="PREFERENCE_USER_INACTIVITY" android:value="60000" />
+        <meta-data android:name="CERTIFICATE_PINNING_ENABLED" android:value="false" />
+        <meta-data android:name="PREFERENCE_LOGS_ENABLED" android:value="false" />
+        <meta-data android:name="PREFERENCE_LOGS_SERVER_URL" android:value="@string/pref_default_log_server_url" />
+        <service android:exported="false" android:name="morpho.etis.android.sdk.mid_android_sdk.account.AccountAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator" />
+        </service>
+        <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/activity_name" android:launchMode="singleTop" android:name="MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:label="@string/launcher_name">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="net.easysol.did.qr_auth.QRCodeAuthenticationActivity" android:screenOrientation="portrait" />
+        <activity android:name="org.cloudsky.cordovaPlugins.ZBarScannerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:label="@string/title_activity_my_app" android:name="co.pragma.www.plugin.morpho.RegistrationActivity" />
+        <activity android:configChanges="orientation|keyboardHidden" android:name="co.pragma.www.plugin.daon.MainActivity" android:screenOrientation="portrait" />
+        <activity android:configChanges="orientation|keyboardHidden" android:name="co.pragma.www.plugin.daon.BlinkActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:label="@string/title_activity_my_app" android:name="co.pragma.www.plugin.morpho.MainActivity" />
+        <activity android:configChanges="orientation|keyboardHidden" android:name="co.pragma.www.plugin.daon.VerifyActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+    </application>
+</manifest>

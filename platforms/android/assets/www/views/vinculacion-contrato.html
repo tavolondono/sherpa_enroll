@@ -1,0 +1,96 @@
+<ion-view can-swipe-back="false">    
+    <ion-content class="contract wizard-content" ng-controller="vinculacionContratoController as vinculacionContratoControl">
+        <div class="contenedor-contrato">
+
+            <!--HEADER-->
+            <div class="bar bar-header bar-light aqua">
+                <button class="button ion-navicon icon-arrow" ng-click="vinculacionContratoControl.atras()"></button>
+                <h1 class="title">Información Legal</h1>
+                <button class="button ion-navicon icon-help"></button>
+            </div>
+            <!--FIN HEADER-->
+
+            <div class="clearheader"></div>
+
+            <!--PASOS-->
+            <div class="row">
+                <div class="col">
+                    <div class="Txt-pasos">
+                        <p>4 de 5</p>
+                    </div>
+                </div>
+            </div> 
+            <!--FIN PASOS-->
+
+            <!--ICONO-->
+            <div class="row">
+                <div class="col">
+                    <div class="vinculacion-icono icono-contrato"></div>
+                </div>
+            </div> 
+            <!--FIN ICONO-->
+
+            <br>
+
+            <!--TEXTOS-->
+            <div class="row">
+                <div class="col">
+                    <div class="Txt-parrafo">
+                        <p><strong>Resumen del contrato de Sherpa</strong></p>
+                        <p>Resumen de contrato legal de esta cuenta:<br> Cuenta de ahorro de trámite simplificado.</p>
+                    </div>
+                </div>
+            </div> 
+            <!--FIN TEXTOS-->
+
+            <!--CONTRATO-->
+            <div class="row">
+                <div class="col">
+                    <div class="texto-contrato">
+                        <p><strong>Nos gustaría que leyeras con detenimiento qué supone tener una Cuenta de ahorro</strong> simplificado, según el Reglamento de Ahorro Común de Bancolombia aprobado por la Superintendencia Financiera de Colombia, para que aceptes las condiciones que te permitirán tener una cuenta en Sherpa.</p>
+
+
+                        <p>¿A qué te compromete tener una cuenta en Sherpa?</p>
+
+                        <p><strong>a)</strong> El titular de la cuenta, que sólo puede ser uno y una persona natural, se compromete a aceptar el reglamento de Banca Móvil, que se puede consultar en www.grupobancolombia.com.co<br>
+                            <strong>b)</strong> Sólo se permite una cuenta de ahorros de trámite simplificado por persona en la misma Entidad Financiera.<br>
+                            <strong>c)</strong> Autoriza que sus datos queden a disposición de la entidad,  para consulta de bases de datos con fines de operación de información y riesgo.<br>
+                            <strong>d)</strong> Autoriza que le contacten mediante mensajería móvil o a través de correo electrónico.<br>
+                            <strong>e)</strong> Certifica que todos los datos entregados a Bancolombia S.A. son ciertos, y autoriza su verificación.</p>
+
+
+                        <p><strong>¿Qué derechos tiene tener una cuenta en Sherpa?</strong></p>
+
+                        <p><strong>a)</strong> No se requerirá saldo mínimo a mantener en la cuenta.<br>
+                            <strong>b)</strong> La cuenta se encuentra bajo un seguro de depósitos del Fondo de Garantías Financieras, garantizando un seguro a los ahorradores en la medida que se restituye de forma total o parcial el monto depositado, de acuerdo con la ley.<br>
+                            <strong>c)</strong> El extracto de cuenta estará disponible para el titular en caso de necesitarlo para trámites legales y se le hará llegar a su cuenta de correo electrónico.<br>
+                            <strong>d)</strong> Las transacciones monetarias que se realicen a través del celular serán dotadas de un medio de seguridad por clave numérica, que tendrá validez de 30 minutos.</p>
+
+                        <p>Aquí termina el resumen, pero puedes <br><a href="#">descargar el contrato completo.</a></p>
+                    </div>
+                </div>
+            </div>        
+            <!--FIN CONTRATO-->
+
+            <div class="row row-terminos-condiciones">
+              <div class="item-checkbox contrato">
+                 <label class="checkbox contrato">
+                   <input type="checkbox" name="acceptContract">
+                 </label>
+                 {{i18n.liteRegistry.contract.textAcceptContract}}
+              </div>
+            </div>
+
+
+            <!--BOTON-->
+            <div class="row">
+                <button class="button button-block button-assertive acepto" ng-click="vinculacionContratoControl.siguiente()">Acepto el contrato</button>
+            </div> 
+            <div class="row">
+                <div class="texto-cancelar"><a href="#" ng-click="vinculacionContratoControl.atras()">No lo acepto</a></div> 
+            </div> 
+            <!--FIN BOTON-->
+
+        </div>
+    </ion-content>
+</ion-view>

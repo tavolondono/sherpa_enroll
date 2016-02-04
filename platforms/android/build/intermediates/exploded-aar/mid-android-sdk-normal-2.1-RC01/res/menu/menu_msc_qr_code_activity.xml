@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_exit"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_menu_close"
+        android:title="@string/action_exit"
+        />
+</menu><!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/menu/menu_msc_qr_code_activity.xml -->

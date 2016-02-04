@@ -1,0 +1,41 @@
+<ion-modal-view class="tool-dashboard-bkg">
+    <ion-content class="container-tool-dashboard" scroll="false">
+        <!--CERRAR-->
+        <div class="row">
+            <div class="col col-close">
+                <button class="tool-dashboard-close" ng-click="recharge.hide();"></button>
+            </div>
+        </div>
+        <!--FIN CERRAR-->
+
+        <!--MARQUEE-->
+        <div class="row">
+            <div class="col">
+                <div class="tool-dashboard-marquee recharge">
+                    <div class="tool-dashboard-icon-recharge"></div>
+                    <div class="tool-dashboard-text">
+                        <h3>{{i18n.dashboard.tools.recharge.title}}</h3>
+                        <p>{{i18n.dashboard.tools.recharge.context}}</p>
+                        <p><strong>{{i18n.dashboard.tools.subTitle}}</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MARQUEE-->
+
+        <!--BOTON-->
+        <div ng-show="(dashboardControl.isUserEnroll)" class="row">
+            <div class="col">
+                <a href="#/registry/nickname" ng-click="closeToolModal(recharge);">
+                    <button class="button button-block button-positive">{{i18n.generalActions.openAccount}}</button>
+                </a>
+            </div>
+        </div>
+        <div ng-show="(dashboardControl.isUserEnroll)" class="row">
+            <div class="col keep-trying">
+                <a href="#/dashboard" ng-click="recharge.hide();">{{i18n.generalActions.keepTrying}}</a>
+            </div>
+        </div>
+        <!--FIN BOTON-->
+    </ion-content>
+</ion-modal-view>

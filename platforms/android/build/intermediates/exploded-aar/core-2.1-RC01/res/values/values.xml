@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/core/src/main/res/values/strings_core.xml -->
+    <eat-comment/>
+    <string name="account_type" translatable="false">morpho.etrust</string>
+    <!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/core/src/main/res/values/settings_core.xml -->
+    <eat-comment/>
+    <string name="feedback_app_url" translatable="false">https://etis.morpho.com</string>
+    <string name="feedback_piwik_id_site" translatable="false">1</string>
+    <string name="feedback_server_url" translatable="false">https://etis.morpho.com/piwik/piwik.php</string>
+    <!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/core/src/main/res/values/feedback_messages_core.xml -->
+    <eat-comment/>
+    <string name="message_feedback_dont_know" translatable="false">I don\'t know</string>
+    <string name="message_feedback_face_bright_sunlight" translatable="false">Bright sunlight</string>
+    <string name="message_feedback_face_failure_physical" translatable="false">My physical appearance changed</string>
+    <string name="message_feedback_face_failure_poor_conditions" translatable="false">Low light conditions</string>
+    <string name="message_feedback_face_multiple_faces" translatable="false">Multiple faces</string>
+    <string name="message_feedback_face_successfull_not_face" translatable="false">It\'s not a face</string>
+    <string name="message_feedback_its_not_me" translatable="false">It\'s not me</string>
+    <string name="message_feedback_its_not_me_my_twin" translatable="false"> It\'s not me but my twin</string>
+    <string name="message_feedback_other" translatable="false">Other</string>
+    <string name="message_feedback_voice_failure_poor_conditions" translatable="false">Noisy environment</string>
+    <string name="message_feedback_voice_foreign_country" translatable="false">Voice from a foreign country people</string>
+    <string name="message_feedback_voice_many_people_speaking" translatable="false">Many people speaking</string>
+    <string name="message_feedback_voice_modified" translatable="false">Voice modified</string>
+    <string name="message_feedback_voice_not_correct_sentence" translatable="false">Not the correct sentence</string>
+    <string name="message_feedback_voice_successfull_not_voice" translatable="false">It\'s not a voice</string>
+    <string name="message_feedback_voice_synthetic_voice" translatable="false">It\'s a synthetic voice</string>
+    <string name="message_feedback_voice_too_low" translatable="false">Voice too low</string>
+    <string name="message_label_failed_tree_times" translatable="false">Failed 3 times</string>
+    <string name="message_label_preferred_mode_not_working" translatable="false">Preferred mode not working</string>
+    <string name="message_label_system_error" translatable="false">System error</string>
+    <string name="message_label_unknown" translatable="false">System error</string>
+    <string name="message_label_wrongly_authenticated" translatable="false">Wrongly authenticated</string>
+    <!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/core/src/main/res/values/strings_core.xml -->
+    <eat-comment/>
+    <string name="network_type_unknown" translatable="false">UNKNOWN</string>
+    <string name="recognition_token_face" translatable="false">face</string>
+    <string name="recognition_token_password" translatable="false">password</string>
+    <string name="recognition_token_voice" translatable="false">voice</string>
+    <string name="temp_file_dir" translatable="false">Etis</string>
+</resources>

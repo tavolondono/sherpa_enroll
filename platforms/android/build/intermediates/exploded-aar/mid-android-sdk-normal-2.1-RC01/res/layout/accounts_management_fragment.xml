@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/layoutFragment" >
+    
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:text="@string/label_account_list_title"
+        style="?attr/titleText" />
+    
+    <View
+       android:id="@+id/separator"
+	   android:layout_width="match_parent"
+	   android:layout_height="1dp"
+	   android:layout_below="@+id/listTitle"	  
+	   android:layout_marginTop="5dip"
+	   android:layout_marginLeft="5dip"
+	   android:layout_marginRight="5dip"
+	   android:background="@android:color/darker_gray"/>
+
+    
+    <morpho.etis.android.sdk.mid_android_sdk.ui.views.RefreshableListView
+        class="morpho.etis.android.sdk.mid_android_sdk.ui.views.RefreshableListView"
+	    android:id="@+id/list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:choiceMode="singleChoice" 
+	    android:visibility="visible"
+	    android:paddingBottom="5dip"
+	    android:layout_above="@+id/layoutButtons"
+	    android:layout_below="@+id/separator"
+	   	/>	
+	
+        <RelativeLayout
+        android:id="@+id/layoutProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" 
+        >
+
+        <TextView
+		     android:id="@+id/labelProgressBar"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_centerInParent="true"
+		     android:text="@string/label_loading"
+             style="?attr/contentText"
+		      />          	    
+    </RelativeLayout>
+    
+    <TextView
+		     android:id="@+id/labelListEmpty"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="5dip"
+	   		 android:layout_marginRight="5dip"
+		     android:layout_centerInParent="true"
+		     android:visibility="gone"
+		     android:text="@string/label_empty_list_accounts"
+                style="?attr/contentText"
+		      />
+
+    <RelativeLayout
+        android:id="@+id/layoutButtons"
+        style="?attr/layoutSingleButton"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:text="@string/button_add_Account"
+            android:id="@+id/buttonPositive"
+            style="?attr/positiveButton"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+<!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/layout/accounts_management_fragment.xml -->

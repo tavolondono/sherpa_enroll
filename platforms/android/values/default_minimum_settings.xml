@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+	In this file we are only defining the minimum settings, the real conf is done in the authentication_app_settings.xml.
+	You must add a preference field for each of this default settings
+ -->
+<resources>
+    <!-- Account type -->
+    <string name="pref_default_account_type" translatable="false">morpho.etis.sample</string>
+    <!-- Account label displayed in the phone app -->
+    <string name="pref_default_account_label" translatable="false">Morpho eTIS</string>
+    <!-- Server URLs -->
+
+    <string name="pref_default_front_app_provider_url" translatable="false"></string>
+    <string name="pref_default_identity_provider_url" translatable="false"></string>
+
+    <!-- Service Provider -->
+    <string name="pref_default_service_provider" translatable="false">ba91218f-fb79-4711-acde-423e5ee999fe</string>
+
+    <string name="pref_default_client_id" translatable="false">2bb81405-1bbc-499a-aff4-c41bf0801f7d</string>
+
+    <!-- Log server URL -->
+    <string name="pref_default_log_server_url" translatable="false">https://etis.preprod.morpho.com/piwik/piwik.php</string>
+    <!-- Piwik Id site -->
+    <string name="pref_default_log_piwik_id_site" translatable="false">1</string>
+
+    <!-- Google cloud messaging sender id -->
+    <string name="pref_default_gcm_sender_id" translatable="false">130427858015</string>
+    <!-- Google cloud messaging provider -->
+    <string name="pref_default_gcm_provider" translatable="false">GCM</string>
+
+
+</resources>
+

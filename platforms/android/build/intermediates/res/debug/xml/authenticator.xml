@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountPreferences="@xml/account_settings"
+    android:accountType="@string/pref_default_account_type"
+    android:icon="@drawable/ic_launcher"
+    android:label="@string/pref_default_account_label"
+    android:smallIcon="@drawable/ic_launcher" />
+<!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/res/xml/authenticator.xml -->

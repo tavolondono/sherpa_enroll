@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_fullFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.authentication.camera.msc.MorphoCameraAuthenticationFragment">
+
+
+    <include layout="@layout/circular_progress_bar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutLogic"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layoutInfo">
+
+            <RelativeLayout
+                android:id="@+id/layout_CameraPreview"
+                style="?attr/layoutMSC" >
+
+                <morpho.urt.msc.mscengine.MorphoSurfaceView
+                    android:id="@+id/morphoSurfaceView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imageView_frameDetect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/cross_hairs_margin"
+                    android:contentDescription="@string/image_desc"
+                    style="?attr/iconPositionFaceNotDetected"
+                    android:scaleType="fitCenter"
+                    />
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/displayGif"
+                    android:visibility="invisible"
+                    android:layout_centerInParent="true"
+                    android:scrollbars="none"
+                    />
+
+
+
+                <include layout="@layout/steps_status"
+                    android:id="@+id/stepSatus"
+                    style="?attr/layoutStepStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:visibility="invisible"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/icon_Tap"
+                android:layout_width="@dimen/icon_medium_width"
+                android:layout_height="@dimen/icon_medium_height"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dip"
+                android:contentDescription="@string/image_desc"
+                android:src="@drawable/icon_tap" />
+
+            <TextView
+                android:id="@+id/label_dummy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dip"
+                android:text="@string/use_dummy_data"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutInfo"
+            style="?attr/layoutMSCInfo"
+            >
+
+            <ImageView
+                android:id="@+id/iconInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="invisible"
+                style="?attr/iconArrowInfoLeft" />
+
+            <TextView
+                android:id="@+id/labelInfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_authentication_face_not_detected"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iconInfo"
+                android:visibility="visible"
+                style="?attr/contentText"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout><!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/layout/authentication_msc_fragment.xml --><!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/layout/authentication_msc_fragment.xml -->

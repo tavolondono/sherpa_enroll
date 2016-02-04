@@ -1,0 +1,62 @@
+<ion-modal-view
+ class="contenedor-factura" can-swipe-back="false">
+    <div class="contenedor-factura-int">
+    <!--HEADER-->
+    <ion-header-bar class="bar bar-header bar-light" align-title="center">
+        <div class="buttons" side="left">
+            <button
+            class="button ion-navicon icon-close" ng-click="payResumeControl.closeModal('voucher');"></button>
+        </div>
+        <h1 class="title">{{i18n.voucher.title}}</h1>
+
+        <div class="buttons" side="right"></div>
+
+    </ion-header-bar >
+    <!-- FIN HEADER -->
+    <ion-content>
+
+        <!--BOX RESUMEN-->
+        <div class="row padding-horizontal">
+            <div class="col padding">
+                <div class="pagos-factura-box">
+                    <h3>{{i18n.voucher.pointLabel}}</h3>
+                    <p>{{payResumeControl.pointName}}</p>
+                    <div class="pagos-factura-box-line "></div>
+                    <h3>{{i18n.voucher.amountLabel}}</h3>
+                    <p>{{payResumeControl.mountToPay | currency : '$' : '0'}}</p>
+                    <h3>{{i18n.voucher.costLabel}}</h3>
+                    <p>{{i18n.voucher.costValue}}</p>
+                    <div class="pagos-factura-box-line"></div>
+                    <h3>{{i18n.voucher.dateLabel}}</h3>
+                    <p><span>{{payResumeControl.paymentDate}}</span></p>
+                    <h3>{{i18n.voucher.referenceLabel}}</h3>
+                    <p><span>{{payResumeControl.reference}}</span> </p>
+                </div>
+            </div>
+        </div>
+    	<!--FIN BOX RESUMEN-->
+
+        <!--BOTON-->
+        <div class="row">
+            <div class="col">
+                <a href="#" ng-click="payResumeControl.redirect('dashboard','voucher');" class="btn">
+                    <button class="button button-block button-positive acepto">{{i18n.voucher.goBack}}</button>
+                </a>
+            </div>
+        </div>
+        <!--FIN BOTON-->
+
+        <!--OPERATIONRESULT TEXTO-->
+        <div class="row padding center">
+            <div class="col padding">
+                <div class="texto-cancelar enlace-secundario">
+                    <a href="#" ng-click="payResumeControl.closeModal('voucher');">{{i18n.payResume.success.otroPago}}</a>
+                </div>
+            </div>
+        </div>
+        <!--FIN OPERATIONRESULT TEXTO-->
+        <div class="lines"></div>
+        </div>
+
+    </ion-content>
+</ion-modal-view>

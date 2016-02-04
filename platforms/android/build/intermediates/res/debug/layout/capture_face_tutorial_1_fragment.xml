@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/layoutFragment"
+    >
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutBody"
+            android:gravity="center"
+            style="?attr/layoutBody"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon"
+                style="?attr/iconTutorialFace1"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_capture_face_tutorial_1_description"
+                android:id="@+id/label_description"
+
+                android:layout_below="@+id/icon"
+                style="?attr/contentTutorialText"
+                />
+            </RelativeLayout>
+	</ScrollView>
+ </RelativeLayout><!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/layout/capture_face_tutorial_1_fragment.xml --><!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/layout/capture_face_tutorial_1_fragment.xml -->

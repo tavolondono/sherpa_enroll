@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pinh-crypto-r61">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/pinh-crypto-r61.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

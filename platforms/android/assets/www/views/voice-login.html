@@ -1,0 +1,66 @@
+<ion-view
+    class="contenedor-login-celular voice-login"
+    can-swipe-back="false"
+    ng-controller="voiceLoginController as voiceLoginControl">
+    <!--HEADER-->
+    <ion-header-bar class="bar bar-header bar-light userLogin" align-title="center">
+        <div class="buttons" side="left">
+            <button class="ion-backicon icon-arrow" ng-click="voiceLoginControl.goHome()"></button>
+        </div>
+        <h1 class="title"></h1>
+    </ion-header-bar >
+    <!-- FIN HEADER -->
+    <ion-content scroll="false" >
+        <div class="">
+
+
+
+            <div class="login-clear-header voice-login-clear"></div>
+
+            <!--TITULO-->
+            <div class="login-titulo">
+                <h2>{{i18n.login.user.title}}</h2>
+            </div>
+            <!--FIN TITULO-->
+
+
+            <div class="row row-center center padding Txt-parrafo">
+                <h2>Frase:</h2>
+            </div>
+
+            <div class="row row-center center padding Txt-parrafo">
+                <h2 class="oblique">"Nequi la aplicación que esperabas"</h2>
+            </div>
+
+
+            <div class="row">
+                <div class="col center">
+                    <li class="ion-android-microphone button" ng-click="voiceLoginControl.recordAudio();" data-pack="android" data-tags="recorder, speak, noise, music, sound" style="display: inline-block; font-size: 114px"></li>
+                </div>
+            </div> 
+            <div class="row center">
+                <div class="col">
+                    <p><strong>Presiona el botón y dí la frase</strong></p>
+                </div>
+            </div>
+            <div class="row center" ng-show="voiceLoginControl.isRecording">
+                <div class="col center">
+                    <div class="audio-wave"></div>
+                </div>
+            </div> 
+            <div class="row center" ng-show="voiceLoginControl.isRecording">
+                <div class="col">
+                    <p id="media">Grabando frase... </p>
+                    <span id="audio_position_voice"></span>
+                </div>
+            </div> 
+
+
+        </div>
+
+
+        <div class="row pata">
+            <div class="col bkg-fondo-pata"></div>
+        </div>
+    </ion-content>
+</ion-view>

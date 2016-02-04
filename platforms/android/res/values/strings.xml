@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Nequi</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="csZbarScannerTitle">Scan QR Code</string>
+    <string name="csZbarScannerInstructions">Please point your camera at the QR code.</string>
+    <color name="csZbarScannerTextColor">#ffffff</color>
+    <color name="csZbarScannerTextBackground">#88000000</color>
+    <color name="csZbarScannerBackground">#000000</color>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="error_message_authentication">Registration should be carried out first!</string>
+    <string name="error_message_error_authentication">Error in Authentication</string>
+    <string name="action_settings">Settings</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="register">Register</string>
+    <string name="management">Account management</string>
+    <string name="title_activity_my_app">Morpho eTIS Getting Started</string>
+    <string name="action_more_options">More Options</string>
+    <string name="action_logout">Logout</string>
+    <string name="label_authentication_request_read_only_access">Launching authentication…</string>
+    <string name="label_create_account_request">Creating account…</string>
+    <string name="title_activity_entry">Morpho eTIS Getting Started</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="error_message_registration">Something went wrong in the registration</string>
+    <string name="message_authentication">Successful Authentication </string>
+    <string name="message_registration">Successful Registration</string>
+    <string name="error_message_registration1">Registration was not completed</string>
+    <string name="error_message_error_authentication1">Authentication was not completed</string>
+    <string name="hello_world">Hello world!</string>
+</resources>

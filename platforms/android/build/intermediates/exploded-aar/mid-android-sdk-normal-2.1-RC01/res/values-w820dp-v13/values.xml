@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/values-w820dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+</resources>

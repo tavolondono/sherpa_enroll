@@ -1,0 +1,81 @@
+<ion-view can-swipe-back="false" class="movements-container" ng-controller="movementsController as movementsControl">
+   
+    <!--HEADER-->
+    <ion-header-bar class="bar bar-header bar-light purple" align-title="center">
+        <div class="buttons" side="left">
+            <button class="button ion-navicon-white icon-close" ng-click="$ionicGoBack()"></button>
+        </div>
+        <h1 class="title">{{i18n.movements.title}}</h1>
+    </ion-header-bar >
+    <!--FIN HEADER-->
+
+    <ion-content scroll="false">
+        <ion-scroll class="balance-scroll">
+            <ion-refresher pulling-text="Cargando..." on-refresh="movementsControl.getBalance()"></ion-refresher>
+            <!--SALDO-->
+            <div class="movements-money padding">
+                <div class="row">
+                    <div class="col col-33"><p>{{i18n.generalActions.available}}</p></div>
+                    <div class="col right"><p><span>{{movementsControl.balance | currency : '$' : '0'}}</span></p></div>
+                </div>
+                <div class="row">
+                    <div class="col"><p>{{i18n.generalActions.total}}</p></div>
+                    <div class="col right"><p>{{movementsControl.balanceAvailable | currency : '$' : '0'}}</p></div>
+                </div>
+            </div>
+            <div class="movements-bg"></div>
+            <!--FIN SALDO-->
+        </ion-scroll>
+        
+        <!--GLOBOS-->
+        <ion-scroll class="movements-scroll" on-scroll="movementsControl.seeMovementsHistory();" delegate-handle="movementsScroll" has-bouncing="true">
+            <div class="row movements-row">
+                <div class="col">
+                    
+                    <ion-list class="list-movements-history">
+                        
+                        <!-- TITLE NOT MORE MOVEMENTS -->
+                        <h3 class="movements-title-not-more" ng-show="movementsControl.isEndRecords">
+                            {{i18n.movements.notMoreMovementsTitle}}
+                        </h3>
+                        <!-- END TITLE NOT MORE MOVEMENTS -->
+                        
+                        <!-- SPINNER CONTAINER -->
+                        <div class="spinner-container" ng-show="movementsControl.onProcessReadMoreMovements">
+                            <ion-spinner icon="android"></ion-spinner>
+                        </div>
+                        <!-- END SPINNER CONTAINER -->
+
+                        <!-- LIST MOVEMENTS -->
+                        <ion-item class="mov-item" ng-repeat="movGroup in movementsControl.getObjectKeys(movementsControl.movements)">
+                            <h4><span>{{movGroup | dayFilter}}</span></h4>
+                            <div class="mov-globe mov-{{mov.style}} padding-top padding-bottom" ng-repeat="mov in movementsControl.movements[movGroup]" ng-click="movementsControl.getMovementsDetail(movGroup, $index);">
+                                <div class="mov-globe-general mov-globe-{{mov.style}}">
+                                    <div class="mov-box-data mov-box-data-{{mov.style}}">
+                                        <div class="mov-globe-box-left">
+                                            <span class="mov-data">{{mov.typeTransfer}} - {{mov.name}}</span>
+                                        </div>
+                                        <div class="mov-globe-box-right">
+                                            <span class="mov-mount">
+                                                <strong>{{mov.mount | currency : '$' : '0'}}</strong>
+                                            </span>
+                                            <!-- <a href="#">{{mov.tag}}</a> -->
+                                        </div>
+                                    </div>
+                                    <figure class="mov-icon mov-{{mov.style}}"></figure>
+                                </div>
+                                <div class="mov-globe-bottom mov-globe-bottom-{{mov.style}}"></div>
+                            </div>
+                        </ion-item>
+                        <!-- END LIST MOVEMENTS -->
+                    </ion-list>
+
+                    <ion-infinite-scroll class="movements-infinite-scroll" distance="-8%" on-infinite="movementsControl.refreshMovements();"></ion-infinite-scroll>
+                </div>
+            </div>
+            
+        </ion-scroll>
+        <!--FIN GLOBOS-->
+        
+    </ion-content>
+</ion-view>

@@ -1,0 +1,35 @@
+<ion-view
+can-swipe-back="false"
+class="view-wizard contenedor-vinculacion"
+ng-controller="liteRegistryController as registryController"
+ng-class="configStyles.backgroundColor.nameClass">
+
+    <div ng-controller="faqsController as faqsControl">
+
+        <ion-nav-bar no-tap-scroll="true" class="bar-light bar bar-header disable-user-behavior" align-title="center">
+
+            <div class="button-container">
+                <ion-nav-buttons side="left">
+                    <a ng-hide="registryController.registryModel.isShowAdvantage">
+                        <button class="button ion-navicon icon-arrow" ng-click="registryController.goToPreviousPage();" ></button>
+                    </a>
+                    <a ng-hide="!registryController.registryModel.isShowAdvantage">
+                        <button class="button ion-navicon icon-close" ng-click="registryController.closeAdvantage();"></button>
+                    </a>
+
+                </ion-nav-buttons>
+                <ion-nav-buttons side="right">
+                    <a>
+                        <button class="button button-faq icon-help" ng-click="faqsControl.showModal(registryController.current.state)"> </button>
+                    </a>
+                </ion-nav-buttons>
+            </div>
+
+        </ion-nav-bar>
+
+        <ion-nav-view class="registry-views">
+
+        </ion-nav-view>
+    </div>
+
+</ion-view>

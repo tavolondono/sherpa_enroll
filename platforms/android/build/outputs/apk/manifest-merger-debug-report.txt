@@ -1,0 +1,825 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	package
+		ADDED from AndroidManifest.xml:2:98
+	android:versionName
+		ADDED from AndroidManifest.xml:2:70
+	android:hardwareAccelerated
+		ADDED from AndroidManifest.xml:2:11
+	android:versionCode
+		ADDED from AndroidManifest.xml:2:46
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:146
+supports-screens
+ADDED from AndroidManifest.xml:3:5
+	android:largeScreens
+		ADDED from AndroidManifest.xml:3:49
+	android:smallScreens
+		ADDED from AndroidManifest.xml:3:132
+	android:normalScreens
+		ADDED from AndroidManifest.xml:3:77
+	android:xlargeScreens
+		ADDED from AndroidManifest.xml:3:160
+	android:resizeable
+		ADDED from AndroidManifest.xml:3:106
+	android:anyDensity
+		ADDED from AndroidManifest.xml:3:23
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:4:5
+MERGED from :core-2.1-RC01::13:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::14:5
+MERGED from :msc-normalmsc-2.1-RC01::7:5
+	android:name
+		ADDED from AndroidManifest.xml:4:22
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from AndroidManifest.xml:5:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::20:5
+	android:name
+		ADDED from AndroidManifest.xml:5:22
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from AndroidManifest.xml:6:5
+	android:name
+		ADDED from AndroidManifest.xml:6:22
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from AndroidManifest.xml:7:5
+MERGED from :core-2.1-RC01::10:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::26:5
+	android:name
+		ADDED from AndroidManifest.xml:7:22
+uses-permission#android.permission.EXPAND_STATUS_BAR
+ADDED from AndroidManifest.xml:8:5
+	android:name
+		ADDED from AndroidManifest.xml:8:22
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from AndroidManifest.xml:9:5
+MERGED from :core-2.1-RC01::12:5
+MERGED from :msc-normalmsc-2.1-RC01::8:5
+	android:name
+		ADDED from AndroidManifest.xml:9:22
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:10:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::19:5
+	android:name
+		ADDED from AndroidManifest.xml:10:22
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from AndroidManifest.xml:11:5
+	android:name
+		ADDED from AndroidManifest.xml:11:22
+uses-permission#app.cloudstringers.permission.C2D_MESSAGE
+ADDED from AndroidManifest.xml:12:5
+	android:name
+		ADDED from AndroidManifest.xml:12:22
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:13:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::23:5
+	android:name
+		ADDED from AndroidManifest.xml:13:22
+uses-feature#android.hardware.telephony
+ADDED from AndroidManifest.xml:14:5
+	android:required
+		ADDED from AndroidManifest.xml:14:61
+	android:name
+		ADDED from AndroidManifest.xml:14:19
+uses-feature#android.hardware.wifi
+ADDED from AndroidManifest.xml:15:5
+	android:required
+		ADDED from AndroidManifest.xml:15:56
+	android:name
+		ADDED from AndroidManifest.xml:15:19
+uses-feature#android.hardware.camera
+ADDED from AndroidManifest.xml:16:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::11:5
+	android:required
+		ADDED from AndroidManifest.xml:16:58
+		MERGED from AndroidManifest.xml:16:58
+	android:name
+		ADDED from AndroidManifest.xml:16:19
+uses-feature#android.hardware.camera.autofocus
+ADDED from AndroidManifest.xml:17:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::12:5
+	android:required
+		ADDED from AndroidManifest.xml:17:68
+		MERGED from AndroidManifest.xml:17:68
+	android:name
+		ADDED from AndroidManifest.xml:17:19
+uses-sdk
+ADDED from AndroidManifest.xml:18:5
+MERGED from :core-2.1-RC01::7:5
+MERGED from :custom-play-services-5.0.89::15:5
+MERGED from :gcm-2.1-RC01::7:5
+MERGED from :hardware-camera-2.1-RC01::7:5
+MERGED from :hardware-nfc-2.1-RC01::7:5
+MERGED from :hardware-voice-2.1-RC01::7:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::7:5
+MERGED from android:CordovaLib:unspecified:debug:25:5
+	android:targetSdkVersion
+		ADDED from AndroidManifest.xml:18:42
+	android:minSdkVersion
+		ADDED from AndroidManifest.xml:18:15
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:19:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::24:5
+	android:name
+		ADDED from AndroidManifest.xml:19:22
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from AndroidManifest.xml:20:5
+	android:name
+		ADDED from AndroidManifest.xml:20:22
+uses-permission#android.permission.CAMERA
+ADDED from AndroidManifest.xml:21:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::9:5
+	android:name
+		ADDED from AndroidManifest.xml:21:22
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from AndroidManifest.xml:22:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::15:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+uses-permission#android.permission.AUTHENTICATE_ACCOUNTS
+ADDED from AndroidManifest.xml:23:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::16:5
+	android:name
+		ADDED from AndroidManifest.xml:23:22
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from AndroidManifest.xml:24:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::17:5
+	android:name
+		ADDED from AndroidManifest.xml:24:22
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from AndroidManifest.xml:25:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::18:5
+	android:name
+		ADDED from AndroidManifest.xml:25:22
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from AndroidManifest.xml:26:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::21:5
+	android:name
+		ADDED from AndroidManifest.xml:26:22
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from AndroidManifest.xml:27:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::22:5
+	android:name
+		ADDED from AndroidManifest.xml:27:22
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:28:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::25:5
+	android:name
+		ADDED from AndroidManifest.xml:28:22
+uses-feature#android.hardware.camera.front
+ADDED from AndroidManifest.xml:29:5
+	android:required
+		ADDED from AndroidManifest.xml:29:64
+	android:name
+		ADDED from AndroidManifest.xml:29:19
+application
+ADDED from AndroidManifest.xml:30:5
+MERGED from :core-2.1-RC01::15:5
+MERGED from :custom-play-services-5.0.89::16:5
+MERGED from :gcm-2.1-RC01::9:5
+MERGED from :hardware-camera-2.1-RC01::9:5
+MERGED from :hardware-nfc-2.1-RC01::9:5
+MERGED from :hardware-voice-2.1-RC01::9:5
+MERGED from :mid-android-sdk-normal-2.1-RC01::37:5
+	android:label
+		ADDED from AndroidManifest.xml:30:83
+	android:supportsRtl
+		ADDED from AndroidManifest.xml:30:116
+	android:hardwareAccelerated
+		ADDED from AndroidManifest.xml:30:18
+	android:icon
+		ADDED from AndroidManifest.xml:30:53
+	android:allowBackup
+		ADDED from :mid-android-sdk-normal-2.1-RC01::37:18
+	android:minSdkVersion
+		ADDED from :core-2.1-RC01::15:18
+meta-data#PREFERENCE_CLIENT_ID
+ADDED from AndroidManifest.xml:31:9
+	android:value
+		ADDED from AndroidManifest.xml:31:56
+	android:name
+		ADDED from AndroidManifest.xml:31:20
+meta-data#PREFERENCE_ACCOUNT_TYPE
+ADDED from AndroidManifest.xml:32:9
+	android:value
+		ADDED from AndroidManifest.xml:32:59
+	android:name
+		ADDED from AndroidManifest.xml:32:20
+meta-data#PREFERENCE_FRONT_APP_PROVIDER
+ADDED from AndroidManifest.xml:33:9
+	android:value
+		ADDED from AndroidManifest.xml:33:65
+	android:name
+		ADDED from AndroidManifest.xml:33:20
+meta-data#PREFERENCE_IDENTITY_PROVIDER
+ADDED from AndroidManifest.xml:34:9
+	android:value
+		ADDED from AndroidManifest.xml:34:64
+	android:name
+		ADDED from AndroidManifest.xml:34:20
+meta-data#PREFERENCE_SERVICE_PROVIDER
+ADDED from AndroidManifest.xml:35:9
+	android:value
+		ADDED from AndroidManifest.xml:35:63
+	android:name
+		ADDED from AndroidManifest.xml:35:20
+meta-data#PREFERENCE_NOTIFICATION_PROVIDER
+ADDED from AndroidManifest.xml:36:9
+	android:value
+		ADDED from AndroidManifest.xml:36:68
+	android:name
+		ADDED from AndroidManifest.xml:36:20
+meta-data#PREFERENCE_GCM_ENABLED
+ADDED from AndroidManifest.xml:37:9
+	android:value
+		ADDED from AndroidManifest.xml:37:58
+	android:name
+		ADDED from AndroidManifest.xml:37:20
+meta-data#PREFERENCE_NOTIFICATION_SENDER_ID
+ADDED from AndroidManifest.xml:38:9
+	android:value
+		ADDED from AndroidManifest.xml:38:69
+	android:name
+		ADDED from AndroidManifest.xml:38:20
+meta-data#PREFERENCE_USER_INACTIVITY
+ADDED from AndroidManifest.xml:39:9
+	android:value
+		ADDED from AndroidManifest.xml:39:62
+	android:name
+		ADDED from AndroidManifest.xml:39:20
+meta-data#CERTIFICATE_PINNING_ENABLED
+ADDED from AndroidManifest.xml:40:9
+	android:value
+		ADDED from AndroidManifest.xml:40:63
+	android:name
+		ADDED from AndroidManifest.xml:40:20
+meta-data#PREFERENCE_LOGS_ENABLED
+ADDED from AndroidManifest.xml:41:9
+	android:value
+		ADDED from AndroidManifest.xml:41:59
+	android:name
+		ADDED from AndroidManifest.xml:41:20
+meta-data#PREFERENCE_LOGS_SERVER_URL
+ADDED from AndroidManifest.xml:42:9
+	android:value
+		ADDED from AndroidManifest.xml:42:62
+	android:name
+		ADDED from AndroidManifest.xml:42:20
+service#morpho.etis.android.sdk.mid_android_sdk.account.AccountAuthenticatorService
+ADDED from AndroidManifest.xml:43:9
+	android:exported
+		ADDED from AndroidManifest.xml:43:18
+	android:name
+		ADDED from AndroidManifest.xml:43:43
+intent-filter#android.accounts.AccountAuthenticator
+ADDED from AndroidManifest.xml:44:13
+action#android.accounts.AccountAuthenticator
+ADDED from AndroidManifest.xml:45:17
+	android:name
+		ADDED from AndroidManifest.xml:45:25
+meta-data#android.accounts.AccountAuthenticator
+ADDED from AndroidManifest.xml:47:13
+	android:resource
+		ADDED from AndroidManifest.xml:47:77
+	android:name
+		ADDED from AndroidManifest.xml:47:24
+activity#com.ionicframework.sherpaenroll532309.MainActivity
+ADDED from AndroidManifest.xml:49:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:49:194
+	android:label
+		ADDED from AndroidManifest.xml:49:97
+	android:launchMode
+		ADDED from AndroidManifest.xml:49:135
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:49:285
+	android:configChanges
+		ADDED from AndroidManifest.xml:49:19
+	android:theme
+		ADDED from AndroidManifest.xml:49:231
+	android:name
+		ADDED from AndroidManifest.xml:49:166
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:50:13
+	android:label
+		ADDED from AndroidManifest.xml:50:28
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:51:17
+	android:name
+		ADDED from AndroidManifest.xml:51:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:52:17
+	android:name
+		ADDED from AndroidManifest.xml:52:27
+activity#net.easysol.did.qr_auth.QRCodeAuthenticationActivity
+ADDED from AndroidManifest.xml:55:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:55:87
+	android:name
+		ADDED from AndroidManifest.xml:55:19
+activity#org.cloudsky.cordovaPlugins.ZBarScannerActivity
+ADDED from AndroidManifest.xml:56:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:56:82
+	android:theme
+		ADDED from AndroidManifest.xml:56:119
+	android:name
+		ADDED from AndroidManifest.xml:56:19
+activity#co.pragma.www.plugin.morpho.RegistrationActivity
+ADDED from AndroidManifest.xml:58:9
+	android:label
+		ADDED from AndroidManifest.xml:58:19
+	android:name
+		ADDED from AndroidManifest.xml:58:65
+activity#co.pragma.www.plugin.daon.MainActivity
+ADDED from AndroidManifest.xml:59:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:59:124
+	android:configChanges
+		ADDED from AndroidManifest.xml:59:19
+	android:name
+		ADDED from AndroidManifest.xml:59:70
+activity#co.pragma.www.plugin.daon.BlinkActivity
+ADDED from AndroidManifest.xml:60:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:60:125
+	android:configChanges
+		ADDED from AndroidManifest.xml:60:19
+	android:theme
+		ADDED from AndroidManifest.xml:60:163
+	android:name
+		ADDED from AndroidManifest.xml:60:70
+activity#co.pragma.www.plugin.morpho.MainActivity
+ADDED from AndroidManifest.xml:61:9
+	android:label
+		ADDED from AndroidManifest.xml:61:19
+	android:name
+		ADDED from AndroidManifest.xml:61:65
+activity#co.pragma.www.plugin.daon.VerifyActivity
+ADDED from AndroidManifest.xml:62:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:62:126
+	android:configChanges
+		ADDED from AndroidManifest.xml:62:19
+	android:theme
+		ADDED from AndroidManifest.xml:62:164
+	android:name
+		ADDED from AndroidManifest.xml:62:70
+uses-permission#android.permission.GET_TASKS
+ADDED from :mid-android-sdk-normal-2.1-RC01::27:5
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::27:22
+permission#morpho.etis.android.sdk.mid_android_sdk.account.content_provider.READ_ETIS_ACCOUNT_PROVIDER
+ADDED from :mid-android-sdk-normal-2.1-RC01::29:5
+	android:protectionLevel
+		ADDED from :mid-android-sdk-normal-2.1-RC01::31:9
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::30:9
+permission#morpho.etis.android.sdk.mid_android_sdk.account.content_provider.WRITE_ETIS_ACCOUNT_PROVIDER
+ADDED from :mid-android-sdk-normal-2.1-RC01::32:5
+	android:protectionLevel
+		ADDED from :mid-android-sdk-normal-2.1-RC01::34:9
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::33:9
+meta-data#com.google.android.gms.version
+ADDED from :mid-android-sdk-normal-2.1-RC01::38:9
+	android:value
+		ADDED from :mid-android-sdk-normal-2.1-RC01::40:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::39:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.init.AuthenticationRequestActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::42:9
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::42:19
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::45:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::47:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::46:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationPasswordActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::49:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::51:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::50:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationHomomorphicPasswordActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::53:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::55:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::54:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationHomomorphicPinPadActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::57:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::59:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::58:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.managment.UserAccountManagementActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::64:9
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::64:19
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.WelcomeRegistrationActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::68:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::70:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::69:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.ActivationProcessActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::72:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::74:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::73:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.ActivationStateMachineActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::76:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::78:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::77:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.ActivationCredentialSuccessActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::80:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::82:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::81:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.ManualActivationActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::84:9
+	android:windowSoftInputMode
+		ADDED from :mid-android-sdk-normal-2.1-RC01::87:13
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::86:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::85:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.RegisterLocationActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::89:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::91:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::90:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.RegistrationStateMachineActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::93:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::95:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::94:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.RegistrationMoaSuccessActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::97:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::99:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::98:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationEnrolFaceDeviceMSCActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::101:9
+	android:screenOrientation
+		ADDED from :mid-android-sdk-normal-2.1-RC01::106:13
+	android:keepScreenOn
+		ADDED from :mid-android-sdk-normal-2.1-RC01::105:13
+	android:configChanges
+		ADDED from :mid-android-sdk-normal-2.1-RC01::103:13
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::104:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::102:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationEnrolFaceServerMSCActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::108:9
+	android:screenOrientation
+		ADDED from :mid-android-sdk-normal-2.1-RC01::113:13
+	android:keepScreenOn
+		ADDED from :mid-android-sdk-normal-2.1-RC01::112:13
+	android:configChanges
+		ADDED from :mid-android-sdk-normal-2.1-RC01::110:13
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::111:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::109:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.password_homomorphic.RegistrationEnrolHomomorphicPasswordActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::115:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::117:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::116:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.password_server.RegistrationEnrolPasswordServerActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::119:9
+	android:windowSoftInputMode
+		ADDED from :mid-android-sdk-normal-2.1-RC01::122:13
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::121:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::120:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationRetrievingInfoActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::124:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::126:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::125:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationManualFailureActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::128:9
+	android:label
+		ADDED from :mid-android-sdk-normal-2.1-RC01::131:13
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::130:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::129:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationSuccessActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::133:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::135:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::134:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.EnrolmentStateMachine
+ADDED from :mid-android-sdk-normal-2.1-RC01::137:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::139:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::138:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.qr_code.MSCQrCodeActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::141:9
+	android:screenOrientation
+		ADDED from :mid-android-sdk-normal-2.1-RC01::146:13
+	android:keepScreenOn
+		ADDED from :mid-android-sdk-normal-2.1-RC01::145:13
+	android:configChanges
+		ADDED from :mid-android-sdk-normal-2.1-RC01::143:13
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::144:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::142:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.errors.QrCodeFailureActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::151:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::153:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::152:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.errors.DeviceNotEligibleFailureActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::155:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::157:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::156:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.errors.DeviceNotEligibleExplanationFailureActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::159:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::161:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::160:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.RegistrationMoaChoiceActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::163:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::165:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::164:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.CaptureFaceServerWelcomeActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::167:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::169:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::168:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.CaptureFaceDeviceWelcomeActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::171:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::173:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::172:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.tutorial.CaptureFaceTutorialActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::175:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::177:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::176:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.password_homomorphic.CapturePasswordHomomorphicWelcomeActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::179:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::181:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::180:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.password_server.CapturePasswordWelcomeActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::183:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::185:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::184:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationMoaChoiceActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::187:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::189:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::188:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationMSCFaceServerActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::191:9
+	android:screenOrientation
+		ADDED from :mid-android-sdk-normal-2.1-RC01::196:13
+	android:keepScreenOn
+		ADDED from :mid-android-sdk-normal-2.1-RC01::195:13
+	android:configChanges
+		ADDED from :mid-android-sdk-normal-2.1-RC01::193:13
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::194:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::192:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationMSCFaceDeviceActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::198:9
+	android:screenOrientation
+		ADDED from :mid-android-sdk-normal-2.1-RC01::203:13
+	android:keepScreenOn
+		ADDED from :mid-android-sdk-normal-2.1-RC01::202:13
+	android:configChanges
+		ADDED from :mid-android-sdk-normal-2.1-RC01::200:13
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::201:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::199:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationFaceDeviceTutorialActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::205:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::207:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::206:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationFaceServerTutorialActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::209:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::211:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::210:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationMoaFailActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::213:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::215:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::214:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationAuthenticationMSCFaceDeviceActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::217:9
+	android:screenOrientation
+		ADDED from :mid-android-sdk-normal-2.1-RC01::222:13
+	android:keepScreenOn
+		ADDED from :mid-android-sdk-normal-2.1-RC01::221:13
+	android:configChanges
+		ADDED from :mid-android-sdk-normal-2.1-RC01::219:13
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::220:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::218:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationAuthenticationMSCFaceServerActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::224:9
+	android:screenOrientation
+		ADDED from :mid-android-sdk-normal-2.1-RC01::229:13
+	android:keepScreenOn
+		ADDED from :mid-android-sdk-normal-2.1-RC01::228:13
+	android:configChanges
+		ADDED from :mid-android-sdk-normal-2.1-RC01::226:13
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::227:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::225:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.ActivationConnectionLostActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::231:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::233:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::232:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.EnrolmentConnectionLostActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::235:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::237:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::236:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationFaceSuccessInfoActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::239:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::241:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::240:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.errors.RegistrationMoaFailActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::243:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::245:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::244:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationAuthenticationFaceTutorial
+ADDED from :mid-android-sdk-normal-2.1-RC01::247:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::249:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::248:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationAuthenticationFaceFailActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::251:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::253:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::252:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.EnrolmentFaceDeviceStateMachineActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::255:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::257:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::256:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.EnrolmentFaceServerStateMachineActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::259:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::261:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::260:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.pin_homomorphic.CapturePinHomomorphicWelcomeActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::263:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::265:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::264:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.pin_homomorphic.RegistrationEnrolHomomorphicPinPadActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::267:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::269:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::268:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.pin_homomorphic.EnrolmentPinHomomorphicStateMachineActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::271:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::273:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::272:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.password_server.EnrolmentPasswordServerStateMachineActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::275:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::277:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::276:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.password_homomorphic.EnrolmentPasswordHomomorphicStateMachineActivity
+ADDED from :mid-android-sdk-normal-2.1-RC01::279:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::281:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::280:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.RegistrationMoaStateMachineActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::283:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::285:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::284:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.PurposeOfRequestActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::287:9
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::289:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::288:13
+activity#morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.passport.MSCPassportActivityParent
+ADDED from :mid-android-sdk-normal-2.1-RC01::291:9
+	android:screenOrientation
+		ADDED from :mid-android-sdk-normal-2.1-RC01::296:13
+	android:keepScreenOn
+		ADDED from :mid-android-sdk-normal-2.1-RC01::295:13
+	android:configChanges
+		ADDED from :mid-android-sdk-normal-2.1-RC01::293:13
+	android:icon
+		ADDED from :mid-android-sdk-normal-2.1-RC01::294:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::292:13
+provider#morpho.etis.android.sdk.mid_android_sdk.account.content_provider.AccountProvider
+ADDED from :mid-android-sdk-normal-2.1-RC01::299:9
+	android:readPermission
+		ADDED from :mid-android-sdk-normal-2.1-RC01::305:13
+	android:authorities
+		ADDED from :mid-android-sdk-normal-2.1-RC01::301:13
+	android:grantUriPermissions
+		ADDED from :mid-android-sdk-normal-2.1-RC01::303:13
+	android:label
+		ADDED from :mid-android-sdk-normal-2.1-RC01::304:13
+	android:exported
+		ADDED from :mid-android-sdk-normal-2.1-RC01::302:13
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::300:13
+	android:writePermission
+		ADDED from :mid-android-sdk-normal-2.1-RC01::306:13
+receiver#morpho.etis.android.sdk.mid_android_sdk.application.UpgradeBroadcastReceiver
+ADDED from :mid-android-sdk-normal-2.1-RC01::309:9
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::309:19
+intent-filter#android.intent.action.PACKAGE_REPLACED
+ADDED from :mid-android-sdk-normal-2.1-RC01::310:13
+action#android.intent.action.PACKAGE_REPLACED
+ADDED from :mid-android-sdk-normal-2.1-RC01::311:17
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::311:25
+data
+ADDED from :mid-android-sdk-normal-2.1-RC01::313:17
+	android:scheme
+		ADDED from :mid-android-sdk-normal-2.1-RC01::313:23
+intent-filter#android.intent.action.PACKAGE_REMOVED
+ADDED from :mid-android-sdk-normal-2.1-RC01::315:13
+action#android.intent.action.PACKAGE_REMOVED
+ADDED from :mid-android-sdk-normal-2.1-RC01::316:17
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::316:25
+intent-filter#android.intent.action.PACKAGE_ADDED
+ADDED from :mid-android-sdk-normal-2.1-RC01::320:13
+action#android.intent.action.PACKAGE_ADDED
+ADDED from :mid-android-sdk-normal-2.1-RC01::321:17
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::321:25
+intent-filter#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from :mid-android-sdk-normal-2.1-RC01::325:13
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from :mid-android-sdk-normal-2.1-RC01::326:17
+	android:name
+		ADDED from :mid-android-sdk-normal-2.1-RC01::326:25

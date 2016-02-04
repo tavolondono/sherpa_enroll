@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/layoutFragment"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/layoutButtons"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutMainBody"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutBody"
+                android:gravity="center"
+                style="?attr/layoutBody"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_manual_activation_title"
+                    android:id="@+id/label_title"
+                    style="?attr/titleText"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_manual_activation_description"
+                    android:id="@+id/label_description"
+
+                    android:layout_below="@+id/label_title"
+                    style="?attr/contentText"
+                    />
+                </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutEdit"
+                android:gravity="center"
+                android:layout_below="@+id/layoutBody"
+                android:layout_marginTop="@dimen/margin_large"
+                >
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/label_manual_activation_hint_user_id"
+                android:singleLine="true"
+
+
+                />
+            <EditText
+                android:id="@+id/editTextActivation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_manual_activation_hint_activation_code"
+                android:singleLine="true"
+                android:layout_below="@+id/editTextEmail"
+                android:layout_marginTop="@dimen/margin_large"
+                android:inputType="textVisiblePassword|textCapCharacters"
+                />
+
+            <EditText
+                android:id="@+id/editTextServerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/label_manual_activation_hint_server_address"
+                android:singleLine="true"
+                android:layout_below="@+id/editTextActivation"
+                android:layout_marginTop="@dimen/margin_large"
+                android:inputType="textVisiblePassword|textCapCharacters"
+                />
+        </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layoutButtons"
+        style="?attr/layoutSingleButton"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:text="@string/button_confirm"
+            android:id="@+id/buttonPositive"
+            style="?attr/positiveButton"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+<!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/layout/manual_activate_account_fragment.xml -->

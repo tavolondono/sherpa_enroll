@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="daon-face-api-1.2.0.32">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/daon-face-api-1.2.0.32.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

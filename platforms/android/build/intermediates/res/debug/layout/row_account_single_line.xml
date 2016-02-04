@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight" 
+    android:padding="6dip">
+    
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dip"
+        android:src="@drawable/login_key" />
+    
+    <ImageView
+        android:id="@+id/iconButton"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginLeft="15dip"
+        android:src="@drawable/trash"
+        android:clickable="true" 
+        />
+
+    <ImageView
+        android:id="@+id/pendingButton"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_toLeftOf="@+id/iconButton"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginLeft="15dip"
+        android:src="@drawable/login_key"
+        android:clickable="true"
+        />
+    
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toLeftOf="@+id/pendingButton"
+        android:ellipsize="end"
+        android:freezesText="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/label_authentication_methods_face"
+        android:gravity="left"
+        style="?attr/contentText"
+        />
+    
+
+</RelativeLayout>
+<!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/layout/row_account_single_line.xml --><!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/layout/row_account_single_line.xml -->

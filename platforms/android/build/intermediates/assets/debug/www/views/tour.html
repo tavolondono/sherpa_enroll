@@ -1,0 +1,125 @@
+<ion-view
+ng-controller="tourController as tourCtrl"
+class="contenedor-tour"
+can-swipe-back="false">
+
+    <ion-content on-swipe-left="tourCtrl.swipeLeft();" scroll="false" class="tour">
+        <ion-slide-box
+            on-slide-changed="tourCtrl.slideHasChanged($index)"
+            pager-click="tourCtrl.pagerClick(index)"
+            does-continue="false">
+            <ion-slide class="contenedor-wt-one">
+                <div class="clearheader"></div>
+                <!--Icon-->
+                <div class="row">
+                    <div class="col">
+                        <div class="wt-img-content">
+                            <div class="wt-img">
+                                <img src="images/wt-icono-cuenta.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN Icon-->
+
+                <!--TEXTO-->
+                <div class="row">
+                    <div class="col">
+                        <div class="wt-texto">
+                            <p ng-bind-html="i18n.tour.descriptionStep1"></p>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN TEXTO-->
+            </ion-slide>
+            <ion-slide class="contenedor-wt-two">
+                <div class="clearheader"></div>
+                <!--Icon-->
+                <div class="row">
+                    <div class="col">
+                        <div class="wt-img-content">
+                            <div class="wt-img">
+                                <img src="images/wt-icono-pagos.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN Icon-->
+
+                <!--TEXTO-->
+                <div class="row">
+                    <div class="col">
+                        <div class="wt-texto">
+                            <p ng-bind-html="i18n.tour.descriptionStep2"></p>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN TEXTO-->
+            </ion-slide>
+            <ion-slide class="contenedor-wt-three">
+                <div class="clearheader"></div>
+                <!--Icon-->
+                <div class="row">
+                    <div class="col">
+                        <div class="wt-img-content">
+                            <div class="wt-img">
+                                <img src="images/wt-icono-salirte.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN Icon-->
+
+                <!--TEXTO-->
+                <div class="row">
+                    <div class="col">
+                        <div class="wt-texto">
+                            <p ng-bind-html="i18n.tour.descriptionStep3"></p>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN TEXTO-->
+            </ion-slide>
+            <ion-slide class="contenedor-wt-four">
+                <div class="clearheader"></div>
+                <!--Icon-->
+                <div class="row">
+                    <div class="col">
+                        <div class="wt-img-content">
+                            <div class="wt-img">
+                                <img src="images/wt-icono-bono.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN Icon-->
+
+                <!--TEXTO-->
+                <div class="row">
+                    <div class="col">
+                        <div class="wt-texto">
+                            <p ng-bind-html="i18n.tour.descriptionStep4"></p>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN TEXTO-->
+            </ion-slide>
+        </ion-slide-box>
+
+        <div ng-class="{'lastSlide': tourCtrl.lastSlider}" class="bar bar-footer botonCel">
+            <div class="row">
+                <div class="col">
+                    
+                    <div ng-if="!tourCtrl.lastSlider" class="texto-saltar enlace-secundario">
+                        <a href="#" ng-click="tourCtrl.goEnroll();">{{i18n.navigation.jump}}</a>
+                    </div>
+
+                    <a ng-if="tourCtrl.lastSlider" class="btn" href="#" ng-click="tourCtrl.goEnroll();">
+                        <button class="button button-block button-positive Enviar">{{i18n.tour.test}}</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

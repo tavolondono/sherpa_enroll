@@ -1,0 +1,124 @@
+<ion-view class="container-security" ng-controller="securityController as securityControl">
+
+    <!--HEADER-->
+    <ion-header-bar class="bar bar-header bar-light" align-title="center">
+        <div class="button-action-bar" side="left">
+            <button class="button ion-navicon icon-arrow" ng-click="securityControl.goBack()"></button>
+        </div>
+        <h1 class="title">{{i18n.profile.security.title}}</h1>
+        <div class="buttons" side="right"></div>
+    </ion-header-bar >
+    <!-- FIN HEADER -->
+
+    <ion-content>
+
+        <ul class="list nospace">
+            <li class="item noborder item-padding">{{i18n.profile.security.biometry.title}}</li>
+
+            <!--            <li class="item gray">
+                            <div class="content-item">
+                                <p class="context" ng-bind-html="i18n.profile.security.item.contextA"></p>
+                                <br>
+                                <div class="enlace-secundario" ng-class="{'hide-element': securityControl.showPassword, '' : !securityControl.showPassword}">
+                                    <a href="#" ng-click="securityControl.activate(true)">{{i18n.profile.security.item.actionText}}</a>
+                                </div>
+            
+                                <div ng-class="{'hide-element': !securityControl.showPassword}" class="textPassword">
+                                    <strong ng-class="{'hide-element': !securityControl.showConfirm}">{{i18n.profile.security.item.newPassword}}</strong>
+                                    <strong ng-class="{'hide-element': securityControl.showConfirm}">{{i18n.profile.security.item.repeatPassword}}</strong>
+                                </div>
+            
+                                <div class="enlace-secundario right" ng-class="{'hide-element': !securityControl.showPassword}">
+                                    <a href="#" ng-click="securityControl.activate(false)">{{i18n.generalActions.cancel}}</a>
+                                </div>
+            
+                                <strong ng-hide="securityControl.showConfirm" class="hidePass">{{securityControl.password}}</strong>
+                            </div>
+            
+                            INPUTS
+                            <div class="contenedor-password" ng-class="{'hide-element': !securityControl.showPassword}">
+            
+                                <label class="item item-input mask-password" ng-class="{'hide-element': !securityControl.showConfirm}">
+            
+                                    <input type="tel"
+                                    name="password"
+                                    ng-model="securityControl.password"
+                                    ng-required="true"
+                                    trim="true"
+                                    ng-maxlength="4"
+                                    length-size="4"
+                                    length-checker="securityControl.password"
+                                    ng-change="securityControl.validatePassword()">
+            
+                                    <div class="maskPunto">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="maskPunto transparent">
+                                        <span class="active" ng-class="{'has-pass': securityControl.password.length > 0}"> · </span>
+                                        <span class="active" ng-class="{'has-pass': securityControl.password.length > 1}"> · </span>
+                                        <span class="active" ng-class="{'has-pass': securityControl.password.length > 2}"> · </span>
+                                        <span class="active" ng-class="{'has-pass': securityControl.password.length > 3}"> · </span>
+                                    </div>
+                                </label>
+            
+                                <label class="item item-input mask-password" ng-class="{'hide-element': securityControl.showConfirm}">
+            
+                                    <input type="tel"
+                                    name="confirmPassword"
+                                    ng-model="securityControl.confirmPassword"
+                                    ng-required="true"
+                                    trim="true"
+                                    ng-maxlength="4"
+                                    length-checker="securityControl.confirmPassword"
+                                    length-size="4"
+                                    ng-change="securityControl.validateConfim()">
+            
+                                    <div class="maskPunto">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="maskPunto transparent">
+                                        <span class="active" ng-class="{'has-pass': securityControl.confirmPassword.length > 0}"> · </span>
+                                        <span class="active" ng-class="{'has-pass': securityControl.confirmPassword.length > 1}"> · </span>
+                                        <span class="active" ng-class="{'has-pass': securityControl.confirmPassword.length > 2}"> · </span>
+                                        <span class="active" ng-class="{'has-pass': securityControl.confirmPassword.length > 3}"> · </span>
+                                    </div>
+                                </label>
+            
+                            </div>
+                            FIN INPUTS
+                        </li>-->
+
+            <li class="item gray nobordertop item-toggle">
+                {{i18n.profile.security.biometry.faceRecognition}}
+                <label class="toggle toggle-balanced">
+                    <input type="checkbox" 
+                           ng-model="securityControl.biometryCheckboxModel.facial" ng-disabled="securityControl.canDisableFace" ng-change="securityControl.almostOneValidation(1)">
+                    <div class="track"><div class="handle"></div></div></label>
+            </li>
+            <li class="item gray nobordertop item-toggle">
+                {{i18n.profile.security.biometry.voiceRecognition}}
+                <label class="toggle toggle-balanced">
+                    <input type="checkbox" ng-model="securityControl.biometryCheckboxModel.voice" 
+                           ng-disabled="securityControl.canDisableVoice" ng-change="securityControl.almostOneValidation(2)"><div class="track"><div class="handle"></div></div></label>
+            </li>
+            <!--            <li class="item nobordertop gray">
+                            <p class="context" ng-bind-html="i18n.profile.security.item.text"></p>
+                        </li>
+                        <li class="item gray item-toggle">
+                            {{i18n.profile.security.item.optionOpen}}
+                            <label class="toggle toggle-balanced">
+                                <input type="checkbox" disabled="disabled">
+                                <div class="track">
+                                    <div class="handle"></div>
+                                </div>
+                            </label>
+                        </li>-->
+        </ul>
+    </ion-content>
+</ion-view>

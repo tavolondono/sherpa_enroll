@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/layout_fullFragment" 
+    >
+         <include layout="@layout/circular_progress_bar"/>
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/layoutLogic"
+             >
+
+             <RelativeLayout
+                 android:id="@+id/layout_body"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_above="@+id/layoutInfo">
+
+                 <RelativeLayout
+                     android:id="@+id/layout_CameraPreview"
+                     style="?attr/layoutMSC" >
+
+                     <morpho.urt.msc.mscengine.MorphoSurfaceView
+                         android:id="@+id/morphoSurfaceView"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent" />
+                     <WebView
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:id="@+id/displayGif"
+                         android:visibility="gone"
+                         android:layout_centerInParent="true"
+                         />
+
+                     <ImageView
+                         android:id="@+id/imageView_frameDetect"
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_centerInParent="true"
+                         android:layout_margin="@dimen/cross_hairs_margin"
+                         android:contentDescription="@string/image_desc"
+                         style="?attr/iconPositionFaceNotDetected"
+                         android:scaleType="fitCenter"
+                         />
+
+                     <TextView
+                         android:id="@+id/textViewCountDown"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_centerInParent="true"
+                         android:visibility="gone"
+                         style="?attr/captureFaceCountDownText"
+                         />
+
+                     <include layout="@layout/steps_status"
+                         android:id="@+id/stepSatus"
+                         style="?attr/layoutStepStatus"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentTop="true"
+                         android:visibility="invisible"
+                         />
+                 </RelativeLayout>
+
+                 <ImageView
+                     android:id="@+id/icon_Tap"
+                     android:layout_width="@dimen/icon_medium_width"
+                     android:layout_height="@dimen/icon_medium_height"
+                     android:layout_alignParentBottom="true"
+                     android:layout_alignParentRight="true"
+                     android:layout_margin="5dip"
+                     android:contentDescription="@string/image_desc"
+                     android:src="@drawable/icon_tap" />
+
+                 <TextView
+                     android:id="@+id/label_dummy"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentLeft="true"
+                     android:layout_margin="5dip"
+                     android:text="@string/use_dummy_data"
+                     android:visibility="gone" />
+
+             </RelativeLayout>
+
+
+
+
+         <RelativeLayout
+             android:id="@+id/layoutInfo"
+             style="?attr/layoutMSCInfo"
+             >
+
+             <TextView
+                 android:id="@+id/labelInfoText"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/label_capture_face_description"
+                 android:layout_centerInParent="true"
+                 android:visibility="visible"
+                 style="?attr/contentText"/>
+
+             <LinearLayout
+                 android:id="@+id/layout_icons"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center_horizontal"
+                 android:orientation="horizontal"
+                 >
+
+             </LinearLayout>
+         </RelativeLayout>
+   	</RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/layout/capture_face_msc_fragment.xml -->

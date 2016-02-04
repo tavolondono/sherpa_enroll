@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pinh-interface-r61">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/pinh-interface-r61.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

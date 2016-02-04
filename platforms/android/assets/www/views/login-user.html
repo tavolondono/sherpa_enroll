@@ -1,0 +1,83 @@
+<ion-view
+    class="contenedor-login-celular"
+    can-swipe-back="false"
+    ng-controller="userLoginController as userLoginControl">
+    <!--HEADER-->
+    <ion-header-bar class="bar bar-header bar-light userLogin" align-title="center">
+        <div class="buttons" side="left">
+            <button class="ion-backicon icon-arrow" ng-click="userLoginControl.goHome()"></button>
+        </div>
+        <h1 class="title"></h1>
+    </ion-header-bar >
+    <!-- FIN HEADER -->
+    <ion-content scroll="false" >
+        <div class="">
+
+
+
+            <div class="login-clear-header"></div>
+
+            <!--TITULO-->
+            <div class="login-titulo">
+                <h2>{{i18n.login.user.title}}</h2>
+            </div>
+            <!--FIN TITULO-->
+
+
+            <div ng-if="userLoginControl.doesNotBiometry">
+                <div class="row row-center center padding Txt-parrafo" >
+                    <div class="col color-white">
+                        No posee biometría
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col">
+                        <div class="padding content-bottom">
+                            <button type="submit" class="button button-positive enviar" ng-click="userLoginControl.goHome();">{{i18n.generalActions.back}}</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="padding content-bottom">
+                            <button type="submit" class="button button-positive enviar" ng-click="userLoginControl.goRegister();">{{i18n.generalActions.registry}}</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="contenedor-vinculacion" ng-if="!userLoginControl.doesNotBiometry">
+                <div class="row"  >
+                    <div class="col" ng-if="userLoginControl.hasVoice">
+                        <div class="biometria-botonera">
+                            <div class="biometria-boton-facial full"><div class="voice-permisos-icono"></div></div>
+                        </div>
+                    </div>
+                    <div class="col" ng-if="userLoginControl.hasFacial">
+                        <div class="biometria-botonera">
+                            <div class="biometria-boton-facial full"><div class="face-permisos-icono"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col" ng-if="userLoginControl.hasVoice">
+                        <div class="padding content-bottom">
+                            <button type="submit" class="button button-positive enviar" ng-click="userLoginControl.takeVoice()">{{i18n.biometry.voice.title}}</button>
+                        </div>
+                    </div>
+                    <div class="col" ng-if="userLoginControl.hasFacial">
+                        <div class="padding content-bottom">
+                            <button type="submit" class="button button-positive enviar" ng-click="userLoginControl.launchAuthentication()">{{i18n.biometry.facial.photo}}</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="row pata">
+            <div class="col bkg-fondo-pata"></div>
+        </div>
+    </ion-content>
+</ion-view>

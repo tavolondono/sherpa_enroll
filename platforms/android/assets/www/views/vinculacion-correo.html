@@ -1,0 +1,69 @@
+<ion-view can-swipe-back="false">    
+    <ion-content class="contract wizard-content" ng-controller="vinculacionCorreoController as vinculacionCorreoControl">
+        <div class="contenedor-vinculacion">
+
+            <!--HEADER-->
+            <div class="bar bar-header bar-light aqua">
+                <button class="button ion-navicon icon-arrow" ng-click="vinculacionCorreoControl.atras()"></button>
+                <h1 class="title">Comunicación</h1>
+                <button class="button ion-navicon icon-help"></button>
+            </div>
+            <!--FIN HEADER-->
+
+            <div class="clearheader"></div>
+
+            <!--PASOS-->
+            <div class="row">
+                <div class="col">
+                    <div class="Txt-pasos">
+                        <p>3 de 5</p>
+                    </div>
+                </div>
+            </div> 
+            <!--FIN PASOS-->
+
+            <!--ICONO-->
+            <div class="row">
+                <div class="col">
+                    <div class="vinculacion-icono icono-correo"></div>
+                </div>
+            </div> 
+            <!--FIN ICONO-->
+
+            <br>
+
+            <!--TEXTOS-->
+            <div class="row">
+                <div class="col">
+                    <div class="Txt-parrafo">
+                        <p><strong>Para estar más cerca</strong></p>
+                        <p>Necesitaremos tu correo electrónico personal <br> para estar en contacto contigo, además te <br> 
+                            enviaremos una copia del contrato que <br> acabas de aceptar</p>
+                    </div>
+                </div>
+            </div> 
+            <!--FIN TEXTOS-->
+
+            <!--INPUT-->
+            <div class="row row-phone-number">
+                <div class="col">
+                    <label class=" item item-input input-documento">
+                        <span class="input-label">E-mail</span>
+                        <input type="text">
+                    </label>
+                </div>
+            </div>        
+            <!--FIN INPUT-->
+            <!--BOTON-->
+            <div class="row">
+                <button class="button button-block button-assertive siguiente" ng-click="vinculacionCorreoControl.siguiente()">Siguiente</button>
+            </div> 
+            <div class="row">
+                <div class="texto-cancelar"><a href="#" ng-click="vinculacionCorreoControl.atras()">Cancelar</a></div> 
+            </div> 
+            <!--FIN BOTON-->
+
+        </div>
+
+    </ion-content>
+</ion-view>

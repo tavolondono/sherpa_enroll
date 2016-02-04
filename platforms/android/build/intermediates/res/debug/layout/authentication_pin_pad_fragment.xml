@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/layoutFragment" >
+
+    <include layout="@layout/circular_progress_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutLogic">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/layoutBody"
+                android:gravity="center"
+                style="?attr/layoutBody"
+                android:layout_weight=".4"
+                >
+                <TextView
+                    android:layout_below="@+id/icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_capture_pin_title_1"
+                    android:id="@+id/label_title"
+                    style="?attr/titleText"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/layoutPinPad"
+                android:layout_weight=".6"
+                >
+                <!-- displays dots as user enters pin -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:addStatesFromChildren="true"
+                    android:gravity="center_vertical"
+                    android:baselineAligned="false"
+                    android:background="@android:drawable/edit_text"
+                    >
+
+                    <EditText android:id="@+id/editTextPassword1"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:maxLines="1"
+                        android:background="@null"
+                        android:hint="@string/label_capture_pin_hint_1"
+                        android:inputType="numberPassword"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:cursorVisible="true"
+                        />
+                </LinearLayout>
+
+                <!-- Keypad section -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".12"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button android:id="@+id/one"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        style="?attr/buttonPinPadNeutralStyle"
+                        android:text="@string/label_number_1"
+
+                        />
+
+                    <Button android:id="@+id/two"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        style="?attr/buttonPinPadNeutralStyle"
+                        android:text="@string/label_number_2"
+                        />
+
+                    <Button android:id="@+id/three"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        style="?attr/buttonPinPadNeutralStyle"
+                        android:text="@string/label_number_3"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".12"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button android:id="@+id/four"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        style="?attr/buttonPinPadNeutralStyle"
+                        android:text="@string/label_number_4"
+                        />
+
+                    <Button android:id="@+id/five"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        style="?attr/buttonPinPadNeutralStyle"
+                        android:text="@string/label_number_5"
+                        />
+
+                    <Button android:id="@+id/six"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        style="?attr/buttonPinPadNeutralStyle"
+                        android:text="@string/label_number_6"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".12"
+                    android:orientation="horizontal"
+                    >
+
+                    <Button android:id="@+id/seven"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        style="?attr/buttonPinPadNeutralStyle"
+                        android:text="@string/label_number_7"
+                        />
+
+                    <Button android:id="@+id/eight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        style="?attr/buttonPinPadNeutralStyle"
+                        android:text="@string/label_number_8"
+                        />
+
+                    <Button android:id="@+id/nine"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        style="?attr/buttonPinPadNeutralStyle"
+                        android:text="@string/label_number_9"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".12"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageButton android:id="@+id/backspace1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        style="?attr/buttonPinPadNegativeStyle"
+                        />
+
+                    <Button android:id="@+id/zero"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        style="?attr/buttonPinPadNeutralStyle"
+                        android:text="@string/label_number_0"
+                        />
+
+                    <ImageButton android:id="@+id/ok"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        style="?attr/buttonPinPadPositiveStyle"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/layout/authentication_pin_pad_fragment.xml --><!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/layout/authentication_pin_pad_fragment.xml -->

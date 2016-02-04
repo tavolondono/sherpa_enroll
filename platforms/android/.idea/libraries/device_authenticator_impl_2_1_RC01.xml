@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="device-authenticator-impl-2.1-RC01">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/device-authenticator-impl-2.1-RC01.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

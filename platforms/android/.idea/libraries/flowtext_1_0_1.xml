@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="flowtext-1.0.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/flowtext-1.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,56 @@
+<ion-view can-swipe-back="false" class="contenido-vinculacion enrollContent" ng-controller="facialHelpController as facialHelpControl">
+    <ion-nav-bar no-tap-scroll="true" class="bar-light bar bar-header disable-user-behavior nav-bar-wizard-registry" align-title="center">
+        <div class="button-container">
+            <ion-nav-buttons class="button-container">
+                <div class="bar bar-header bar-light aqua">
+                    <button class="button ion-navicon icon-arrow" ng-click="facialHelpControl.atras();"></button>
+                    <div class="title-vinculacion-facial header-item">{{i18n.biometry.help.advices}}</div>
+                    <button class="button ion-navicon icon-help" ng-click="facialHelpControl.showHelp();"></button>
+                </div>
+            </ion-nav-buttons>
+        </div>
+    </ion-nav-bar>
+    
+    <ion-content class="contract wizard-content has-header" >
+        <div class="contenedor-vinculacion">
+
+
+
+            <div class="clearheader"></div>
+
+            <!--PASOS-->
+            <div class="row center">
+                <div class="col">
+                    <div class="Txt-pasos">
+                        <p>5 de 5</p>
+                    </div>
+                </div>
+            </div> 
+            <!--FIN PASOS-->
+
+            <!--ICONO-->
+            <div class="row">
+                <div class="col">
+                    <div class="vinculacion-icono icono-correo"></div>
+                </div>
+            </div> 
+            <!--FIN ICONO-->
+
+            <br>
+
+            <!--FIN TEXTOS-->
+            <div class="row center">
+                <div class="facial-help"></div>
+            </div>
+            <!--TEXTOS-->
+            <div class="row">                
+                <div class="col">
+                    <button class="button button-block button-assertive siguiente" 
+                            ng-click="facialHelpControl.siguiente()">
+                        {{i18n.navigation.jump}}</button>
+                </div>
+            </div>             
+        </div>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/hardware-nfc/src/main/res/values/nfc_responses.xml -->
+    <eat-comment/>
+    <string name="response_address_range_exceeded" translatable="false">Address range exceeded</string>
+    <string name="response_ask_or_give_random_not_executed" translatable="false">Ask or give random not executed</string>
+    <string name="response_authentication_failed" translatable="false">Authentication failed</string>
+    <string name="response_authentication_method_blocked" translatable="false">Authentication method blocked</string>
+    <string name="response_class_not_supported" translatable="false">Class not supported</string>
+    <string name="response_command_aborted" translatable="false">Command aborted</string>
+    <string name="response_command_incompatible_with_file_structure" translatable="false">Command not compatible with file structure</string>
+    <string name="response_command_not_allowed" translatable="false">Command not allowed</string>
+    <string name="response_command_not_allowed_ef_not_selected" translatable="false">Command not allowed EF not selected</string>
+    <string name="response_command_not_supported" translatable="false">Command not supported</string>
+    <string name="response_data_maybe_erroneous" translatable="false">Data maybe erroneus</string>
+    <string name="response_execution_error_icc" translatable="false">Execution error ICC</string>
+    <string name="response_execution_error_ifd" translatable="false">Execution error IFD</string>
+    <string name="response_execution_stoped" translatable="false">Execution stoped</string>
+    <string name="response_expected_secure_messages_data_objetcs_missing" translatable="false">Expected secure messages data objects missing</string>
+    <string name="response_failed" translatable="false">Response failed</string>
+    <string name="response_fci_format_error" translatable="false">FCI format error</string>
+    <string name="response_fewer_bytes_readed_than_specified" translatable="false">Fewer bytes readed than specified</string>
+    <string name="response_fid_not_found" translatable="false">FID not found</string>
+    <string name="response_file_not_found" translatable="false">File not found</string>
+    <string name="response_function_not_suported" translatable="false">Function not supported</string>
+    <string name="response_functions_not_supported" translatable="false">Functions not supported</string>
+    <string name="response_incorrect_parametes" translatable="false">Incorrect parameters P1 or P2</string>
+    <string name="response_incorrect_parametes_data_portion" translatable="false">Incorrect parameters data portion</string>
+    <string name="response_incorrect_parametes_general" translatable="false">Incorrect parameters general</string>
+    <string name="response_increase_or_decrease_limit_exceeded" translatable="false">Increase or decrease limit exceeded</string>
+    <string name="response_insufficient_memory" translatable="false">Insufficient memory</string>
+    <string name="response_lc_inconsistent_with_p1_p2" translatable="false">Lc incosistent with p1 or p2</string>
+    <string name="response_lc_inconsistent_with_tlv" translatable="false">Lc incosistent with TLV</string>
+    <string name="response_logical_channels_not_supported" translatable="false">Logical channels not supported</string>
+    <string name="response_memory_error" translatable="false">Memory error</string>
+    <string name="response_no_ef_selected" translatable="false">No EF selected</string>
+    <string name="response_no_error" translatable="false">No error</string>
+    <string name="response_no_information" translatable="false">No information</string>
+    <string name="response_no_pin_defined" translatable="false">No pin defined</string>
+    <string name="response_not_supported" translatable="false">Not supported</string>
+    <string name="response_pin_verification_not_successfully" translatable="false">Pin verification not successfully</string>
+    <string name="response_record_not_found" translatable="false">Record not found</string>
+    <string name="response_referenced_data_invalidated" translatable="false">Referenced data invalidated</string>
+    <string name="response_referenced_data_not_found" translatable="false">Referenced data not found</string>
+    <string name="response_requested_information_not_available" translatable="false">Requested information not available</string>
+    <string name="response_secure_messages_data_objetcs_incorrect" translatable="false">Secure messages data objects incorrect</string>
+    <string name="response_secure_messaging_not_supported" translatable="false">Secure messaging not supported</string>
+    <string name="response_security_state_not_satisfied" translatable="false">Security state not satisfied</string>
+    <string name="response_selected_file_invalidated" translatable="false">Selected file invalidated</string>
+    <string name="response_selected_file_type_doesnt_match_command" translatable="false">Selected file type doesn\'t match command</string>
+    <string name="response_unexpected_length" translatable="false">Unexpected length</string>
+    <string name="response_unexpected_value" translatable="false">Unexpected value</string>
+    <string name="response_usage_conditions_not_satisfied" translatable="false">Usage conditions not satisfied</string>
+    <string name="response_writing_eeprom_not_successfully" translatable="false">Writing eeprom not successfully</string>
+</resources>

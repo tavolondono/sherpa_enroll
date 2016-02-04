@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_enabled="false" android:drawable="@drawable/switch_bg_disabled_holo_dark" />
+    <item android:state_focused="true"  android:drawable="@drawable/switch_bg_focused_holo_dark" />
+    <item                               android:drawable="@drawable/switch_bg_holo_dark" />-->
+    <item android:state_checked="false">
+        <shape android:shape="line">
+            <stroke android:width="2dp" android:color="@color/color_other_6"/>
+            <size android:height="@dimen/switch_item_height"/>
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape android:shape="line">
+            <stroke android:width="2dp" android:color="@color/color_primary_2"/>
+            <size android:height="@dimen/switch_item_height"/>
+        </shape>
+    </item>
+</selector><!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/drawable/positive_switch_bg.xml -->

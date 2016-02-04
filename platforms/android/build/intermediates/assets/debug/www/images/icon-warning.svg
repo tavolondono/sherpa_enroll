@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Warning (Outline)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="02-Tabla-costos-ACH" sketch:type="MSArtboardGroup" transform="translate(-39.000000, -285.000000)">
+            <g id="Warning-(Outline)" sketch:type="MSLayerGroup" transform="translate(40.000000, 286.000000)">
+                <g id="Group" sketch:type="MSShapeGroup">
+                    <path d="M13.0163704,12 L0.732666667,12 C0.237481481,12 -0.0715555556,11.4594783 0.17837037,11.0290435 L6.32022222,0.434608696 C6.56807407,0.00730434783 7.18096296,0.00730434783 7.42881481,0.434608696 L13.5706667,11.0290435 C13.8205926,11.4594783 13.5115556,12 13.0163704,12 L13.0163704,12 Z" id="Stroke-852" stroke="#FF3862"></path>
+                    <path d="M6.87451852,3.65217391 L6.87451852,7.82608696" id="Stroke-854" stroke="#FF3862" stroke-linecap="round"></path>
+                    <path d="M7.25925926,9.91304348 C7.25925926,10.2010435 7.02696296,10.4347826 6.74074074,10.4347826 C6.45451852,10.4347826 6.22222222,10.2010435 6.22222222,9.91304348 C6.22222222,9.62504348 6.45451852,9.39130435 6.74074074,9.39130435 C7.02696296,9.39130435 7.25925926,9.62504348 7.25925926,9.91304348" id="Imported-Layers" fill="#FF3862"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

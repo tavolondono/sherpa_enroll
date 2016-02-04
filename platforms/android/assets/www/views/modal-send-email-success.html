@@ -1,0 +1,16 @@
+<ion-modal-view class="modal-sherpa-view modal-send-email-success">
+
+    <button class="close-modal" ng-click="contractControl.nextPage();"></button>
+
+    <ion-content class="modal-sherpa-container" scroll="false">
+        <div class="send-email-container">
+            <h3>{{i18n.faqs.verifyEmail.title}}</h3>
+            <div class="icon-mail"></div>
+            <p>{{i18n.recoverPassword.modalSuccess.subtitle}}</p>
+            <p><a>{{registryController.registryModel.email}}</a></p>
+            <p ng-bind-html="i18n.recoverPassword.modalSuccess.context"></p>
+        </div>
+    </ion-content>
+    
+
+</ion-modal-view>

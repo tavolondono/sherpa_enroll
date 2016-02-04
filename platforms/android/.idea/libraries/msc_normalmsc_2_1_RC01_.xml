@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="msc-normalmsc-2.1-RC01-">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/msc-normalmsc-2.1-RC01/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/build/intermediates/exploded-aar/msc-normalmsc-2.1-RC01/libs/MSC-interface.jar!/" />
+      <root url="file://$PROJECT_DIR$/build/intermediates/exploded-aar/msc-normalmsc-2.1-RC01/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

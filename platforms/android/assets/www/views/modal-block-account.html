@@ -1,0 +1,28 @@
+<ion-modal-view class="tool-dashboard-bkg">
+    <ion-content class="container-tool-dashboard" scroll="false">
+        <!--CERRAR-->
+        <div class="row">
+            <div class="col col-close">
+                <button class="tool-dashboard-close" ng-click="blockAccountModal.hide();"></button>
+            </div>
+        </div>
+        <!--FIN CERRAR-->
+
+        <!--MARQUEE-->
+        <div class="row">
+            <div class="col">
+                <div class="tool-dashboard-marquee block-account">
+                    <div class="tool-dashboard-text">
+                        <h3>{{i18n.blockAccountModal.title}}</h3>
+                        <p>{{i18n.blockAccountModal.description}}</p>
+                        <p>{{i18n.blockAccountModal.info}}</p>
+                        <h1>{{i18n.blockAccountModal.time}}</h1>
+                        <p><span ng-repeat="timeInfo in i18n.blockAccountModal.timeInfo">{{timeInfo}}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MARQUEE-->
+
+    </ion-content>
+</ion-modal-view>

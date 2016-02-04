@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/layoutFragment"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/layoutButtons"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutBody"
+            android:gravity="center"
+            style="?attr/layoutBody"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/icon"
+                style="?attr/iconLargeConnectionLost"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_below="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_failure"
+                android:id="@+id/label_title"
+                style="?attr/titleText"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/label_description"
+                android:layout_below="@+id/label_title"
+                style="?attr/contentText"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layoutButtons"
+        style="?attr/layoutSingleButton"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:text="@string/button_exit"
+            android:id="@+id/buttonNegative"
+            style="?attr/negativeButton"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+<!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/layout/authentication_manual_fail_fragment.xml --><!-- From: file:/D:/AndroidProjects/Bancolombia/Bancolombia-enrolamiento/sherpa_enroll/platforms/android/build/intermediates/exploded-aar/mid-android-sdk-normal-2.1-RC01/res/layout/authentication_manual_fail_fragment.xml -->

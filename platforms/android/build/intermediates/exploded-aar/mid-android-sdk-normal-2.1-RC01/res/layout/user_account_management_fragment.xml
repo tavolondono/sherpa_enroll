@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/layoutFragment" >
+    
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:text="@string/label_account_management_list_title"
+        style="?attr/titleText" />
+    
+    <View
+       android:id="@+id/separator"
+	   android:layout_width="match_parent"
+	   android:layout_height="1dp"
+	   android:layout_below="@+id/listTitle"	  
+	   android:layout_marginTop="5dip"
+	   android:layout_marginLeft="5dip"
+	   android:layout_marginRight="5dip"
+	   android:background="@android:color/darker_gray"/>
+        
+    <ListView
+	    android:id="@+id/list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:choiceMode="singleChoice" 
+	    android:visibility="visible"
+	    android:paddingBottom="5dip"
+	    android:layout_above="@+id/buttonPositive"
+	    android:layout_below="@+id/separator"	    
+	   	>
+	</ListView>
+	
+    
+    <TextView
+		     android:id="@+id/labelListEmpty"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="5dip"
+	   		 android:layout_marginRight="5dip"
+		     android:layout_centerInParent="true"
+		     android:visibility="gone"
+		     android:text="@string/label_account_management_list_empty" 
+		     android:textAppearance="?android:attr/textAppearanceMedium"		     
+		      />
+    
+        <Button
+	        android:id="@+id/buttonPositive"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"	
+	        android:text="@string/button_finish"
+	        style="?attr/positiveButton"
+	        />
+
+</RelativeLayout>
+<!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/layout/user_account_management_fragment.xml -->

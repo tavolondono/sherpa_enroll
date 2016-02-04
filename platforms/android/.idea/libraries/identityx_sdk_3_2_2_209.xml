@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="identityx-sdk-3.2.2.209">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/identityx-sdk-3.2.2.209.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

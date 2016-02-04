@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.pragma.www.plugin.daon.MainActivity" >
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="No face detected"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:autoText="false" />
+
+    <FrameLayout
+               android:id="@+id/preview"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_gravity="center"
+               android:layout_below="@+id/status"
+               android:background="#333333"
+               android:layout_margin="5dp">
+
+    </FrameLayout>
+
+</RelativeLayout>

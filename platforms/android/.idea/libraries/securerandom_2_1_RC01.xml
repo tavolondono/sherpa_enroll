@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="securerandom-2.1-RC01">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/securerandom-2.1-RC01.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

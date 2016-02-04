@@ -1,0 +1,20 @@
+<ion-modal-view class="modal modal-sherpa-view">
+    <ion-content class="padding modal-sherpa-container">
+        <div class="modal-sherpa">
+            <div class="row">
+                <div class="col">
+                    <h4>{{i18n.enrollment.requestTokenTitleErrorModal}}</h4>
+                    <p>
+                        <span>{{i18n.enrollment.requestTokenContextErrorModal}}</span>
+                    </p>
+                    <button class="button button-block button-positive request-other-token" ng-click="tokenControl.goToRequestPhoneNumber()">
+                        {{i18n.enrollment.requestTokenButtonErrorModal}}
+                    </button>
+                    <h4>
+                        <a ng-show="tokenControl.isRetryToken" ng-click="locationsModal.hide();">{{i18n.enrollment.requestTokenLinkErrorModal}}</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

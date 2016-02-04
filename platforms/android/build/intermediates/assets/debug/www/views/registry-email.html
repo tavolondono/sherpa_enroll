@@ -1,0 +1,50 @@
+<ion-view view-title=" {{i18n.liteRegistry.email.title}}" can-swipe-back="false" class="contenido-vinculacion">
+    <!--PASOS-->
+    <div class="row pasos-wizard">
+        <div class="col">
+            <div class="Txt-pasos">
+                <p><span class="active">4</span> de 5</p>
+            </div>
+        </div>
+    </div>
+    <!--FIN PASOS-->
+   <ion-content class="documentsValidation wizard-content" ng-controller="securityDataController as securityDataControl">
+        <div class="header-wizard text-center clearfix" align-title="center">
+            <!--ICONO-->
+            <div class="row">
+                <div class="col">
+                    <div class="vinculacion-icono icono-phone active" ng-class="{ 'opacity' : !formSecurityData.$valid }"></div>
+                </div>
+            </div>
+            <!--FIN ICONO-->
+        </div>
+
+        <form name="formSecurityData" ng-submit="formSecurityData.$valid && securityDataControl.dataValidation()" novalidate>
+
+            <div class="row row-center center padding Txt-parrafo">
+                <p><strong>{{i18n.liteRegistry.email.description}}</strong></p>
+                <p class="txt-explicativo">{{i18n.liteRegistry.email.explanetionText}}</p>
+            </div>
+
+            <div class="row row-phone-number">
+                <div class="col">
+                    <label ng-class="{'has-error':formSecurityData.email.$invalid && formSecurityData.email.$dirty}" class="item item-input input-documento">
+                        <span class="input-label">{{i18n.generalActions.email}}</span>
+                        <input type="email" name ="email" ng-model="registryController.registryModel.email" ng-required="true" ng-minlength="5" ng-maxlength="40" maxlength="40" ng-pattern="/^(([^<>()[\]\\.,;:\s@\']+(\.[^<>()[\]\\.,;:\s@\']+)*)|(\'.+\'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,3}))$/">
+                    </label>
+                </div>
+            </div>
+
+            <div class="row row-bottom">
+                <div class="col col-center">
+                    <button type="submit" class="button button-positive" ng-disabled="!formSecurityData.$valid"> {{i18n.navigation.next}} </button>
+                </div>
+            </div>
+            <div class="row row-bottom">
+                <div class="col texto-cancelar center col-center">
+                    <a ng-click="registryController.cancelProcess();">{{i18n.generalActions.cancel}}</a>
+                </div>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

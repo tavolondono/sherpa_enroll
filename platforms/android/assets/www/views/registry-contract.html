@@ -1,0 +1,72 @@
+<ion-view
+view-title="{{i18n.liteRegistry.contract.title}}"
+can-swipe-back="false"
+class="contenido-vinculacion"
+ng-controller="contractController as contractControl" >
+    <!--PASOS-->
+    <div class="row pasos-wizard">
+        <div class="col">
+            <div class="Txt-pasos">
+                <p><span class="active">3</span> de 5</p>
+            </div>
+        </div>
+    </div>
+    <!--FIN PASOS-->
+   <ion-content class="contract wizard-content">
+        <div class="header-wizard text-center clearfix" align-title="center">
+            <!--ICONO-->
+            <div class="row">
+                <div class="col">
+                    <div class="vinculacion-icono icono-contrato active"></div>
+                </div>
+            </div>
+            <!--FIN ICONO-->
+        </div>
+        <form name="formContract" ng-submit="formContract.$valid && contractControl.acceptContract()" novalidate>
+
+            <div class="row row-center center padding Txt-parrafo">
+                <p><strong>{{i18n.liteRegistry.contract.description}}</strong></p>
+                <p class="txt-explicativo">{{i18n.liteRegistry.contract.explanetionText}}</p>
+            </div>
+
+            <!--CONTRATO-->
+            <div class="row">
+                <div class="col">
+                  <div class="texto-contrato">
+                        <p ng-bind-html="registryController.registryModel.contract.content"></p>
+                        <p>{{i18n.liteRegistry.contract.labelcontractVersion}}: {{registryController.registryModel.contract.version}}</p>
+                    </div>
+                </div>
+            </div>
+            <!--FIN CONTRATO-->
+
+            <div class="row row-terminos-condiciones">
+                <div class="col center col-center texto-cancelar">
+                    <a ng-click="contractControl.redirect(registryController.registryModel.contract.urlContract);">{{i18n.liteRegistry.contract.downloadText}}</a>
+                </div>
+            </div>
+
+
+            <div class="row row-terminos-condiciones">
+              <div class="item-checkbox contrato">
+                 <label class="checkbox contrato">
+                   <input type="checkbox" name="acceptContract" required ng-model="registryController.registryModel.acceptContract">
+                 </label>
+                 {{i18n.liteRegistry.contract.textAcceptContract}}
+              </div>
+            </div>
+
+            <div class="row row-bottom">
+                <div class="col col-center">
+                    <button type="submit" ng-disabled="!formContract.$valid" class="button button-positive">{{i18n.liteRegistry.contract.textBottonAcceptContract}}</button>
+                </div>
+            </div>
+            <div class="row row-bottom">
+                <div class="col texto-cancelar center col-center">
+                    <a ng-click="registryController.cancelProcess();">{{i18n.generalActions.cancel}}</a>
+                </div>
+            </div>
+
+        </form>
+    </ion-content>
+</ion-view>

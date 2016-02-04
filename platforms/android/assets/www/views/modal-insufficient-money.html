@@ -1,0 +1,45 @@
+<ion-modal-view class="modal-sherpa-view modal-insufficient-money-container" can-swipe-back="false">
+    <!--MODAL-->
+    <ion-content scroll="false">
+    	<!--ERROR TEXTO-->
+        <div class="row">
+            <div class="col">
+            	<div class="error-txt">
+                    <h3>{{i18n.insufficientMoney.titleA}} <br> {{i18n.insufficientMoney.titleB}}</h3>
+                </div>
+            </div>
+        </div> 
+    	<!--FIN ERROR TEXTO-->
+        
+    	<!--ERROR TEXTO-->
+        <div class="row">
+            <div class="col">
+            	<div class="error-txt">
+                    <p>{{i18n.insufficientMoney.subTitleA}} {{insufficientMoneyData.transferOrigin}} {{insufficientMoneyData.pocketName}} </p>
+                    <br>
+                    <p>{{i18n.insufficientMoney.labelMoney}}</p>
+                    <h3>{{insufficientMoneyData.value | currency : '$' : '0'}}</h3>
+                    <br>
+                    <p><strong>{{i18n.insufficientMoney.labelQuestion}}</strong></p>
+                </div>
+            </div>
+        </div> 
+    	<!--FIN ERROR TEXTO-->
+        
+        <!--BOTON-->
+        <div class="bar bar-footer">
+            <div class="row">
+                <div class="col">
+                    <button class="button button-block button-assertive acepto" ng-click="completeTransfer();">
+                        {{i18n.insufficientMoney.labelButton}}
+                    </button> 
+                    <div class="error-txt" ng-click="goToPockets();">
+                        <a>{{i18n.insufficientMoney.labelReturn}}</a>
+                    </div>
+                </div>
+            </div>   
+        </div>     
+        <!--FIN BOTON-->
+    </ion-content>
+    <!--FIN MODAL-->
+</ion-view>

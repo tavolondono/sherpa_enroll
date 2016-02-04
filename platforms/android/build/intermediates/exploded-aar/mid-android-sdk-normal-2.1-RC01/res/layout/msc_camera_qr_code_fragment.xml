@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_fullFragment"
+    style="?attr/layoutFragment"
+    >
+
+    <include layout="@layout/circular_progress_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutLogic"
+        >
+    <RelativeLayout
+        android:id="@+id/layout_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_CameraPreview"
+            style="?attr/layoutMSC" >
+
+            <morpho.urt.msc.mscengine.MorphoSurfaceView
+                android:id="@+id/morphoSurfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/icon_Tap"
+            android:layout_width="@dimen/icon_medium_width"
+            android:layout_height="@dimen/icon_medium_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dip"
+            android:contentDescription="@string/image_desc"
+            android:src="@drawable/icon_tap" />
+
+        <TextView
+            android:id="@+id/label_dummy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dip"
+            android:text="@string/use_dummy_data"
+            android:visibility="gone" />
+
+        <include layout="@layout/progress_bar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutButtons"
+        style="?attr/layoutDoubleButton"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:text="@string/button_activation_code_manually"
+            android:id="@+id/buttonPositive"
+            style="?attr/positiveButton"
+            android:layout_alignParentBottom="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/label_scan_qr_code_to_proceed"
+            android:id="@+id/info"
+            android:layout_above="@+id/buttonPositive"
+            android:layout_centerHorizontal="true"
+            style="?attr/descriptionText"
+            />
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_xxxlarge"
+        android:background="@color/color_background"
+        >
+    </RelativeLayout>-->
+
+    <ImageView
+        android:layout_above="@+id/layoutButtons"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageView_frameDetect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/cross_hairs_margin"
+        android:contentDescription="@string/image_desc"
+        style="?attr/iconPositionQrCodeNotDetected" />
+
+    </RelativeLayout>
+</RelativeLayout><!-- From: file:/data/hudson1_new/workspace/MID-2.1-Android-SDK-nightly-10-Build/mid-android-sdk/src/main/res/layout/msc_camera_qr_code_fragment.xml -->

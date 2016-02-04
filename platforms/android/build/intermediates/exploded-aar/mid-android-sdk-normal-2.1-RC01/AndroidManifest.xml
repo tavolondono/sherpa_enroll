@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="morpho.etis.android.sdk.mid_android_sdk"
+    android:versionCode="1"
+    android:versionName="1.0" > <!-- unless otherwise required, set the maximum security permission -->
+    <uses-sdk android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <permission
+        android:name="morpho.etis.android.sdk.mid_android_sdk.account.content_provider.READ_ETIS_ACCOUNT_PROVIDER"
+        android:protectionLevel="signature" /> <!-- unless otherwise required, set the maximum security permission -->
+    <permission
+        android:name="morpho.etis.android.sdk.mid_android_sdk.account.content_provider.WRITE_ETIS_ACCOUNT_PROVIDER"
+        android:protectionLevel="signature" />
+
+    <!-- DO NOT REMOVE ALLOW BACKUP SETTING TO FALSE. IT PREVENTS BACKUP -->
+    <application android:allowBackup="false" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.init.AuthenticationRequestActivity" />
+
+        <!-- Authentication -->
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationPasswordActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationHomomorphicPasswordActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationHomomorphicPinPadActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+
+        <!-- Management -->
+
+        <activity android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.managment.UserAccountManagementActivity" >
+        </activity>
+
+        <!-- New screens -->
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.WelcomeRegistrationActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.ActivationProcessActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.ActivationStateMachineActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.ActivationCredentialSuccessActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.ManualActivationActivityParent"
+            android:icon="@drawable/ic_sdk_logo"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.RegisterLocationActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.RegistrationStateMachineActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.RegistrationMoaSuccessActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationEnrolFaceDeviceMSCActivityParent"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/ic_sdk_logo"
+            android:keepScreenOn="true"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationEnrolFaceServerMSCActivityParent"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/ic_sdk_logo"
+            android:keepScreenOn="true"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.password_homomorphic.RegistrationEnrolHomomorphicPasswordActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.password_server.RegistrationEnrolPasswordServerActivityParent"
+            android:icon="@drawable/ic_sdk_logo"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationRetrievingInfoActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationManualFailureActivityParent"
+            android:icon="@drawable/ic_sdk_logo"
+            android:label="@string/authentication_failure_title" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationSuccessActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.EnrolmentStateMachine"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.qr_code.MSCQrCodeActivityParent"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/ic_sdk_logo"
+            android:keepScreenOn="true"
+            android:screenOrientation="nosensor" >
+        </activity>
+
+        <!-- New etis theme -->
+
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.errors.QrCodeFailureActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.errors.DeviceNotEligibleFailureActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.errors.DeviceNotEligibleExplanationFailureActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.RegistrationMoaChoiceActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.CaptureFaceServerWelcomeActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.CaptureFaceDeviceWelcomeActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.tutorial.CaptureFaceTutorialActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.password_homomorphic.CapturePasswordHomomorphicWelcomeActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.password_server.CapturePasswordWelcomeActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationMoaChoiceActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationMSCFaceServerActivityParent"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/ic_sdk_logo"
+            android:keepScreenOn="true"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationMSCFaceDeviceActivityParent"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/ic_sdk_logo"
+            android:keepScreenOn="true"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationFaceDeviceTutorialActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationFaceServerTutorialActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.AuthenticationMoaFailActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationAuthenticationMSCFaceDeviceActivityParent"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/ic_sdk_logo"
+            android:keepScreenOn="true"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationAuthenticationMSCFaceServerActivityParent"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/ic_sdk_logo"
+            android:keepScreenOn="true"
+            android:screenOrientation="nosensor" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.ActivationConnectionLostActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.EnrolmentConnectionLostActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationFaceSuccessInfoActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.errors.RegistrationMoaFailActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationAuthenticationFaceTutorial"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.RegistrationAuthenticationFaceFailActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.EnrolmentFaceDeviceStateMachineActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.face.EnrolmentFaceServerStateMachineActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.pin_homomorphic.CapturePinHomomorphicWelcomeActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.pin_homomorphic.RegistrationEnrolHomomorphicPinPadActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.pin_homomorphic.EnrolmentPinHomomorphicStateMachineActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.password_server.EnrolmentPasswordServerStateMachineActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.password_homomorphic.EnrolmentPasswordHomomorphicStateMachineActivity"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.enrolment.RegistrationMoaStateMachineActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.authentication.PurposeOfRequestActivityParent"
+            android:icon="@drawable/ic_sdk_logo" >
+        </activity>
+        <activity
+            android:name="morpho.etis.android.sdk.mid_android_sdk.ui.activities.registration.activation.passport.MSCPassportActivityParent"
+            android:configChanges="orientation|screenSize"
+            android:icon="@drawable/ic_sdk_logo"
+            android:keepScreenOn="true"
+            android:screenOrientation="nosensor" >
+        </activity>
+
+        <provider
+            android:name="morpho.etis.android.sdk.mid_android_sdk.account.content_provider.AccountProvider"
+            android:authorities="morpho.etis.android.sdk.mid_android_sdk.account.content_provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:label="AccountProvider"
+            android:readPermission="morpho.etis.android.sdk.mid_android_sdk.account.content_provider.READ_ETIS_ACCOUNT_PROVIDER"
+            android:writePermission="morpho.etis.android.sdk.mid_android_sdk.account.content_provider.WRITE_ETIS_ACCOUNT_PROVIDER" >
+        </provider>
+
+        <receiver android:name="morpho.etis.android.sdk.mid_android_sdk.application.UpgradeBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

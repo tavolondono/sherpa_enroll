@@ -1,0 +1,90 @@
+<ion-view view-title=" {{i18n.liteRegistry.id.title}}" can-swipe-back="false" class="contenido-vinculacion">
+    <!--PASOS-->
+    <div class="row pasos-wizard">
+        <div class="col">
+            <div class="Txt-pasos">
+                <p><span class="active">2</span> de 5</p>
+            </div>
+        </div>
+    </div>
+    <!--FIN PASOS-->
+    <ion-content class="documentsValidation wizard-content" ng-controller="documentsValidationController as docControl">
+        <div class="header-wizard text-center clearfix" align-title="center">
+            <!--ICONO-->
+            <div class="row">
+                <div class="col">
+                    <div class="vinculacion-icono icono-documento active" ng-class="{ 'opacity' : !formDocumentsValidation.$valid }"></div>
+                </div>
+            </div>
+            <!--FIN ICONO-->
+        </div>
+
+        <form name="formDocumentsValidation" ng-submit="formDocumentsValidation.$valid && docControl.documentValidation()" novalidate>
+
+            <div class="row row-center center padding Txt-parrafo">
+                <p class="saludo"><strong>{{i18n.liteRegistry.id.hi}} {{registryController.registryModel.nickname}}</strong></p>
+                <p class="txt-explicativo">{{i18n.liteRegistry.id.explanetionText}}</p>
+            </div>
+
+            <!--SELECT-->
+            <div class="row">
+                <div class="col">
+                <label class="item item-input item-select select-documento">
+                    <div class="input-label">{{i18n.liteRegistry.id.documentTypesPlaceHolder}}</div>
+                    <select ng-model="registryController.registryModel.documentType" name="documentType" ng-options="docuType as docuType.value for docuType in docControl.documentTypes track by docuType.code"  >
+                    </select>
+                  </label>
+                </div>
+            </div>
+            <!--FIN SELECT-->
+
+            <div ng-show="registryController.registryModel.documentType.code == 'TI'" class="row">
+                <div class="col">
+                    <label ng-class="{'has-error':formDocumentsValidation.birthDate.$invalid && formDocumentsValidation.birthDate.$dirty}" class=" item item-input input-documento mask-date">
+                        <span class="input-label">{{i18n.generalActions.birthDate}}</span>
+                        <p>{{registryController.registryModel.birthDateString}}</p>
+                        <input type="date" name="birthDate" ng-model="registryController.registryModel.birthDate" ng-required="registryController.registryModel.documentType.code == 'TI'">
+                    </label>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <label ng-class="{'has-error':formDocumentsValidation.idNumber.$invalid && formDocumentsValidation.idNumber.$dirty}" class=" item item-input input-documento input-num-doc">
+                        <span class="input-label">{{i18n.generalActions.idNumber}}</span>
+                        <input type="tel"
+                        name="idNumber"
+                        ng-model="registryController.registryModel.documentNumber"
+                        ng-required="true"
+                        ng-pattern="/^[0-9]*$/"
+                        trim="true"
+                        ng-minlength="3" ng-maxlength="11" maxlength="11">
+                    </label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label ng-class="{'has-error':formDocumentsValidation.expeditionDate.$invalid && formDocumentsValidation.expeditionDate.$dirty}" class="item item-input input-documento mask-date">
+                        <span class="input-label">{{i18n.generalActions.expeditionDate}}</span>
+                        <p>{{registryController.registryModel.expeditionDateString}}</p>
+                        <input type="date" name="expeditionDate" ng-model="registryController.registryModel.expeditionDate" ng-required="true">
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="row row-bottom">
+                <div class="col col-center">
+                    <button type="submit" class="button button-positive" ng-disabled="!formDocumentsValidation.$valid"> {{i18n.navigation.next}} </button>
+                </div>
+            </div>
+
+            <div class="row row-bottom">
+                <div class="col texto-cancelar center col-center">
+                    <a ng-click="registryController.cancelProcess();">{{i18n.generalActions.cancel}}</a>
+                </div>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

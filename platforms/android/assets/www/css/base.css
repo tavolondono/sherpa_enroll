@@ -1,0 +1,462 @@
+/*
+* Licensed Materials - Property of IBM
+* 5725-I43 (C) Copyright IBM Corp. 2006, 2013. All Rights Reserved.
+* US Government Users Restricted Rights - Use, duplication or
+* disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+*/
+
+/* Copyright (C) Worklight Ltd. 2006-2012.  All rights reserved. */
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+	q:before, q:after {
+	content: '';
+	content: none;
+}
+
+a, button {
+	cursor: pointer;
+}
+
+.show {
+	display: inherit;
+}
+
+.hide {
+	display: none !important;
+}
+
+.clear {
+	clear: both;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.rtl {
+	direction: rtl;
+	text-align: right;
+}
+
+.ltr {
+	direction: ltr;
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.max {
+	height: 100%;
+	width: 100%;
+}
+
+/******************************** END BASE CSS ***********************************/
+
+body {
+	position: relative;
+}
+
+#blockOuter {
+	width: 100%;
+	background: #fff;
+	color: inherit;
+	overflow: hidden;
+	position: absolute;
+	z-index: 110;  /* Must be bigger than authenticator z-index (100). */
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+/* The id is set in the upgrade version in messages.js */
+#downloadNewVersion {
+	cursor: pointer;
+	text-decoration: underline;
+	color: #0000ff;
+}
+
+#auth {
+	display: none;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#diagnostic {
+	background-color: white;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);	
+}
+
+.diagnosticTable td {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	font-size: 16px;
+	padding: 2px;
+	color : black;
+	width: 50%;
+	word-break: break-all;
+}
+
+.diagnosticButtons {
+	font-size:16px;
+	height:40px;
+	width: 80px;
+	font-weight: normal;
+	margin: 5px;
+}
+
+/* Start styling for the modal window */
+#WLdialogContainer {
+	position: static;
+}
+
+#WLdialogOverlay {
+	background: #fff;
+	height: 100%;
+	left: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	position: absolute;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 16777269;
+}
+
+#WLdialog {
+	background: #fff;
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 5px;
+	position: absolute;
+	position: fixed;
+	width: 280px;
+	z-index: 16777270;
+}
+
+#WLdialogTitle {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+#WLdialogBody {
+	margin: 5px 0;
+	min-height: 48px;
+	word-wrap: break-word;
+}
+
+#WLdialog button {
+	margin: 0 5px;
+}
+/* End styling for the modal window */
+
+/* Start styling for the busy modal window */
+#WLbusyContainer {
+	position: static;
+}
+
+#WLbusyOverlay {
+	background: #fff;
+	height: 100%;
+	left: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	-moz-opacity:0.5;
+	-o-opacity: 0.5;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 9998;
+}
+
+#WLbusy {
+	background: #fff;
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 5px;
+	position: absolute;
+	width: 240px;
+	z-index: 9999;
+}
+
+#WLbusyTitle {
+	color: #000;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 14px;
+	padding: 5px;
+	text-align: center;
+}
+
+/* End styling for the busy modal window */
+
+.biometry-config .button.button-positive {
+    background-color: #369ba4;
+}
+
+.biometry-config .list .item {
+    background-color: transparent;
+    border: none;
+}
+
+.biometry-config .list .item .row {
+    border-radius: 15px 15px;
+    background-color: #ddd;
+}
+.biometry-config .list .item .row .col {
+    background-color: #ddd;
+}
+
+.biometry-config .list .item .row .col:first-child {
+    background-color: #2f7fff;
+    border-radius: 15px 0 0 15px;
+    margin: -6px 5px -6px -6px;
+}
+
+.biometry-config .list .item .row .col:first-child img{
+    max-width: 100%
+}
+.biometry-config .icon.ion-ios-checkmark-outline:before {
+    font-size: 25px;
+    color: #87ef1e;
+}
+
+.biometry-config .item .row.active {
+    opacity: 1;
+}
+
+.biometry-config .item .row{
+    opacity: 0.5;
+}
+
+.biometry-config .item i {
+    visibility: hidden;
+}
+
+.biometry-config .item.pass i {
+    visibility: visible;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.icon-dispositivo {
+    width: 36px;
+    height: 100px;
+    display: block;
+    margin: 0px auto;
+    background: url(../images/icon-dispositivo.png) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.biometria-botonera {
+    width: 90%;
+    height: 150px;
+    border-radius: 6px;
+    display: block;
+    margin: 0px auto;
+}
+
+.face-permisos-icono {
+    width: 109px;
+    height: 130px;
+    margin: 14px auto 0px auto;
+    clear: both;
+    display: block;
+    text-align: center;
+    background: url(../images/bio-icon-face.svg) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+.facial-help {
+    width: 100%;
+    height: 286px;
+    margin: 14px auto 0px auto;
+    clear: both;
+    display: block;
+    text-align: center;
+    background: url(../images/img_facial_help.svg) no-repeat 45% 50%;
+    background-size: contain;
+}
+
+
+.voice-permisos-icono {
+    width: 109px;
+    height: 130px;
+    margin: 14px auto 0px auto;
+    clear: both;
+    display: block;
+    text-align: center;
+    background: url(../images/bio-icon-voice.svg) no-repeat 50% 50%;
+    background-size: contain;
+}
+
+ion-view.contenedor-login-celular.pane > ion-content > div:nth-child(1) {
+    z-index: 9;
+    position: relative;
+}
+
+.contenedor-permisos {
+    width: 360px;
+    height: 568px;
+    margin: 0px auto;
+    clear: both;
+    display: block;
+    position: relative;
+    opacity: 0.72;
+    background: #000000;
+}
+
+.clear-iconotop {
+    width: 100%;
+    height: 120px;
+    clear: both;
+    display: block;
+}
+
+.face-permisos-texto {
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    clear: both;
+    display: block;
+    text-align: center;
+}
+
+.face-permisos-texto p {
+    font-family: 'Conv_AvenirNextLTPro-Regular';
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 24px;
+}
+
+.bar-footer.botonCel {
+    height: auto;
+    background-color: transparent;
+}
+
+.modal-view-sherpa.permisos {
+    opacity: 0.92;
+}
+.modal-view-sherpa.permisos .button {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.icono-correo {
+    background: url(../images/icono-correo.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: contain;
+    height: 38px;
+}
+
+.biometria-botonera .button {
+    width: 90%;
+    height: 150px;
+    border-radius: 6px;
+    display: block;
+    margin: 0px auto;
+    background-color: #FFFFFF;
+    color: #717171;
+}
+
+.chooseBiometryControl {
+    top: 0px;
+    padding-top: 0px !important;
+    /* padding-bottom: 20px; */
+}
+
+.footer-choosebiometry {
+    margin-top: 20px !important;
+}
+
+.title-vinculacion-facial {
+    font-family: "Conv_AvenirNextLTPro-MediumCn",sans-serif;
+    font-size: 1.125em;
+    letter-spacing: 1.79px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+}
+canvas {
+    display: inline-block;
+    background: #202020;
+    width: 100%;
+    /*height: 45%;*/
+    box-shadow: 0px 0px 10px blue;
+}
+
+.float-rt {
+    float: right;
+}
+
+h2.oblique {
+    font-style: oblique;
+}
+
+.audio-wave {
+    background: url(../images/animated-sound-waves-s-2.gif);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: contain;
+    height: 38px;
+}
+
+.voice-login, .voice-login p, .voice-login h2, .voice-login span {
+    color: #fff !important
+}
+
+.contenedor-login-celular .login-clear-header.voice-login-clear {
+    height: 100px;
+}
+
+.ion-android-microphone.button {
+    border-radius: 40px;
+    background-color: #ff2f73;
+    color: #fff;
+    border-color: transparent;
+}
+
+.biometry-config .col-50 p {
+    white-space: normal;
+}
