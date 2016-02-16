@@ -57,8 +57,8 @@
         </activity>
         <activity android:label="@string/title_activity_my_app" android:name="co.pragma.www.plugin.morpho.RegistrationActivity" />
         <activity android:configChanges="orientation|keyboardHidden" android:name="co.pragma.www.plugin.daon.MainActivity" android:screenOrientation="portrait" />
-        <activity android:configChanges="orientation|keyboardHidden" android:name="co.pragma.www.plugin.daon.BlinkActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <activity android:label="@string/title_activity_my_app" android:name="co.pragma.www.plugin.morpho.MainActivity" />
+        <activity android:configChanges="orientation|keyboardHidden" android:name="co.pragma.www.plugin.daon.BlinkActivity" android:screenOrientation="portrait"  />
+        <activity android:label="@string/title_activity_my_app" android:name="co.pragma.www.plugin.morpho.AuthenticationActivity" />
         <activity android:configChanges="orientation|keyboardHidden" android:name="co.pragma.www.plugin.daon.VerifyActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
     </application>
 </manifest>

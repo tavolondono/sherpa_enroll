@@ -76,7 +76,7 @@ public class Daon extends CordovaPlugin {
         try {
             appCtx = cordova.getActivity().getApplicationContext();
             if (launchAuthentication.equals(action)) {
-                Intent authenticationActivity = new Intent(appCtx, BlinkActivity.class);
+                Intent authenticationActivity = new Intent(appCtx, MainActivity.class);
                 authenticationActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 // It's mandatory add the user account name
                 authenticationActivity.putExtra(ACCOUNT_NAME_KEY, userAccountName);

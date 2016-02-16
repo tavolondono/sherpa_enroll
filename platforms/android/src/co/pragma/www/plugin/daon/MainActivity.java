@@ -209,45 +209,45 @@ public class MainActivity extends Activity
 	{
 		// Initialize the Face SDK. Make sure this is only done once.		
 			
-		engine = Verifier.getInstance(this, 
-				IMAGE_WIDTH, 
-				IMAGE_HEIGHT, 
-				Verifier.OPTION_VERIFICATION|Verifier.OPTION_LIVENESS|Verifier.OPTION_QUALITY);
-		
+		engine = Verifier.getInstance(this,
+			IMAGE_WIDTH,
+			IMAGE_HEIGHT,
+			Verifier.OPTION_VERIFICATION|Verifier.OPTION_LIVENESS|Verifier.OPTION_QUALITY);
+
 		engine.setThreshold(FaceEngine.LIVENESS_SCORE, FaceEngine.THRESHOLD_LIVENESS);
 		engine.setThreshold(FaceEngine.VERIFY_SCORE, FaceEngine.THRESHOLD_VERIFY);
 		engine.setThreshold(FaceQuality.FACE_FOUND_CONFIDENCE, FaceQuality.THRESHOLD_FACE_FOUND_CONFIDENCE + .20f);
-        ImageView img = new ImageView(this);
-        img.setBackgroundResource(R.drawable.background);
+		ImageView img = new ImageView(this);
+		img.setBackgroundResource(R.drawable.background);
 
-        addContentView(img, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+		addContentView(img, new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
 
-        engine.setListener(new FaceEngineListener() {
+		engine.setListener(new FaceEngineListener() {
 
-            @Override
-            public void onImageVerify(ImageInfo info) {
-                boolean last = blink;
+			@Override
+			public void onImageVerify(ImageInfo info) {
+				boolean last = blink;
 
-                blink = info.isBlinkDetected();
+				blink = info.isBlinkDetected();
 
-                if (info.getFacePosition().isEmpty()) {
-                    count = 0;
+				if (info.getFacePosition().isEmpty()) {
+					count = 0;
 
-                } else {
-                    // Only count the frame with the first blink
-                    if (!last && blink && info.isVerified())
-                        count++;
-                }
+				} else {
+					// Only count the frame with the first blink
+					if (!last && blink && info.isVerified())
+						count++;
+				}
 
-                update(info);
-            }
+				update(info);
+			}
 
-            @Override
-            public void onImageEnroll(boolean success) {
-                enrolled = success;
-                Log.d(TAG, "Enrolled: " + enrolled);
-            }
-        });
+			@Override
+			public void onImageEnroll(boolean success) {
+				enrolled = success;
+				Log.d(TAG, "Enrolled: " + enrolled);
+			}
+		});
 
 	}
 	

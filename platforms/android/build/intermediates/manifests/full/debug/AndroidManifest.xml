@@ -154,10 +154,9 @@
         <activity
             android:name="co.pragma.www.plugin.daon.BlinkActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="landscape"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+            android:screenOrientation="portrait" />
         <activity
-            android:name="co.pragma.www.plugin.morpho.MainActivity"
+            android:name="co.pragma.www.plugin.morpho.AuthenticationActivity"
             android:label="@string/title_activity_my_app" />
         <activity
             android:name="co.pragma.www.plugin.daon.VerifyActivity"

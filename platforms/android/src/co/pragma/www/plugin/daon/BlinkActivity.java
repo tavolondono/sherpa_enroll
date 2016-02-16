@@ -54,27 +54,27 @@ public class BlinkActivity extends Activity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		
+
 		// The View Finder should take up the whole screen.
 		// Note. These methods has to be called before setting the
 		// content.
-		
+
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 		// The camera is always in landscape orientation. Setting landscape orientation
 		// in the manifest will make sure that our image has the right orientation.
-			
-		
+
+
 		// Create the View Finder/Preview and make it the content. The preview could be added to a View
 		// instead of using full screen.
-		
+
 		preview = new CameraPreview(this, IMAGE_WIDTH, IMAGE_HEIGHT);
-		
+
 		setContentView(preview);
 
 		setupUI();
-		
+
 		// Initialize and start the Face SDK
 		initializeSDK();
 	}
@@ -113,7 +113,7 @@ public class BlinkActivity extends Activity
 		// Initialize the Face SDK. Make sure this is only done once.
 
 		engine = Verifier.getInstance(this, IMAGE_WIDTH, IMAGE_HEIGHT, Verifier.OPTION_LIVENESS);
-		
+
 		engine.setLivenessThreshold(THRESHOLD_BLINK);
 		engine.setListener(new FaceEngineAdapter() {
 
@@ -136,19 +136,19 @@ public class BlinkActivity extends Activity
 	{
 		// Start camera preview
 		preview.start();
-		
+
 		// Set preview frame callback and start collecting frames.
 		// Frames are in the NV21 format YUV encoding.
 		
 		preview.setPreviewFrameCallback(new PreviewCallback()
-		{			
+		{
 			@Override
 			public void onPreviewFrame(byte[] data, Camera camera)
 			{
 				// Pass the image to the Face SDK. You may want to add
-				// a queue or some additional threading if there are 
+				// a queue or some additional threading if there are
 				// performance issues.
-									
+
 				if (engine != null) {
                     engine.verifyImage(data);
                     if (blink) {
@@ -163,7 +163,7 @@ public class BlinkActivity extends Activity
                 }
 
 			}
-		});		
+		});
 	}
 	
 	private void setupUI()
@@ -203,6 +203,6 @@ public class BlinkActivity extends Activity
 			}
 		}, 200);
 	}
-	
+
 	
 }
